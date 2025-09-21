@@ -1,23 +1,47 @@
-import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import FindRoutes from './components/FindRoutes';
-import Contact from './components/Contact';
-import Fares from './components/Fares';
-import HighwayFareCalculator from './components/HighwayFareCalculator';
-import '../src/main';
+import React, { useState, useEffect } from "react";
+import Home from "./components/Home";
+import FindRoutes from "./components/FindRoutes";
+import Contact from "./components/Contact";
+import Fares from "./components/Fares";
+import HighwayFareCalculator from "./components/HighwayFareCalculator";
+
+// Map paths to components
+const routes = {
+  "/": <Home />,
+  "/routes": <FindRoutes />,
+  "/fares": <Fares />,
+  "/highway-fares": <HighwayFareCalculator />,
+  "/contact": <Contact />,
+};
 
 const App = () => {
+  const [path, setPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const onPopState = () => setPath(window.location.pathname);
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
+  const navigate = (to) => {
+    window.history.pushState({}, "", to);
+    setPath(to);
+  };
+
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/routes" element={<FindRoutes />} />
-        <Route path="/fares" element={<Fares />} />
-        <Route path="/highway-fares" element={<HighwayFareCalculator />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </HashRouter>
+    <div>
+      {/* Navigation */}
+      <nav>
+        <a href="/" onClick={(e) => { e.preventDefault(); navigate("/"); }}>Home</a>
+        <a href="/routes" onClick={(e) => { e.preventDefault(); navigate("/routes"); }}>Routes</a>
+        <a href="/fares" onClick={(e) => { e.preventDefault(); navigate("/fares"); }}>Fares</a>
+        <a href="/highway-fares" onClick={(e) => { e.preventDefault(); navigate("/highway-fares"); }}>Highway Fares</a>
+        <a href="/contact" onClick={(e) => { e.preventDefault(); navigate("/contact"); }}>Contact</a>
+      </nav>
+
+      {/* Render page */}
+      <main>{routes[path] || <Home />}</main>
+    </div>
   );
 };
 
