@@ -1,0 +1,4050 @@
+[{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ccc"
+  },
+  "route_no": "EX 001",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ccd"
+  },
+  "route_no": "EX 001",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 770
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cce"
+  },
+  "route_no": "EX 001",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ccf"
+  },
+  "route_no": "EX 001",
+  "service_type": "TEMP",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 520
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd0"
+  },
+  "route_no": "EX 001",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd1"
+  },
+  "route_no": "EX 001",
+  "service_type": "LUXURY",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 620
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd2"
+  },
+  "route_no": "EX 001-001",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd3"
+  },
+  "route_no": "EX 001-001",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 970
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd4"
+  },
+  "route_no": "EX 001-001",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd5"
+  },
+  "route_no": "EX 001-001",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 650
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd6"
+  },
+  "route_no": "EX 001-001",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd7"
+  },
+  "route_no": "EX 001-001",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 780
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd8"
+  },
+  "route_no": "EX 001-002",
+  "service_type": "SUPER",
+  "section_name": "KADUWELA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cd9"
+  },
+  "route_no": "EX 001-002",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1050
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cda"
+  },
+  "route_no": "EX 001-002",
+  "service_type": "TEMP",
+  "section_name": "KADUWELA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cdb"
+  },
+  "route_no": "EX 001-002",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 700
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cdc"
+  },
+  "route_no": "EX 001-002",
+  "service_type": "LUXURY",
+  "section_name": "KADUWELA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cdd"
+  },
+  "route_no": "EX 001-002",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 840
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cde"
+  },
+  "route_no": "EX 001-003-04",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cdf"
+  },
+  "route_no": "EX 001-003-04",
+  "service_type": "SUPER",
+  "section_name": "KURUNEGALA",
+  "section_id": 1,
+  "fare": 1560
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce0"
+  },
+  "route_no": "EX 001-003-04",
+  "service_type": "LUXURY",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce1"
+  },
+  "route_no": "EX 001-003-04",
+  "service_type": "LUXURY",
+  "section_name": "KURUNEGALA",
+  "section_id": 1,
+  "fare": 1260
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce2"
+  },
+  "route_no": "EX 001-003-04",
+  "service_type": "TEMP",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce3"
+  },
+  "route_no": "EX 001-003-04",
+  "service_type": "TEMP",
+  "section_name": "KURUNEGALA",
+  "section_id": 1,
+  "fare": 1040
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce4"
+  },
+  "route_no": "EX 001-004-49",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce5"
+  },
+  "route_no": "EX 001-004-49",
+  "service_type": "SUPER",
+  "section_name": "TRINCO",
+  "section_id": 1,
+  "fare": 2810
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce6"
+  },
+  "route_no": "EX 001-004-49",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce7"
+  },
+  "route_no": "EX 001-004-49",
+  "service_type": "LUXURY",
+  "section_name": "TRINCO",
+  "section_id": 1,
+  "fare": 2270
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce8"
+  },
+  "route_no": "EX 001-009-211",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ce9"
+  },
+  "route_no": "EX 001-009-211",
+  "service_type": "SUPER",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 1500
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cea"
+  },
+  "route_no": "EX 001-009-211",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ceb"
+  },
+  "route_no": "EX 001-009-211",
+  "service_type": "LUXURY",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 1220
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cec"
+  },
+  "route_no": "EX 001-009-211",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ced"
+  },
+  "route_no": "EX 001-009-211",
+  "service_type": "TEMP",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 1000
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cee"
+  },
+  "route_no": "EX 001-010/060",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cef"
+  },
+  "route_no": "EX 001-010/060",
+  "service_type": "LUXURY",
+  "section_name": "IMADUWA",
+  "section_id": 1,
+  "fare": 850
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf0"
+  },
+  "route_no": "EX 001-010/060",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf1"
+  },
+  "route_no": "EX 001-010/060",
+  "service_type": "SUPER",
+  "section_name": "IMADUWA",
+  "section_id": 1,
+  "fare": 960
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf2"
+  },
+  "route_no": "EX 001-010/060",
+  "service_type": "SUPER",
+  "section_name": "AKURESSA",
+  "section_id": 2,
+  "fare": 1050
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf3"
+  },
+  "route_no": "EX 001-010/060",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf4"
+  },
+  "route_no": "EX 001-010/060",
+  "service_type": "TEMP",
+  "section_name": "IMADUWA",
+  "section_id": 1,
+  "fare": 700
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf5"
+  },
+  "route_no": "EX 001-011/032",
+  "service_type": "SUPER",
+  "section_name": "TANGALLE",
+  "section_id": 2,
+  "fare": 1300
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf6"
+  },
+  "route_no": "EX 001-011/032",
+  "service_type": "SUPER",
+  "section_name": "WEERAKETIYA",
+  "section_id": 3,
+  "fare": 1380
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf7"
+  },
+  "route_no": "EX 001-011/032",
+  "service_type": "LUXURY",
+  "section_name": "TANGALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf8"
+  },
+  "route_no": "EX 001-011/032",
+  "service_type": "LUXURY",
+  "section_name": "WEERAKETIYA",
+  "section_id": 1,
+  "fare": 1120
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cf9"
+  },
+  "route_no": "EX 001-011/032",
+  "service_type": "TEMP",
+  "section_name": "TANGALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cfa"
+  },
+  "route_no": "EX 001-011/032",
+  "service_type": "TEMP",
+  "section_name": "WEERAKETIYA",
+  "section_id": 1,
+  "fare": 920
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cfb"
+  },
+  "route_no": "EX-001-13/353",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cfc"
+  },
+  "route_no": "EX-001-13/353",
+  "service_type": "LUXURY",
+  "section_name": "DEYYANDARA",
+  "section_id": 1,
+  "fare": 1080
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cfd"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cfe"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "LUXURY",
+  "section_name": "DENIYAYA",
+  "section_id": 1,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83cff"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d00"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "DENIYAYA",
+  "section_id": 1,
+  "fare": 1360
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d01"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d02"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "TEMP",
+  "section_name": "DENIYAYA",
+  "section_id": 1,
+  "fare": 900
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d03"
+  },
+  "route_no": "EX 001-016",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d04"
+  },
+  "route_no": "EX 001-016",
+  "service_type": "LUXURY",
+  "section_name": "ELPITIYA",
+  "section_id": 1,
+  "fare": 560
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d05"
+  },
+  "route_no": "EX 001-016",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d06"
+  },
+  "route_no": "EX 001-016",
+  "service_type": "SUPER",
+  "section_name": "ELPITIYA",
+  "section_id": 1,
+  "fare": 690
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d07"
+  },
+  "route_no": "EX 001-016",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d08"
+  },
+  "route_no": "EX 001-016",
+  "service_type": "TEMP",
+  "section_name": "ELPITIYA",
+  "section_id": 1,
+  "fare": 460
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d09"
+  },
+  "route_no": "EX 001-018",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d0a"
+  },
+  "route_no": "EX 001-018",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1080
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d0b"
+  },
+  "route_no": "EX 001-018",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d0c"
+  },
+  "route_no": "EX 001-018",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 870
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d0d"
+  },
+  "route_no": "EX 001-018",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d0e"
+  },
+  "route_no": "EX 001-018",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 720
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d0f"
+  },
+  "route_no": "EX 001-021",
+  "service_type": "SUPER",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d10"
+  },
+  "route_no": "EX 001-021",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 890
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d11"
+  },
+  "route_no": "EX 001-021",
+  "service_type": "LUXURY",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d12"
+  },
+  "route_no": "EX 001-021",
+  "service_type": "LUXURY",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 720
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d13"
+  },
+  "route_no": "EX 001-021",
+  "service_type": "TEMP",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d14"
+  },
+  "route_no": "EX 001-021",
+  "service_type": "TEMP",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 590
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d15"
+  },
+  "route_no": "EX 001-022",
+  "service_type": "SUPER",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d16"
+  },
+  "route_no": "EX 001-022",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1080
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d17"
+  },
+  "route_no": "EX 001-022",
+  "service_type": "LUXURY",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d18"
+  },
+  "route_no": "EX 001-022",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 870
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d19"
+  },
+  "route_no": "EX 001-022",
+  "service_type": "TEMP",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d1a"
+  },
+  "route_no": "EX 001-022",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 720
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d1b"
+  },
+  "route_no": "EX 001-023",
+  "service_type": "SUPER",
+  "section_name": "KADUWELA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d1c"
+  },
+  "route_no": "EX 001-023",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 860
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d1d"
+  },
+  "route_no": "EX 001-023",
+  "service_type": "LUXURY",
+  "section_name": "KADUWELA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d1e"
+  },
+  "route_no": "EX 001-023",
+  "service_type": "LUXURY",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 690
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d1f"
+  },
+  "route_no": "EX 001-023",
+  "service_type": "TEMP",
+  "section_name": "KADUWELA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d20"
+  },
+  "route_no": "EX 001-023",
+  "service_type": "TEMP",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 570
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d21"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d22"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "SUPER",
+  "section_name": "MIRISWATTA",
+  "section_id": 1,
+  "fare": 1160
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d23"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "SUPER",
+  "section_name": "NITTAMBUWA",
+  "section_id": 2,
+  "fare": 1230
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d24"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "SUPER",
+  "section_name": "WARAKAPOLA",
+  "section_id": 3,
+  "fare": 1330
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d25"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "SUPER",
+  "section_name": "KEGALLE",
+  "section_id": 4,
+  "fare": 1480
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d26"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "SUPER",
+  "section_name": "MAWANELLA",
+  "section_id": 5,
+  "fare": 1570
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d27"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "SUPER",
+  "section_name": "KANDY",
+  "section_id": 6,
+  "fare": 1720
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d28"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d29"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "LUXURY",
+  "section_name": "MIRISWATTA",
+  "section_id": 1,
+  "fare": 1390
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d2a"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d2b"
+  },
+  "route_no": "EX 001-024/001",
+  "service_type": "TEMP",
+  "section_name": "MIRISWATTA",
+  "section_id": 1,
+  "fare": 1150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d2c"
+  },
+  "route_no": "EX 001-025/450",
+  "service_type": "SUPER",
+  "section_name": "PANADURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d2d"
+  },
+  "route_no": "EX 001-025/450",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 940
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d2e"
+  },
+  "route_no": "EX 001-025/450",
+  "service_type": "LUXURY",
+  "section_name": "PANADURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d2f"
+  },
+  "route_no": "EX 001-025/450",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 760
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d30"
+  },
+  "route_no": "EX 001-025/450",
+  "service_type": "TEMP",
+  "section_name": "PANADURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d31"
+  },
+  "route_no": "EX 001-025/450",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 630
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d32"
+  },
+  "route_no": "EX 001-46",
+  "service_type": "SUPER",
+  "section_name": "MORATUWA CAMPUS",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d33"
+  },
+  "route_no": "EX 001-46",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1000
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d34"
+  },
+  "route_no": "EX 001-026/119",
+  "service_type": "SUPER",
+  "section_name": "DEHIWALA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d35"
+  },
+  "route_no": "EX 001-026/119",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1040
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d36"
+  },
+  "route_no": "EX 001-026/119",
+  "service_type": "LUXURY",
+  "section_name": "DEHIWALA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d37"
+  },
+  "route_no": "EX 001-026/119",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 830
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d38"
+  },
+  "route_no": "EX 001-026/119",
+  "service_type": "TEMP",
+  "section_name": "DEHIWALA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d39"
+  },
+  "route_no": "EX 001-026/119",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 690
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d3a"
+  },
+  "route_no": "EX 001-033/270",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d3b"
+  },
+  "route_no": "EX 001-033/270",
+  "service_type": "SUPER",
+  "section_name": "KATUNAYAKE ( 18 KANUWA )",
+  "section_id": 0,
+  "fare": 1085
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d3c"
+  },
+  "route_no": "EX 001-033/270",
+  "service_type": "SUPER",
+  "section_name": "NEGAMBO",
+  "section_id": 1,
+  "fare": 1130
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d3d"
+  },
+  "route_no": "EX 001-033/270",
+  "service_type": "LUXURY",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d3e"
+  },
+  "route_no": "EX 001-033/270",
+  "service_type": "LUXURY",
+  "section_name": "NEGOMBO",
+  "section_id": 1,
+  "fare": 920
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d3f"
+  },
+  "route_no": "EX 001-033/270",
+  "service_type": "TEMP",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d40"
+  },
+  "route_no": "EX 001-033/270",
+  "service_type": "TEMP",
+  "section_name": "NEGAMBO",
+  "section_id": 1,
+  "fare": 760
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d41"
+  },
+  "route_no": "EX 001-037/174",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d42"
+  },
+  "route_no": "EX 001-037/174",
+  "service_type": "SUPER",
+  "section_name": "BATTARAMULLA",
+  "section_id": 1,
+  "fare": 860
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d43"
+  },
+  "route_no": "EX 001-037/174",
+  "service_type": "LUXURY",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d44"
+  },
+  "route_no": "EX 001-037/174",
+  "service_type": "LUXURY",
+  "section_name": "BATTARAMULLA",
+  "section_id": 1,
+  "fare": 690
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d45"
+  },
+  "route_no": "EX 001-037/174",
+  "service_type": "TEMP",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d46"
+  },
+  "route_no": "EX 001-037/174",
+  "service_type": "TEMP",
+  "section_name": "BATTARAMULLA",
+  "section_id": 1,
+  "fare": 570
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d47"
+  },
+  "route_no": "EX001-39",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d48"
+  },
+  "route_no": "EX001-39",
+  "service_type": "LUXURY",
+  "section_name": "TANGALLE",
+  "section_id": 1,
+  "fare": 940
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d49"
+  },
+  "route_no": "EX 001-041",
+  "service_type": "LUXURY",
+  "section_name": "AMBALANGODA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d4a"
+  },
+  "route_no": "EX 001-041",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 1,
+  "fare": 600
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d4b"
+  },
+  "route_no": "EX 001-041",
+  "service_type": "SUPER",
+  "section_name": "AMBALANGODA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d4c"
+  },
+  "route_no": "EX 001-041",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 1,
+  "fare": 750
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d4d"
+  },
+  "route_no": "EX 001-041",
+  "service_type": "TEMP",
+  "section_name": "AMBALANGODA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d4e"
+  },
+  "route_no": "EX 001-041",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 1,
+  "fare": 500
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d4f"
+  },
+  "route_no": "EX001-42",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d50"
+  },
+  "route_no": "EX001-42",
+  "service_type": "LUXURY",
+  "section_name": "BADDEGAMA",
+  "section_id": 1,
+  "fare": 620
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d51"
+  },
+  "route_no": "EX001-42",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d52"
+  },
+  "route_no": "EX001-42",
+  "service_type": "SUPER",
+  "section_name": "BADDEGAMA",
+  "section_id": 1,
+  "fare": 760
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d53"
+  },
+  "route_no": "EX001-42",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d54"
+  },
+  "route_no": "EX001-42",
+  "service_type": "TEMP",
+  "section_name": "BADDEGAMA",
+  "section_id": 1,
+  "fare": 510
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d55"
+  },
+  "route_no": "EX 001/03",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d56"
+  },
+  "route_no": "EX 001/03",
+  "service_type": "SUPER",
+  "section_name": "KATUNAYAKE ( 18 KANUWA )",
+  "section_id": 4,
+  "fare": 1250
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d57"
+  },
+  "route_no": "EX 001/03",
+  "service_type": "SUPER",
+  "section_name": "NEGAMBO",
+  "section_id": 5,
+  "fare": 1310
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d58"
+  },
+  "route_no": "EX 001/03",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d59"
+  },
+  "route_no": "EX 001/03",
+  "service_type": "LUXURY",
+  "section_name": "NEGOMBO",
+  "section_id": 1,
+  "fare": 1060
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d5a"
+  },
+  "route_no": "EX 001/03",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d5b"
+  },
+  "route_no": "EX 001/03",
+  "service_type": "TEMP",
+  "section_name": "NEGOMBO",
+  "section_id": 1,
+  "fare": 870
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d5c"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d5d"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d5e"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "SUPER",
+  "section_name": "THIHAGODA",
+  "section_id": 2,
+  "fare": 1150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d5f"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "SUPER",
+  "section_name": "HAKMANA",
+  "section_id": 3,
+  "fare": 1250
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d60"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d61"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "TEMP",
+  "section_name": "HAKMANA",
+  "section_id": 1,
+  "fare": 830
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d62"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d63"
+  },
+  "route_no": "EX 001-05/26",
+  "service_type": "LUXURY",
+  "section_name": "HAKMANA",
+  "section_id": 1,
+  "fare": 1010
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d64"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d65"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "IMADUWA",
+  "section_id": 1,
+  "fare": 960
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d66"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "AKURESSA",
+  "section_id": 2,
+  "fare": 1050
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d67"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "PITABEDDARA",
+  "section_id": 2,
+  "fare": 1150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d68"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "MORAWAKA",
+  "section_id": 3,
+  "fare": 1230
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d69"
+  },
+  "route_no": "EX-001-14/60",
+  "service_type": "SUPER",
+  "section_name": "DENIYAYA",
+  "section_id": 4,
+  "fare": 1360
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d6a"
+  },
+  "route_no": "EX-001-042",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d6b"
+  },
+  "route_no": "EX001-43",
+  "service_type": "LUXURY",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d6c"
+  },
+  "route_no": "EX001-43",
+  "service_type": "LUXURY",
+  "section_name": "ELPITIYA",
+  "section_id": 1,
+  "fare": 550
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d6d"
+  },
+  "route_no": "EX001-46",
+  "service_type": "LUXURY",
+  "section_name": "MORATUWA CAMPUS",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d6e"
+  },
+  "route_no": "EX001-46",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 810
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d6f"
+  },
+  "route_no": "EX001-46",
+  "service_type": "SUPER",
+  "section_name": "MORATUWA CAMPUS",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d70"
+  },
+  "route_no": "EX001-46",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1000
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d71"
+  },
+  "route_no": "EX001-46",
+  "service_type": "TEMP",
+  "section_name": "MORATUWA CAMPUS",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d72"
+  },
+  "route_no": "EX001-46",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 670
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d73"
+  },
+  "route_no": "EX-001-048",
+  "service_type": "SUPER",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d74"
+  },
+  "route_no": "EX-001-048",
+  "service_type": "SUPER",
+  "section_name": "AMBALANGODA",
+  "section_id": 1,
+  "fare": 720
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d75"
+  },
+  "route_no": "EX-001-048",
+  "service_type": "LUXURY",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d76"
+  },
+  "route_no": "EX-001-048",
+  "service_type": "LUXURY",
+  "section_name": "AMBALANGODA",
+  "section_id": 1,
+  "fare": 590
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d77"
+  },
+  "route_no": "EX-001-048",
+  "service_type": "TEMP",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d78"
+  },
+  "route_no": "EX-001-048",
+  "service_type": "TEMP",
+  "section_name": "AMBALANGODA",
+  "section_id": 1,
+  "fare": 480
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d79"
+  },
+  "route_no": "EX-001-52/35-2",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d7a"
+  },
+  "route_no": "EX-001-52/35-2",
+  "service_type": "LUXURY",
+  "section_name": "MONARAGALA",
+  "section_id": 1,
+  "fare": 1740
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d7b"
+  },
+  "route_no": "EX-001-52/35-2",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d7c"
+  },
+  "route_no": "EX-001-52/35-2",
+  "service_type": "SUPER",
+  "section_name": "MONARAGALA",
+  "section_id": 1,
+  "fare": 2150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d7d"
+  },
+  "route_no": "EX-001-52/35-2",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d7e"
+  },
+  "route_no": "EX-001-52/35-2",
+  "service_type": "TEMP",
+  "section_name": "MONARAGALA",
+  "section_id": 1,
+  "fare": 1430
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d7f"
+  },
+  "route_no": "EX1-60",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d80"
+  },
+  "route_no": "EX1-60",
+  "service_type": "SUPER",
+  "section_name": "AKKAREIPATTU",
+  "section_id": 1,
+  "fare": 2870
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d81"
+  },
+  "route_no": "EX-1-67",
+  "service_type": "LUXURY",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d82"
+  },
+  "route_no": "EX-1-67",
+  "service_type": "LUXURY",
+  "section_name": "TANGALLE",
+  "section_id": 1,
+  "fare": 1050
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d83"
+  },
+  "route_no": "EX-1-69",
+  "service_type": "LUXURY",
+  "section_name": "NEGAMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d84"
+  },
+  "route_no": "EX-1-69",
+  "service_type": "LUXURY",
+  "section_name": "TANGALLE",
+  "section_id": 1,
+  "fare": 1210
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d85"
+  },
+  "route_no": "EX-1-72",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d86"
+  },
+  "route_no": "EX-1-72",
+  "service_type": "SUPER",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1400
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d87"
+  },
+  "route_no": "EX-1-72",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d88"
+  },
+  "route_no": "EX-1-72",
+  "service_type": "LUXURY",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1130
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d89"
+  },
+  "route_no": "EX-1-72",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d8a"
+  },
+  "route_no": "EX-1-72",
+  "service_type": "TEMP",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 930
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d8b"
+  },
+  "route_no": "EX-1-73/35/2",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d8c"
+  },
+  "route_no": "EX-1-73/35/2",
+  "service_type": "SUPER",
+  "section_name": "MONARAGALA",
+  "section_id": 1,
+  "fare": 2010
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d8d"
+  },
+  "route_no": "EX-1-73/35/2",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d8e"
+  },
+  "route_no": "EX-1-73/35/2",
+  "service_type": "LUXURY",
+  "section_name": "MONARAGALA",
+  "section_id": 1,
+  "fare": 1630
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d8f"
+  },
+  "route_no": "EX-1-73/35/2",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d90"
+  },
+  "route_no": "EX-1-73/35/2",
+  "service_type": "TEMP",
+  "section_name": "MONARAGALA",
+  "section_id": 1,
+  "fare": 1340
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d91"
+  },
+  "route_no": "EX-1-74/31-2",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d92"
+  },
+  "route_no": "EX-1-74/31-2",
+  "service_type": "LUXURY",
+  "section_name": "BADULLA",
+  "section_id": 1,
+  "fare": 1760
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d93"
+  },
+  "route_no": "EX-1-74/31-2",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d94"
+  },
+  "route_no": "EX-1-74/31-2",
+  "service_type": "TEMP",
+  "section_name": "BADULLA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d95"
+  },
+  "route_no": "EX-1-74/31-2",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 1,
+  "fare": 1450
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d96"
+  },
+  "route_no": "EX-1-74/31-2",
+  "service_type": "SUPER",
+  "section_name": "BADULLA",
+  "section_id": 1,
+  "fare": 2180
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d97"
+  },
+  "route_no": "EX-1-75/211",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d98"
+  },
+  "route_no": "EX-1-75/211",
+  "service_type": "SUPER",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 1360
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d99"
+  },
+  "route_no": "EX-1-75/211",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d9a"
+  },
+  "route_no": "EX-1-75/211",
+  "service_type": "LUXURY",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d9b"
+  },
+  "route_no": "EX-1-75/211",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d9c"
+  },
+  "route_no": "EX-1-75/211",
+  "service_type": "TEMP",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 910
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d9d"
+  },
+  "route_no": "EX-1-77/35",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d9e"
+  },
+  "route_no": "EX-1-77/35",
+  "service_type": "SUPER",
+  "section_name": "AMPARA",
+  "section_id": 1,
+  "fare": 2620
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83d9f"
+  },
+  "route_no": "EX-1-77/35",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da0"
+  },
+  "route_no": "EX-1-77/35",
+  "service_type": "LUXURY",
+  "section_name": "AMPARA",
+  "section_id": 1,
+  "fare": 2120
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da1"
+  },
+  "route_no": "EX-1-77/35",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da2"
+  },
+  "route_no": "EX-1-77/35",
+  "service_type": "TEMP",
+  "section_name": "AMPARA",
+  "section_id": 1,
+  "fare": 1740
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da3"
+  },
+  "route_no": "EX-1-78/35/881",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da4"
+  },
+  "route_no": "EX-1-78/35/881",
+  "service_type": "LUXURY",
+  "section_name": "AKKAREIPATTU",
+  "section_id": 1,
+  "fare": 2150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da5"
+  },
+  "route_no": "EX-1-78/35/881",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da6"
+  },
+  "route_no": "EX-1-78/35/881",
+  "service_type": "SUPER",
+  "section_name": "AKKAREIPATTU",
+  "section_id": 1,
+  "fare": 2670
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da7"
+  },
+  "route_no": "EX-1-78/35/881",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da8"
+  },
+  "route_no": "EX-1-78/35/881",
+  "service_type": "TEMP",
+  "section_name": "AKKAREIPATTU",
+  "section_id": 1,
+  "fare": 1770
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83da9"
+  },
+  "route_no": "EX-1-81/29",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83daa"
+  },
+  "route_no": "EX-1-81/29",
+  "service_type": "LUXURY",
+  "section_name": "MADOLSIMA",
+  "section_id": 1,
+  "fare": 1870
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dab"
+  },
+  "route_no": "EX-1-81/29",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dac"
+  },
+  "route_no": "EX-1-81/29",
+  "service_type": "SUPER",
+  "section_name": "MADOLSIMA",
+  "section_id": 1,
+  "fare": 2310
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dad"
+  },
+  "route_no": "EX-1-81/29",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dae"
+  },
+  "route_no": "EX-1-81/29",
+  "service_type": "TEMP",
+  "section_name": "MADOLSIMA",
+  "section_id": 1,
+  "fare": 1540
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83daf"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db0"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db1"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "SUPER",
+  "section_name": "HAKMANA",
+  "section_id": 2,
+  "fare": 1250
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db2"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "SUPER",
+  "section_name": "WALASMULLA",
+  "section_id": 3,
+  "fare": 1340
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db3"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "SUPER",
+  "section_name": "MIDDENIYA",
+  "section_id": 4,
+  "fare": 1510
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db4"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db5"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "TEMP",
+  "section_name": "MIDDENIYA",
+  "section_id": 1,
+  "fare": 1000
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db6"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db7"
+  },
+  "route_no": "EX-007/026",
+  "service_type": "LUXURY",
+  "section_name": "MIDDENIYA",
+  "section_id": 1,
+  "fare": 1210
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db8"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83db9"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "SUPER",
+  "section_name": "RANNA",
+  "section_id": 1,
+  "fare": 1360
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dba"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "SUPER",
+  "section_name": "AMBALANTOTA",
+  "section_id": 2,
+  "fare": 1460
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dbb"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "SUPER",
+  "section_name": "HAMBANTOTA",
+  "section_id": 3,
+  "fare": 1580
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dbc"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "SUPER",
+  "section_name": "TISSA",
+  "section_id": 4,
+  "fare": 1760
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dbd"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "SUPER",
+  "section_name": "KATARAGAMA",
+  "section_id": 5,
+  "fare": 1880
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dbe"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dbf"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "LUXURY",
+  "section_name": "KATARAGAMA",
+  "section_id": 1,
+  "fare": 1520
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc0"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc1"
+  },
+  "route_no": "EX-012/032",
+  "service_type": "TEMP",
+  "section_name": "KATARAGAMA",
+  "section_id": 1,
+  "fare": 1220
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc2"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc3"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc4"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "SUPER",
+  "section_name": "THIHAGODA",
+  "section_id": 2,
+  "fare": 1150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc5"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "SUPER",
+  "section_name": "KAMBURUPITIYA",
+  "section_id": 3,
+  "fare": 1220
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc6"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "SUPER",
+  "section_name": "MAKANDURA",
+  "section_id": 4,
+  "fare": 1270
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc7"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "SUPER",
+  "section_name": "DEYYANDARA",
+  "section_id": 5,
+  "fare": 1330
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc8"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dc9"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "LUXURY",
+  "section_name": "DEYYANDARA",
+  "section_id": 1,
+  "fare": 1080
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dca"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dcb"
+  },
+  "route_no": "EX-013/353",
+  "service_type": "TEMP",
+  "section_name": "DEYYANDARA",
+  "section_id": 1,
+  "fare": 880
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dcc"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dcd"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "SUPER",
+  "section_name": "MIRISWATTA",
+  "section_id": 1,
+  "fare": 940
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dce"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "SUPER",
+  "section_name": "NITTAMBUWA",
+  "section_id": 2,
+  "fare": 1010
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dcf"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "SUPER",
+  "section_name": "WARAKAPOLA",
+  "section_id": 3,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd0"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "SUPER",
+  "section_name": "KEGALLE",
+  "section_id": 4,
+  "fare": 1255
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd1"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "SUPER",
+  "section_name": "MAWANELLA",
+  "section_id": 5,
+  "fare": 1345
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd2"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "SUPER",
+  "section_name": "KANDY",
+  "section_id": 6,
+  "fare": 1510
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd3"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "LUXURY",
+  "section_name": "WARAKAPOLA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd4"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "LUXURY",
+  "section_name": "KEGALLE",
+  "section_id": 1,
+  "fare": 1210
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd5"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "TEMP",
+  "section_name": "MAWANELLA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd6"
+  },
+  "route_no": "EX-027/001",
+  "service_type": "TEMP",
+  "section_name": "KANDY",
+  "section_id": 1,
+  "fare": 1000
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd7"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd8"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "SUPER",
+  "section_name": "MATHTHALA",
+  "section_id": 1,
+  "fare": 1550
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dd9"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "SUPER",
+  "section_name": "MONARAGALA",
+  "section_id": 2,
+  "fare": 2150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dda"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "SUPER",
+  "section_name": "SIYAMBALANDUWA",
+  "section_id": 3,
+  "fare": 2380
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ddb"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "SUPER",
+  "section_name": "AMPARA",
+  "section_id": 4,
+  "fare": 2760
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ddc"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ddd"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "LUXURY",
+  "section_name": "AMPARA",
+  "section_id": 1,
+  "fare": 2230
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dde"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ddf"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "TEMP",
+  "section_name": "AMPARA",
+  "section_id": 1,
+  "fare": 1830
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de0"
+  },
+  "route_no": "EX -001-51/35-MAK",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de1"
+  },
+  "route_no": "EX -001-51/35-MAK",
+  "service_type": "SUPER",
+  "section_name": "MATHTHALA",
+  "section_id": 1,
+  "fare": 1420
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de2"
+  },
+  "route_no": "EX -001-51/35-MAK",
+  "service_type": "SUPER",
+  "section_name": "MONARAGALA",
+  "section_id": 2,
+  "fare": 2010
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de3"
+  },
+  "route_no": "EX -001-51/35-MAK",
+  "service_type": "SUPER",
+  "section_name": "SIYAMBALANDUWA",
+  "section_id": 3,
+  "fare": 2240
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de4"
+  },
+  "route_no": "EX -001-51/35-MAK",
+  "service_type": "SUPER",
+  "section_name": "AMPARA",
+  "section_id": 4,
+  "fare": 2625
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de5"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de6"
+  },
+  "route_no": "EX -001-51/35",
+  "service_type": "LUXURY",
+  "section_name": "AMPARA",
+  "section_id": 1,
+  "fare": 2230
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de7"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de8"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "SUPER",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1390
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83de9"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "SUPER",
+  "section_name": "PADALANGALA",
+  "section_id": 2,
+  "fare": 1470
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dea"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "SUPER",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 3,
+  "fare": 1550
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83deb"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dec"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "TEMP",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 1030
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83ded"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dee"
+  },
+  "route_no": "EX-001-83/493",
+  "service_type": "LUXURY",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 1250
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83def"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df0"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "SUPER",
+  "section_name": "WELIGAMA",
+  "section_id": 1,
+  "fare": 1040
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df1"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "SUPER",
+  "section_name": "THELIJJAVILA",
+  "section_id": 2,
+  "fare": 1120
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df2"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "SUPER",
+  "section_name": "AKURESSA",
+  "section_id": 3,
+  "fare": 1170
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df3"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df4"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "LUXURY",
+  "section_name": "WELIGAMA",
+  "section_id": 1,
+  "fare": 950
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df5"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df6"
+  },
+  "route_no": "EX-001-84/366",
+  "service_type": "TEMP",
+  "section_name": "AKURESSA",
+  "section_id": 1,
+  "fare": 780
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df7"
+  },
+  "route_no": "EX-001-85/360",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df8"
+  },
+  "route_no": "EX-001-85/360",
+  "service_type": "SUPER",
+  "section_name": "THELIJJAVILA",
+  "section_id": 1,
+  "fare": 1120
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83df9"
+  },
+  "route_no": "EX-001-85/360",
+  "service_type": "SUPER",
+  "section_name": "AKURESSA",
+  "section_id": 2,
+  "fare": 1180
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dfa"
+  },
+  "route_no": "EX-001-85/360",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dfb"
+  },
+  "route_no": "EX-001-85/360",
+  "service_type": "LUXURY",
+  "section_name": "AKURESSA",
+  "section_id": 1,
+  "fare": 960
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dfc"
+  },
+  "route_no": "EX-001-85/360",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dfd"
+  },
+  "route_no": "EX-001-85/360",
+  "service_type": "TEMP",
+  "section_name": "AKURESSA",
+  "section_id": 1,
+  "fare": 780
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dfe"
+  },
+  "route_no": "EX-1-87",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83dff"
+  },
+  "route_no": "EX-1-87",
+  "service_type": "SUPER",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1260
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e00"
+  },
+  "route_no": "EX-1-87",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e01"
+  },
+  "route_no": "EX-1-87",
+  "service_type": "LUXURY",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1020
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e02"
+  },
+  "route_no": "EX-1-87",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e03"
+  },
+  "route_no": "EX-1-87",
+  "service_type": "TEMP",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 840
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e04"
+  },
+  "route_no": "EX-01-88/574",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e05"
+  },
+  "route_no": "EX-01-88/574",
+  "service_type": "SUPER",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1470
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e06"
+  },
+  "route_no": "EX-01-88/574",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e07"
+  },
+  "route_no": "EX-01-88/574",
+  "service_type": "LUXURY",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1190
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e08"
+  },
+  "route_no": "EX-01-88/574",
+  "service_type": "TEMP",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e09"
+  },
+  "route_no": "EX-01-88/574",
+  "service_type": "TEMP",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 980
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e0a"
+  },
+  "route_no": "EX-01-90/493",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e0b"
+  },
+  "route_no": "EX-01-90/493",
+  "service_type": "SUPER",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1410
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e0c"
+  },
+  "route_no": "EX-01-90/493",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e0d"
+  },
+  "route_no": "EX-01-90/493",
+  "service_type": "LUXURY",
+  "section_name": "ANGUNUKOLAPELESSA",
+  "section_id": 1,
+  "fare": 1140
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e0e"
+  },
+  "route_no": "EX-01-92",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e0f"
+  },
+  "route_no": "EX-01-92",
+  "service_type": "LUXURY",
+  "section_name": "HAMBANTOTA",
+  "section_id": 1,
+  "fare": 1200
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e10"
+  },
+  "route_no": "EX-01-94/EX03/EX04",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e11"
+  },
+  "route_no": "EX-01-94/EX03/EX04",
+  "service_type": "LUXURY",
+  "section_name": "KURUNEGALA",
+  "section_id": 1,
+  "fare": 1430
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e12"
+  },
+  "route_no": "EX-01-95/31/314",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e13"
+  },
+  "route_no": "EX-01-95/31/314",
+  "service_type": "LUXURY",
+  "section_name": "MEEGAHAKIVULA",
+  "section_id": 1,
+  "fare": 1910
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e14"
+  },
+  "route_no": "EX-01-96/211",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e15"
+  },
+  "route_no": "EX-01-96/211",
+  "service_type": "SUPER",
+  "section_name": "KOLONNA",
+  "section_id": 1,
+  "fare": 1730
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e16"
+  },
+  "route_no": "EX-01-96/211",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e17"
+  },
+  "route_no": "EX-01-96/211",
+  "service_type": "LUXURY",
+  "section_name": "KOLONNA",
+  "section_id": 1,
+  "fare": 1400
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e18"
+  },
+  "route_no": "EX-01-97/211",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e19"
+  },
+  "route_no": "EX-01-97/211",
+  "service_type": "SUPER",
+  "section_name": "UDAWALAWA",
+  "section_id": 1,
+  "fare": 1590
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e1a"
+  },
+  "route_no": "EX-01-97/211",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e1b"
+  },
+  "route_no": "EX-01-97/211",
+  "service_type": "LUXURY",
+  "section_name": "UDAWALAWA",
+  "section_id": 1,
+  "fare": 1290
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e1c"
+  },
+  "route_no": "EX-01-98",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e1d"
+  },
+  "route_no": "EX-01-98",
+  "service_type": "LUXURY",
+  "section_name": "ELPITIYA",
+  "section_id": 1,
+  "fare": 450
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e1e"
+  },
+  "route_no": "EX-01-99",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e1f"
+  },
+  "route_no": "EX-01-99",
+  "service_type": "LUXURY",
+  "section_name": "TANGALLE",
+  "section_id": 1,
+  "fare": 1150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e20"
+  },
+  "route_no": "EX001-100/382",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e21"
+  },
+  "route_no": "EX001-100/382",
+  "service_type": "LUXURY",
+  "section_name": "AKURESSA",
+  "section_id": 1,
+  "fare": 850
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e22"
+  },
+  "route_no": "EX01-101-366",
+  "service_type": "LUXURY",
+  "section_name": "KADAWATHA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e23"
+  },
+  "route_no": "EX01-101-366",
+  "service_type": "LUXURY",
+  "section_name": "AKURESSA",
+  "section_id": 1,
+  "fare": 940
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e24"
+  },
+  "route_no": "EX01-102-129",
+  "service_type": "LUXURY",
+  "section_name": "HOMAGAMA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e25"
+  },
+  "route_no": "EX01-102-129",
+  "service_type": "LUXURY",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 670
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e26"
+  },
+  "route_no": "EX01-103",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e27"
+  },
+  "route_no": "EX01-103",
+  "service_type": "LUXURY",
+  "section_name": "AMBALANGODA",
+  "section_id": 1,
+  "fare": 500
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e28"
+  },
+  "route_no": "EX01-104/35",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e29"
+  },
+  "route_no": "EX01-104/35",
+  "service_type": "LUXURY",
+  "section_name": "AMPARA",
+  "section_id": 1,
+  "fare": 1470
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e2a"
+  },
+  "route_no": "EX01-105/11",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e2b"
+  },
+  "route_no": "EX01-105/11",
+  "service_type": "LUXURY",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 470
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e2c"
+  },
+  "route_no": "EX01-106/11",
+  "service_type": "LUXURY",
+  "section_name": "KARAPITIYA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e2d"
+  },
+  "route_no": "EX01-106/11",
+  "service_type": "LUXURY",
+  "section_name": "EMBILIPITIYA",
+  "section_id": 1,
+  "fare": 680
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e2e"
+  },
+  "route_no": "EX01-107/42",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e2f"
+  },
+  "route_no": "EX01-107/42",
+  "service_type": "LUXURY",
+  "section_name": "NELUWA",
+  "section_id": 1,
+  "fare": 700
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e30"
+  },
+  "route_no": "EX01-108/35-2",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e31"
+  },
+  "route_no": "EX01-108/35-2",
+  "service_type": "LUXURY",
+  "section_name": "MONARAGALA",
+  "section_id": 1,
+  "fare": 990
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e32"
+  },
+  "route_no": "EX-01-109",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e33"
+  },
+  "route_no": "EX-01-109",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1240
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e34"
+  },
+  "route_no": "EX03/EX01/35/881",
+  "service_type": "LUXURY",
+  "section_name": "NEGAMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e35"
+  },
+  "route_no": "EX03/EX01/35/881",
+  "service_type": "LUXURY",
+  "section_name": "AKKAREIPATTU",
+  "section_id": 1,
+  "fare": 2420
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e36"
+  },
+  "route_no": "EX03/EX01/35/881-1",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e37"
+  },
+  "route_no": "EX03/EX01/35/881-1",
+  "service_type": "LUXURY",
+  "section_name": "AKKAREIPATTU",
+  "section_id": 1,
+  "fare": 2370
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e38"
+  },
+  "route_no": "EX 001-027/001",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e39"
+  },
+  "route_no": "EX 001-027/001",
+  "service_type": "SUPER",
+  "section_name": "MIRISWATTA",
+  "section_id": 1,
+  "fare": 930
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e3a"
+  },
+  "route_no": "EX 001-027/001",
+  "service_type": "SUPER",
+  "section_name": "NITTAMBUWA",
+  "section_id": 2,
+  "fare": 1000
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e3b"
+  },
+  "route_no": "EX 001-027/001",
+  "service_type": "SUPER",
+  "section_name": "WARAKAPOLA",
+  "section_id": 3,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e3c"
+  },
+  "route_no": "EX 001-027/001",
+  "service_type": "SUPER",
+  "section_name": "KEGALLE",
+  "section_id": 4,
+  "fare": 1250
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e3d"
+  },
+  "route_no": "EX 001-027/001",
+  "service_type": "SUPER",
+  "section_name": "MAWANELLA",
+  "section_id": 5,
+  "fare": 1340
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e3e"
+  },
+  "route_no": "EX 001-027/001",
+  "service_type": "SUPER",
+  "section_name": "KANDY",
+  "section_id": 6,
+  "fare": 1500
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e3f"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e40"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 1100
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e41"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "SUPER",
+  "section_name": "THIHAGODA",
+  "section_id": 2,
+  "fare": 1150
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e42"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "SUPER",
+  "section_name": "KAMBURUPITIYA",
+  "section_id": 3,
+  "fare": 1220
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e43"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e44"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 980
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e45"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "TEMP",
+  "section_name": "THIHAGODA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e46"
+  },
+  "route_no": "EX-001-029/353",
+  "service_type": "TEMP",
+  "section_name": "KAMBURUPITIYA",
+  "section_id": 1,
+  "fare": 810
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e47"
+  },
+  "route_no": "EX-1-89",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e48"
+  },
+  "route_no": "EX-1-89",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 1050
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e49"
+  },
+  "route_no": "EX-1-111",
+  "service_type": "SUPER",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e4a"
+  },
+  "route_no": "EX-1-111",
+  "service_type": "SUPER",
+  "section_name": "GALLE",
+  "section_id": 1,
+  "fare": 900
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e4b"
+  },
+  "route_no": "EX 001-026",
+  "service_type": "SUPER",
+  "section_name": "PILIYANDALA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e4c"
+  },
+  "route_no": "EX 001-026",
+  "service_type": "SUPER",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 9600
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e4d"
+  },
+  "route_no": "EX 001-026",
+  "service_type": "LUXURY",
+  "section_name": "PILIYANDALA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e4e"
+  },
+  "route_no": "EX 001-026",
+  "service_type": "LUXURY",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 780
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e4f"
+  },
+  "route_no": "EX 001-026",
+  "service_type": "TEMP",
+  "section_name": "PILIYANDALA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e50"
+  },
+  "route_no": "EX 001-026",
+  "service_type": "TEMP",
+  "section_name": "MATARA",
+  "section_id": 1,
+  "fare": 640
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e51"
+  },
+  "route_no": "EX 1-82/35/75",
+  "service_type": "SUPER",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e52"
+  },
+  "route_no": "EX 1-82/35/75",
+  "service_type": "SUPER",
+  "section_name": "KARANDUGALA",
+  "section_id": 1,
+  "fare": 2440
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e53"
+  },
+  "route_no": "EX 1-82/35/75",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e54"
+  },
+  "route_no": "EX 1-82/35/75",
+  "service_type": "LUXURY",
+  "section_name": "KARANDUGALA",
+  "section_id": 1,
+  "fare": 1970
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e55"
+  },
+  "route_no": "EX 1-82/35/75",
+  "service_type": "TEMP",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e56"
+  },
+  "route_no": "EX 1-82/35/75",
+  "service_type": "TEMP",
+  "section_name": "KARANDUGALA",
+  "section_id": 1,
+  "fare": 1620
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e57"
+  },
+  "route_no": "EX02/EX04/602",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e58"
+  },
+  "route_no": "EX02/EX04/602",
+  "service_type": "LUXURY",
+  "section_name": "KANDY",
+  "section_id": 1,
+  "fare": 890
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e59"
+  },
+  "route_no": "EX02/EX04/602-1",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e5a"
+  },
+  "route_no": "EX02/EX04/602-1",
+  "service_type": "LUXURY",
+  "section_name": "MATHALE",
+  "section_id": 1,
+  "fare": 990
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e5b"
+  },
+  "route_no": "EX02/01-01",
+  "service_type": "LUXURY",
+  "section_name": "MAKUMBURA",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e5c"
+  },
+  "route_no": "EX02/01-01",
+  "service_type": "LUXURY",
+  "section_name": "KEGALLE",
+  "section_id": 1,
+  "fare": 550
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e5d"
+  },
+  "route_no": "EX03/EX04/602",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e5e"
+  },
+  "route_no": "EX03/EX04/602",
+  "service_type": "LUXURY",
+  "section_name": "KANDY",
+  "section_id": 1,
+  "fare": 910
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e5f"
+  },
+  "route_no": "EX03/EX04",
+  "service_type": "LUXURY",
+  "section_name": "COLOMBO",
+  "section_id": 0,
+  "fare": 0
+},
+{
+  "_id": {
+    "$oid": "68d0193338bd9189c9e83e60"
+  },
+  "route_no": "EX03/EX04",
+  "service_type": "LUXURY",
+  "section_name": "KURUNEGALA",
+  "section_id": 1,
+  "fare": 680
+}]

@@ -1,0 +1,3861 @@
+[{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc67"
+  },
+  "fare_stage": 0,
+  "normal": 0,
+  "semi": 0,
+  "ac": 0,
+  "super": 0,
+  "highway": 0
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc68"
+  },
+  "fare_stage": 1,
+  "normal": 27,
+  "semi": 39,
+  "ac": 50,
+  "super": 70,
+  "highway": 80
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc69"
+  },
+  "fare_stage": 2,
+  "normal": 35,
+  "semi": 47,
+  "ac": 60,
+  "super": 85,
+  "highway": 100
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc6a"
+  },
+  "fare_stage": 3,
+  "normal": 45,
+  "semi": 62,
+  "ac": 80,
+  "super": 110,
+  "highway": 130
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc6b"
+  },
+  "fare_stage": 4,
+  "normal": 55,
+  "semi": 75,
+  "ac": 100,
+  "super": 135,
+  "highway": 160
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc6c"
+  },
+  "fare_stage": 5,
+  "normal": 66,
+  "semi": 90,
+  "ac": 120,
+  "super": 160,
+  "highway": 190
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc6d"
+  },
+  "fare_stage": 6,
+  "normal": 76,
+  "semi": 104,
+  "ac": 140,
+  "super": 185,
+  "highway": 220
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc6e"
+  },
+  "fare_stage": 7,
+  "normal": 86,
+  "semi": 119,
+  "ac": 160,
+  "super": 210,
+  "highway": 250
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc6f"
+  },
+  "fare_stage": 8,
+  "normal": 90,
+  "semi": 123,
+  "ac": 165,
+  "super": 215,
+  "highway": 260
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc70"
+  },
+  "fare_stage": 9,
+  "normal": 97,
+  "semi": 132,
+  "ac": 175,
+  "super": 230,
+  "highway": 280
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc71"
+  },
+  "fare_stage": 10,
+  "normal": 104,
+  "semi": 141,
+  "ac": 190,
+  "super": 250,
+  "highway": 300
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc72"
+  },
+  "fare_stage": 11,
+  "normal": 111,
+  "semi": 152,
+  "ac": 200,
+  "super": 265,
+  "highway": 320
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc73"
+  },
+  "fare_stage": 12,
+  "normal": 116,
+  "semi": 158,
+  "ac": 210,
+  "super": 280,
+  "highway": 330
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc74"
+  },
+  "fare_stage": 13,
+  "normal": 123,
+  "semi": 168,
+  "ac": 225,
+  "super": 295,
+  "highway": 350
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc75"
+  },
+  "fare_stage": 14,
+  "normal": 130,
+  "semi": 177,
+  "ac": 235,
+  "super": 310,
+  "highway": 370
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc76"
+  },
+  "fare_stage": 15,
+  "normal": 135,
+  "semi": 185,
+  "ac": 245,
+  "super": 325,
+  "highway": 390
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc77"
+  },
+  "fare_stage": 16,
+  "normal": 140,
+  "semi": 191,
+  "ac": 255,
+  "super": 335,
+  "highway": 400
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc78"
+  },
+  "fare_stage": 17,
+  "normal": 147,
+  "semi": 201,
+  "ac": 270,
+  "super": 350,
+  "highway": 420
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc79"
+  },
+  "fare_stage": 18,
+  "normal": 152,
+  "semi": 207,
+  "ac": 275,
+  "super": 365,
+  "highway": 440
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc7a"
+  },
+  "fare_stage": 19,
+  "normal": 159,
+  "semi": 218,
+  "ac": 290,
+  "super": 380,
+  "highway": 460
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc7b"
+  },
+  "fare_stage": 20,
+  "normal": 164,
+  "semi": 224,
+  "ac": 300,
+  "super": 395,
+  "highway": 470
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc7c"
+  },
+  "fare_stage": 21,
+  "normal": 171,
+  "semi": 234,
+  "ac": 310,
+  "super": 410,
+  "highway": 490
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc7d"
+  },
+  "fare_stage": 22,
+  "normal": 176,
+  "semi": 240,
+  "ac": 320,
+  "super": 420,
+  "highway": 500
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc7e"
+  },
+  "fare_stage": 23,
+  "normal": 183,
+  "semi": 251,
+  "ac": 335,
+  "super": 440,
+  "highway": 530
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc7f"
+  },
+  "fare_stage": 24,
+  "normal": 189,
+  "semi": 257,
+  "ac": 340,
+  "super": 450,
+  "highway": 540
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc80"
+  },
+  "fare_stage": 25,
+  "normal": 195,
+  "semi": 267,
+  "ac": 355,
+  "super": 470,
+  "highway": 560
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc81"
+  },
+  "fare_stage": 26,
+  "normal": 201,
+  "semi": 273,
+  "ac": 365,
+  "super": 480,
+  "highway": 580
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc82"
+  },
+  "fare_stage": 27,
+  "normal": 208,
+  "semi": 284,
+  "ac": 380,
+  "super": 495,
+  "highway": 590
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc83"
+  },
+  "fare_stage": 28,
+  "normal": 213,
+  "semi": 290,
+  "ac": 385,
+  "super": 510,
+  "highway": 610
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc84"
+  },
+  "fare_stage": 29,
+  "normal": 220,
+  "semi": 300,
+  "ac": 400,
+  "super": 525,
+  "highway": 630
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc85"
+  },
+  "fare_stage": 30,
+  "normal": 227,
+  "semi": 309,
+  "ac": 410,
+  "super": 540,
+  "highway": 650
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc86"
+  },
+  "fare_stage": 31,
+  "normal": 232,
+  "semi": 317,
+  "ac": 420,
+  "super": 555,
+  "highway": 660
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc87"
+  },
+  "fare_stage": 32,
+  "normal": 239,
+  "semi": 326,
+  "ac": 435,
+  "super": 570,
+  "highway": 680
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc88"
+  },
+  "fare_stage": 33,
+  "normal": 244,
+  "semi": 333,
+  "ac": 445,
+  "super": 585,
+  "highway": 700
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc89"
+  },
+  "fare_stage": 34,
+  "normal": 251,
+  "semi": 342,
+  "ac": 455,
+  "super": 600,
+  "highway": 720
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc8a"
+  },
+  "fare_stage": 35,
+  "normal": 256,
+  "semi": 350,
+  "ac": 465,
+  "super": 610,
+  "highway": 730
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc8b"
+  },
+  "fare_stage": 36,
+  "normal": 263,
+  "semi": 359,
+  "ac": 480,
+  "super": 630,
+  "highway": 750
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc8c"
+  },
+  "fare_stage": 37,
+  "normal": 268,
+  "semi": 366,
+  "ac": 490,
+  "super": 640,
+  "highway": 770
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc8d"
+  },
+  "fare_stage": 38,
+  "normal": 275,
+  "semi": 375,
+  "ac": 500,
+  "super": 660,
+  "highway": 790
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc8e"
+  },
+  "fare_stage": 39,
+  "normal": 280,
+  "semi": 383,
+  "ac": 510,
+  "super": 670,
+  "highway": 800
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc8f"
+  },
+  "fare_stage": 40,
+  "normal": 287,
+  "semi": 392,
+  "ac": 520,
+  "super": 685,
+  "highway": 820
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc90"
+  },
+  "fare_stage": 41,
+  "normal": 292,
+  "semi": 399,
+  "ac": 530,
+  "super": 700,
+  "highway": 840
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc91"
+  },
+  "fare_stage": 42,
+  "normal": 299,
+  "semi": 408,
+  "ac": 545,
+  "super": 715,
+  "highway": 860
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc92"
+  },
+  "fare_stage": 43,
+  "normal": 304,
+  "semi": 416,
+  "ac": 555,
+  "super": 730,
+  "highway": 870
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc93"
+  },
+  "fare_stage": 44,
+  "normal": 311,
+  "semi": 425,
+  "ac": 565,
+  "super": 745,
+  "highway": 890
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc94"
+  },
+  "fare_stage": 45,
+  "normal": 317,
+  "semi": 432,
+  "ac": 575,
+  "super": 755,
+  "highway": 910
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc95"
+  },
+  "fare_stage": 46,
+  "normal": 323,
+  "semi": 441,
+  "ac": 590,
+  "super": 775,
+  "highway": 930
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc96"
+  },
+  "fare_stage": 47,
+  "normal": 329,
+  "semi": 449,
+  "ac": 600,
+  "super": 785,
+  "highway": 940
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc97"
+  },
+  "fare_stage": 48,
+  "normal": 336,
+  "semi": 458,
+  "ac": 610,
+  "super": 800,
+  "highway": 960
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc98"
+  },
+  "fare_stage": 49,
+  "normal": 341,
+  "semi": 465,
+  "ac": 620,
+  "super": 815,
+  "highway": 980
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc99"
+  },
+  "fare_stage": 50,
+  "normal": 348,
+  "semi": 474,
+  "ac": 630,
+  "super": 830,
+  "highway": 1000
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc9a"
+  },
+  "fare_stage": 51,
+  "normal": 353,
+  "semi": 482,
+  "ac": 640,
+  "super": 845,
+  "highway": 1010
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc9b"
+  },
+  "fare_stage": 52,
+  "normal": 360,
+  "semi": 491,
+  "ac": 655,
+  "super": 860,
+  "highway": 1030
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc9c"
+  },
+  "fare_stage": 53,
+  "normal": 365,
+  "semi": 498,
+  "ac": 665,
+  "super": 870,
+  "highway": 1040
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc9d"
+  },
+  "fare_stage": 54,
+  "normal": 372,
+  "semi": 507,
+  "ac": 675,
+  "super": 890,
+  "highway": 1070
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc9e"
+  },
+  "fare_stage": 55,
+  "normal": 379,
+  "semi": 516,
+  "ac": 690,
+  "super": 905,
+  "highway": 1090
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dc9f"
+  },
+  "fare_stage": 56,
+  "normal": 384,
+  "semi": 524,
+  "ac": 700,
+  "super": 920,
+  "highway": 1100
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca0"
+  },
+  "fare_stage": 57,
+  "normal": 391,
+  "semi": 533,
+  "ac": 710,
+  "super": 935,
+  "highway": 1120
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca1"
+  },
+  "fare_stage": 58,
+  "normal": 396,
+  "semi": 540,
+  "ac": 720,
+  "super": 945,
+  "highway": 1130
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca2"
+  },
+  "fare_stage": 59,
+  "normal": 403,
+  "semi": 549,
+  "ac": 730,
+  "super": 965,
+  "highway": 1160
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca3"
+  },
+  "fare_stage": 60,
+  "normal": 408,
+  "semi": 557,
+  "ac": 740,
+  "super": 975,
+  "highway": 1170
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca4"
+  },
+  "fare_stage": 61,
+  "normal": 413,
+  "semi": 564,
+  "ac": 750,
+  "super": 990,
+  "highway": 1190
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca5"
+  },
+  "fare_stage": 62,
+  "normal": 419,
+  "semi": 572,
+  "ac": 760,
+  "super": 1000,
+  "highway": 1200
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca6"
+  },
+  "fare_stage": 63,
+  "normal": 425,
+  "semi": 581,
+  "ac": 775,
+  "super": 1015,
+  "highway": 1220
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca7"
+  },
+  "fare_stage": 64,
+  "normal": 431,
+  "semi": 588,
+  "ac": 785,
+  "super": 1030,
+  "highway": 1230
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca8"
+  },
+  "fare_stage": 65,
+  "normal": 438,
+  "semi": 597,
+  "ac": 795,
+  "super": 1045,
+  "highway": 1250
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dca9"
+  },
+  "fare_stage": 66,
+  "normal": 443,
+  "semi": 605,
+  "ac": 805,
+  "super": 1060,
+  "highway": 1270
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcaa"
+  },
+  "fare_stage": 67,
+  "normal": 450,
+  "semi": 614,
+  "ac": 820,
+  "super": 1075,
+  "highway": 1290
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcab"
+  },
+  "fare_stage": 68,
+  "normal": 455,
+  "semi": 621,
+  "ac": 830,
+  "super": 1085,
+  "highway": 1300
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcac"
+  },
+  "fare_stage": 69,
+  "normal": 462,
+  "semi": 630,
+  "ac": 840,
+  "super": 1105,
+  "highway": 1320
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcad"
+  },
+  "fare_stage": 70,
+  "normal": 467,
+  "semi": 638,
+  "ac": 850,
+  "super": 1115,
+  "highway": 1340
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcae"
+  },
+  "fare_stage": 71,
+  "normal": 474,
+  "semi": 647,
+  "ac": 860,
+  "super": 1130,
+  "highway": 1360
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcaf"
+  },
+  "fare_stage": 72,
+  "normal": 479,
+  "semi": 654,
+  "ac": 870,
+  "super": 1145,
+  "highway": 1370
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb0"
+  },
+  "fare_stage": 73,
+  "normal": 486,
+  "semi": 663,
+  "ac": 885,
+  "super": 1160,
+  "highway": 1390
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb1"
+  },
+  "fare_stage": 74,
+  "normal": 491,
+  "semi": 671,
+  "ac": 895,
+  "super": 1175,
+  "highway": 1410
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb2"
+  },
+  "fare_stage": 75,
+  "normal": 496,
+  "semi": 677,
+  "ac": 900,
+  "super": 1185,
+  "highway": 1420
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb3"
+  },
+  "fare_stage": 76,
+  "normal": 503,
+  "semi": 687,
+  "ac": 915,
+  "super": 1200,
+  "highway": 1440
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb4"
+  },
+  "fare_stage": 77,
+  "normal": 509,
+  "semi": 693,
+  "ac": 925,
+  "super": 1215,
+  "highway": 1460
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb5"
+  },
+  "fare_stage": 78,
+  "normal": 515,
+  "semi": 704,
+  "ac": 940,
+  "super": 1230,
+  "highway": 1480
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb6"
+  },
+  "fare_stage": 79,
+  "normal": 521,
+  "semi": 710,
+  "ac": 945,
+  "super": 1245,
+  "highway": 1490
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb7"
+  },
+  "fare_stage": 80,
+  "normal": 528,
+  "semi": 720,
+  "ac": 960,
+  "super": 1260,
+  "highway": 1510
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb8"
+  },
+  "fare_stage": 81,
+  "normal": 533,
+  "semi": 726,
+  "ac": 970,
+  "super": 1275,
+  "highway": 1530
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcb9"
+  },
+  "fare_stage": 82,
+  "normal": 540,
+  "semi": 737,
+  "ac": 980,
+  "super": 1290,
+  "highway": 1550
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcba"
+  },
+  "fare_stage": 83,
+  "normal": 545,
+  "semi": 743,
+  "ac": 990,
+  "super": 1300,
+  "highway": 1560
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcbb"
+  },
+  "fare_stage": 84,
+  "normal": 552,
+  "semi": 753,
+  "ac": 1005,
+  "super": 1320,
+  "highway": 1580
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcbc"
+  },
+  "fare_stage": 85,
+  "normal": 557,
+  "semi": 759,
+  "ac": 1010,
+  "super": 1330,
+  "highway": 1600
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcbd"
+  },
+  "fare_stage": 86,
+  "normal": 564,
+  "semi": 770,
+  "ac": 1025,
+  "super": 1345,
+  "highway": 1610
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcbe"
+  },
+  "fare_stage": 87,
+  "normal": 569,
+  "semi": 776,
+  "ac": 1035,
+  "super": 1360,
+  "highway": 1630
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcbf"
+  },
+  "fare_stage": 88,
+  "normal": 576,
+  "semi": 786,
+  "ac": 1050,
+  "super": 1375,
+  "highway": 1650
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc0"
+  },
+  "fare_stage": 89,
+  "normal": 581,
+  "semi": 792,
+  "ac": 1055,
+  "super": 1390,
+  "highway": 1670
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc1"
+  },
+  "fare_stage": 90,
+  "normal": 588,
+  "semi": 803,
+  "ac": 1070,
+  "super": 1405,
+  "highway": 1680
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc2"
+  },
+  "fare_stage": 91,
+  "normal": 593,
+  "semi": 809,
+  "ac": 1080,
+  "super": 1415,
+  "highway": 1700
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc3"
+  },
+  "fare_stage": 92,
+  "normal": 600,
+  "semi": 819,
+  "ac": 1090,
+  "super": 1435,
+  "highway": 1720
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc4"
+  },
+  "fare_stage": 93,
+  "normal": 605,
+  "semi": 825,
+  "ac": 1100,
+  "super": 1445,
+  "highway": 1730
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc5"
+  },
+  "fare_stage": 94,
+  "normal": 612,
+  "semi": 836,
+  "ac": 1115,
+  "super": 1460,
+  "highway": 1750
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc6"
+  },
+  "fare_stage": 95,
+  "normal": 617,
+  "semi": 842,
+  "ac": 1120,
+  "super": 1475,
+  "highway": 1770
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc7"
+  },
+  "fare_stage": 96,
+  "normal": 624,
+  "semi": 852,
+  "ac": 1135,
+  "super": 1490,
+  "highway": 1790
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc8"
+  },
+  "fare_stage": 97,
+  "normal": 630,
+  "semi": 858,
+  "ac": 1145,
+  "super": 1505,
+  "highway": 1800
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcc9"
+  },
+  "fare_stage": 98,
+  "normal": 635,
+  "semi": 866,
+  "ac": 1155,
+  "super": 1515,
+  "highway": 1820
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcca"
+  },
+  "fare_stage": 99,
+  "normal": 642,
+  "semi": 875,
+  "ac": 1165,
+  "super": 1535,
+  "highway": 1840
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dccb"
+  },
+  "fare_stage": 100,
+  "normal": 647,
+  "semi": 882,
+  "ac": 1175,
+  "super": 1545,
+  "highway": 1850
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dccc"
+  },
+  "fare_stage": 101,
+  "normal": 654,
+  "semi": 891,
+  "ac": 1190,
+  "super": 1560,
+  "highway": 1870
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dccd"
+  },
+  "fare_stage": 102,
+  "normal": 659,
+  "semi": 899,
+  "ac": 1200,
+  "super": 1575,
+  "highway": 1890
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcce"
+  },
+  "fare_stage": 103,
+  "normal": 666,
+  "semi": 908,
+  "ac": 1210,
+  "super": 1590,
+  "highway": 1910
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dccf"
+  },
+  "fare_stage": 104,
+  "normal": 671,
+  "semi": 915,
+  "ac": 1220,
+  "super": 1605,
+  "highway": 1920
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd0"
+  },
+  "fare_stage": 105,
+  "normal": 678,
+  "semi": 924,
+  "ac": 1230,
+  "super": 1620,
+  "highway": 1940
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd1"
+  },
+  "fare_stage": 106,
+  "normal": 683,
+  "semi": 932,
+  "ac": 1240,
+  "super": 1630,
+  "highway": 1960
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd2"
+  },
+  "fare_stage": 107,
+  "normal": 690,
+  "semi": 941,
+  "ac": 1255,
+  "super": 1650,
+  "highway": 1980
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd3"
+  },
+  "fare_stage": 108,
+  "normal": 695,
+  "semi": 948,
+  "ac": 1265,
+  "super": 1660,
+  "highway": 1990
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd4"
+  },
+  "fare_stage": 109,
+  "normal": 702,
+  "semi": 957,
+  "ac": 1275,
+  "super": 1675,
+  "highway": 2010
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd5"
+  },
+  "fare_stage": 110,
+  "normal": 707,
+  "semi": 965,
+  "ac": 1285,
+  "super": 1690,
+  "highway": 2030
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd6"
+  },
+  "fare_stage": 111,
+  "normal": 714,
+  "semi": 974,
+  "ac": 1300,
+  "super": 1705,
+  "highway": 2050
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd7"
+  },
+  "fare_stage": 112,
+  "normal": 720,
+  "semi": 981,
+  "ac": 1310,
+  "super": 1720,
+  "highway": 2060
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd8"
+  },
+  "fare_stage": 113,
+  "normal": 726,
+  "semi": 990,
+  "ac": 1320,
+  "super": 1735,
+  "highway": 2080
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcd9"
+  },
+  "fare_stage": 114,
+  "normal": 732,
+  "semi": 998,
+  "ac": 1330,
+  "super": 1745,
+  "highway": 2090
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcda"
+  },
+  "fare_stage": 115,
+  "normal": 739,
+  "semi": 1007,
+  "ac": 1340,
+  "super": 1765,
+  "highway": 2120
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcdb"
+  },
+  "fare_stage": 116,
+  "normal": 744,
+  "semi": 1014,
+  "ac": 1350,
+  "super": 1775,
+  "highway": 2130
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcdc"
+  },
+  "fare_stage": 117,
+  "normal": 751,
+  "semi": 1023,
+  "ac": 1365,
+  "super": 1795,
+  "highway": 2150
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcdd"
+  },
+  "fare_stage": 118,
+  "normal": 756,
+  "semi": 1031,
+  "ac": 1375,
+  "super": 1805,
+  "highway": 2170
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcde"
+  },
+  "fare_stage": 119,
+  "normal": 761,
+  "semi": 1038,
+  "ac": 1385,
+  "super": 1815,
+  "highway": 2180
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcdf"
+  },
+  "fare_stage": 120,
+  "normal": 768,
+  "semi": 1047,
+  "ac": 1395,
+  "super": 1835,
+  "highway": 2200
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce0"
+  },
+  "fare_stage": 121,
+  "normal": 773,
+  "semi": 1055,
+  "ac": 1405,
+  "super": 1845,
+  "highway": 2210
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce1"
+  },
+  "fare_stage": 122,
+  "normal": 780,
+  "semi": 1064,
+  "ac": 1420,
+  "super": 1865,
+  "highway": 2240
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce2"
+  },
+  "fare_stage": 123,
+  "normal": 785,
+  "semi": 1071,
+  "ac": 1430,
+  "super": 1875,
+  "highway": 2250
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce3"
+  },
+  "fare_stage": 124,
+  "normal": 792,
+  "semi": 1080,
+  "ac": 1440,
+  "super": 1890,
+  "highway": 2270
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce4"
+  },
+  "fare_stage": 125,
+  "normal": 797,
+  "semi": 1088,
+  "ac": 1450,
+  "super": 1905,
+  "highway": 2280
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce5"
+  },
+  "fare_stage": 126,
+  "normal": 804,
+  "semi": 1097,
+  "ac": 1460,
+  "super": 1920,
+  "highway": 2300
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce6"
+  },
+  "fare_stage": 127,
+  "normal": 809,
+  "semi": 1104,
+  "ac": 1470,
+  "super": 1935,
+  "highway": 2320
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce7"
+  },
+  "fare_stage": 128,
+  "normal": 816,
+  "semi": 1113,
+  "ac": 1485,
+  "super": 1950,
+  "highway": 2340
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce8"
+  },
+  "fare_stage": 129,
+  "normal": 822,
+  "semi": 1121,
+  "ac": 1495,
+  "super": 1960,
+  "highway": 2350
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dce9"
+  },
+  "fare_stage": 130,
+  "normal": 828,
+  "semi": 1130,
+  "ac": 1505,
+  "super": 1980,
+  "highway": 2370
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcea"
+  },
+  "fare_stage": 131,
+  "normal": 834,
+  "semi": 1137,
+  "ac": 1515,
+  "super": 1990,
+  "highway": 2390
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dceb"
+  },
+  "fare_stage": 132,
+  "normal": 841,
+  "semi": 1146,
+  "ac": 1530,
+  "super": 2005,
+  "highway": 2410
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcec"
+  },
+  "fare_stage": 133,
+  "normal": 846,
+  "semi": 1154,
+  "ac": 1540,
+  "super": 2020,
+  "highway": 2420
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dced"
+  },
+  "fare_stage": 134,
+  "normal": 853,
+  "semi": 1163,
+  "ac": 1550,
+  "super": 2035,
+  "highway": 2440
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcee"
+  },
+  "fare_stage": 135,
+  "normal": 858,
+  "semi": 1170,
+  "ac": 1560,
+  "super": 2050,
+  "highway": 2460
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcef"
+  },
+  "fare_stage": 136,
+  "normal": 865,
+  "semi": 1179,
+  "ac": 1570,
+  "super": 2065,
+  "highway": 2480
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf0"
+  },
+  "fare_stage": 137,
+  "normal": 870,
+  "semi": 1187,
+  "ac": 1580,
+  "super": 2075,
+  "highway": 2490
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf1"
+  },
+  "fare_stage": 138,
+  "normal": 877,
+  "semi": 1196,
+  "ac": 1595,
+  "super": 2095,
+  "highway": 2510
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf2"
+  },
+  "fare_stage": 139,
+  "normal": 882,
+  "semi": 1203,
+  "ac": 1605,
+  "super": 2105,
+  "highway": 2530
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf3"
+  },
+  "fare_stage": 140,
+  "normal": 887,
+  "semi": 1211,
+  "ac": 1615,
+  "super": 2120,
+  "highway": 2540
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf4"
+  },
+  "fare_stage": 141,
+  "normal": 894,
+  "semi": 1220,
+  "ac": 1625,
+  "super": 2135,
+  "highway": 2560
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf5"
+  },
+  "fare_stage": 142,
+  "normal": 899,
+  "semi": 1227,
+  "ac": 1635,
+  "super": 2150,
+  "highway": 2580
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf6"
+  },
+  "fare_stage": 143,
+  "normal": 906,
+  "semi": 1236,
+  "ac": 1650,
+  "super": 2165,
+  "highway": 2600
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf7"
+  },
+  "fare_stage": 144,
+  "normal": 912,
+  "semi": 1244,
+  "ac": 1660,
+  "super": 2175,
+  "highway": 2610
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf8"
+  },
+  "fare_stage": 145,
+  "normal": 918,
+  "semi": 1253,
+  "ac": 1670,
+  "super": 2195,
+  "highway": 2630
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcf9"
+  },
+  "fare_stage": 146,
+  "normal": 924,
+  "semi": 1260,
+  "ac": 1680,
+  "super": 2205,
+  "highway": 2650
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcfa"
+  },
+  "fare_stage": 147,
+  "normal": 931,
+  "semi": 1269,
+  "ac": 1690,
+  "super": 2220,
+  "highway": 2660
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcfb"
+  },
+  "fare_stage": 148,
+  "normal": 936,
+  "semi": 1277,
+  "ac": 1700,
+  "super": 2235,
+  "highway": 2680
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcfc"
+  },
+  "fare_stage": 149,
+  "normal": 943,
+  "semi": 1286,
+  "ac": 1715,
+  "super": 2250,
+  "highway": 2700
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcfd"
+  },
+  "fare_stage": 150,
+  "normal": 948,
+  "semi": 1293,
+  "ac": 1725,
+  "super": 2265,
+  "highway": 2720
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcfe"
+  },
+  "fare_stage": 151,
+  "normal": 955,
+  "semi": 1302,
+  "ac": 1735,
+  "super": 2280,
+  "highway": 2730
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dcff"
+  },
+  "fare_stage": 152,
+  "normal": 960,
+  "semi": 1310,
+  "ac": 1745,
+  "super": 2290,
+  "highway": 2750
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd00"
+  },
+  "fare_stage": 153,
+  "normal": 967,
+  "semi": 1319,
+  "ac": 1760,
+  "super": 2310,
+  "highway": 2770
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd01"
+  },
+  "fare_stage": 154,
+  "normal": 972,
+  "semi": 1326,
+  "ac": 1770,
+  "super": 2320,
+  "highway": 2780
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd02"
+  },
+  "fare_stage": 155,
+  "normal": 979,
+  "semi": 1335,
+  "ac": 1780,
+  "super": 2340,
+  "highway": 2810
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd03"
+  },
+  "fare_stage": 156,
+  "normal": 984,
+  "semi": 1343,
+  "ac": 1790,
+  "super": 2350,
+  "highway": 2820
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd04"
+  },
+  "fare_stage": 157,
+  "normal": 991,
+  "semi": 1352,
+  "ac": 1800,
+  "super": 2365,
+  "highway": 2840
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd05"
+  },
+  "fare_stage": 158,
+  "normal": 996,
+  "semi": 1359,
+  "ac": 1810,
+  "super": 2380,
+  "highway": 2850
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd06"
+  },
+  "fare_stage": 159,
+  "normal": 1003,
+  "semi": 1368,
+  "ac": 1825,
+  "super": 2395,
+  "highway": 2870
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd07"
+  },
+  "fare_stage": 160,
+  "normal": 1008,
+  "semi": 1376,
+  "ac": 1835,
+  "super": 2410,
+  "highway": 2890
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd08"
+  },
+  "fare_stage": 161,
+  "normal": 1015,
+  "semi": 1385,
+  "ac": 1845,
+  "super": 2425,
+  "highway": 2910
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd09"
+  },
+  "fare_stage": 162,
+  "normal": 1020,
+  "semi": 1392,
+  "ac": 1855,
+  "super": 2435,
+  "highway": 2920
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd0a"
+  },
+  "fare_stage": 163,
+  "normal": 1026,
+  "semi": 1398,
+  "ac": 1865,
+  "super": 2450,
+  "highway": 2940
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd0b"
+  },
+  "fare_stage": 164,
+  "normal": 1033,
+  "semi": 1409,
+  "ac": 1880,
+  "super": 2465,
+  "highway": 2960
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd0c"
+  },
+  "fare_stage": 165,
+  "normal": 1038,
+  "semi": 1415,
+  "ac": 1885,
+  "super": 2480,
+  "highway": 2970
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd0d"
+  },
+  "fare_stage": 166,
+  "normal": 1045,
+  "semi": 1425,
+  "ac": 1900,
+  "super": 2495,
+  "highway": 2990
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd0e"
+  },
+  "fare_stage": 167,
+  "normal": 1050,
+  "semi": 1431,
+  "ac": 1910,
+  "super": 2505,
+  "highway": 3010
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd0f"
+  },
+  "fare_stage": 168,
+  "normal": 1057,
+  "semi": 1442,
+  "ac": 1920,
+  "super": 2525,
+  "highway": 3030
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd10"
+  },
+  "fare_stage": 169,
+  "normal": 1062,
+  "semi": 1448,
+  "ac": 1930,
+  "super": 2535,
+  "highway": 3040
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd11"
+  },
+  "fare_stage": 170,
+  "normal": 1069,
+  "semi": 1458,
+  "ac": 1945,
+  "super": 2550,
+  "highway": 3060
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd12"
+  },
+  "fare_stage": 171,
+  "normal": 1074,
+  "semi": 1464,
+  "ac": 1950,
+  "super": 2565,
+  "highway": 3080
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd13"
+  },
+  "fare_stage": 172,
+  "normal": 1081,
+  "semi": 1475,
+  "ac": 1965,
+  "super": 2580,
+  "highway": 3100
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd14"
+  },
+  "fare_stage": 173,
+  "normal": 1086,
+  "semi": 1481,
+  "ac": 1975,
+  "super": 2595,
+  "highway": 3110
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd15"
+  },
+  "fare_stage": 174,
+  "normal": 1093,
+  "semi": 1491,
+  "ac": 1990,
+  "super": 2610,
+  "highway": 3130
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd16"
+  },
+  "fare_stage": 175,
+  "normal": 1098,
+  "semi": 1497,
+  "ac": 1995,
+  "super": 2620,
+  "highway": 3140
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd17"
+  },
+  "fare_stage": 176,
+  "normal": 1105,
+  "semi": 1508,
+  "ac": 2010,
+  "super": 2640,
+  "highway": 3170
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd18"
+  },
+  "fare_stage": 177,
+  "normal": 1110,
+  "semi": 1514,
+  "ac": 2020,
+  "super": 2650,
+  "highway": 3180
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd19"
+  },
+  "fare_stage": 178,
+  "normal": 1117,
+  "semi": 1524,
+  "ac": 2030,
+  "super": 2670,
+  "highway": 3200
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd1a"
+  },
+  "fare_stage": 179,
+  "normal": 1123,
+  "semi": 1530,
+  "ac": 2040,
+  "super": 2680,
+  "highway": 3220
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd1b"
+  },
+  "fare_stage": 180,
+  "normal": 1129,
+  "semi": 1541,
+  "ac": 2055,
+  "super": 2695,
+  "highway": 3230
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd1c"
+  },
+  "fare_stage": 181,
+  "normal": 1135,
+  "semi": 1547,
+  "ac": 2060,
+  "super": 2710,
+  "highway": 3250
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd1d"
+  },
+  "fare_stage": 182,
+  "normal": 1142,
+  "semi": 1557,
+  "ac": 2075,
+  "super": 2725,
+  "highway": 3270
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd1e"
+  },
+  "fare_stage": 183,
+  "normal": 1147,
+  "semi": 1563,
+  "ac": 2085,
+  "super": 2740,
+  "highway": 3290
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd1f"
+  },
+  "fare_stage": 184,
+  "normal": 1152,
+  "semi": 1571,
+  "ac": 2095,
+  "super": 2750,
+  "highway": 3300
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd20"
+  },
+  "fare_stage": 185,
+  "normal": 1159,
+  "semi": 1580,
+  "ac": 2105,
+  "super": 2765,
+  "highway": 3320
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd21"
+  },
+  "fare_stage": 186,
+  "normal": 1164,
+  "semi": 1587,
+  "ac": 2115,
+  "super": 2780,
+  "highway": 3330
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd22"
+  },
+  "fare_stage": 187,
+  "normal": 1171,
+  "semi": 1598,
+  "ac": 2130,
+  "super": 2795,
+  "highway": 3350
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd23"
+  },
+  "fare_stage": 188,
+  "normal": 1176,
+  "semi": 1604,
+  "ac": 2140,
+  "super": 2810,
+  "highway": 3370
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd24"
+  },
+  "fare_stage": 189,
+  "normal": 1183,
+  "semi": 1614,
+  "ac": 2150,
+  "super": 2825,
+  "highway": 3390
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd25"
+  },
+  "fare_stage": 190,
+  "normal": 1188,
+  "semi": 1620,
+  "ac": 2160,
+  "super": 2835,
+  "highway": 3400
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd26"
+  },
+  "fare_stage": 191,
+  "normal": 1195,
+  "semi": 1631,
+  "ac": 2175,
+  "super": 2855,
+  "highway": 3420
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd27"
+  },
+  "fare_stage": 192,
+  "normal": 1200,
+  "semi": 1637,
+  "ac": 2180,
+  "super": 2865,
+  "highway": 3440
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd28"
+  },
+  "fare_stage": 193,
+  "normal": 1207,
+  "semi": 1647,
+  "ac": 2195,
+  "super": 2880,
+  "highway": 3460
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd29"
+  },
+  "fare_stage": 194,
+  "normal": 1212,
+  "semi": 1653,
+  "ac": 2205,
+  "super": 2895,
+  "highway": 3470
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd2a"
+  },
+  "fare_stage": 195,
+  "normal": 1219,
+  "semi": 1664,
+  "ac": 2220,
+  "super": 2910,
+  "highway": 3490
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd2b"
+  },
+  "fare_stage": 196,
+  "normal": 1225,
+  "semi": 1670,
+  "ac": 2225,
+  "super": 2925,
+  "highway": 3510
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd2c"
+  },
+  "fare_stage": 197,
+  "normal": 1231,
+  "semi": 1680,
+  "ac": 2240,
+  "super": 2940,
+  "highway": 3530
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd2d"
+  },
+  "fare_stage": 198,
+  "normal": 1237,
+  "semi": 1686,
+  "ac": 2250,
+  "super": 2955,
+  "highway": 3540
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd2e"
+  },
+  "fare_stage": 199,
+  "normal": 1244,
+  "semi": 1697,
+  "ac": 2260,
+  "super": 2970,
+  "highway": 3560
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd2f"
+  },
+  "fare_stage": 200,
+  "normal": 1249,
+  "semi": 1703,
+  "ac": 2270,
+  "super": 2980,
+  "highway": 3580
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd30"
+  },
+  "fare_stage": 201,
+  "normal": 1256,
+  "semi": 1713,
+  "ac": 2285,
+  "super": 3000,
+  "highway": 3600
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd31"
+  },
+  "fare_stage": 202,
+  "normal": 1261,
+  "semi": 1719,
+  "ac": 2290,
+  "super": 3010,
+  "highway": 3610
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd32"
+  },
+  "fare_stage": 203,
+  "normal": 1268,
+  "semi": 1730,
+  "ac": 2305,
+  "super": 3025,
+  "highway": 3630
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd33"
+  },
+  "fare_stage": 204,
+  "normal": 1273,
+  "semi": 1736,
+  "ac": 2315,
+  "super": 3040,
+  "highway": 3650
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd34"
+  },
+  "fare_stage": 205,
+  "normal": 1280,
+  "semi": 1746,
+  "ac": 2330,
+  "super": 3055,
+  "highway": 3670
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd35"
+  },
+  "fare_stage": 206,
+  "normal": 1285,
+  "semi": 1752,
+  "ac": 2335,
+  "super": 3070,
+  "highway": 3680
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd36"
+  },
+  "fare_stage": 207,
+  "normal": 1290,
+  "semi": 1760,
+  "ac": 2345,
+  "super": 3080,
+  "highway": 3700
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd37"
+  },
+  "fare_stage": 208,
+  "normal": 1297,
+  "semi": 1769,
+  "ac": 2360,
+  "super": 3095,
+  "highway": 3710
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd38"
+  },
+  "fare_stage": 209,
+  "normal": 1302,
+  "semi": 1776,
+  "ac": 2370,
+  "super": 3110,
+  "highway": 3730
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd39"
+  },
+  "fare_stage": 210,
+  "normal": 1309,
+  "semi": 1785,
+  "ac": 2380,
+  "super": 3125,
+  "highway": 3750
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd3a"
+  },
+  "fare_stage": 211,
+  "normal": 1315,
+  "semi": 1793,
+  "ac": 2390,
+  "super": 3140,
+  "highway": 3770
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd3b"
+  },
+  "fare_stage": 212,
+  "normal": 1321,
+  "semi": 1802,
+  "ac": 2400,
+  "super": 3155,
+  "highway": 3780
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd3c"
+  },
+  "fare_stage": 213,
+  "normal": 1327,
+  "semi": 1809,
+  "ac": 2410,
+  "super": 3165,
+  "highway": 3800
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd3d"
+  },
+  "fare_stage": 214,
+  "normal": 1334,
+  "semi": 1818,
+  "ac": 2425,
+  "super": 3185,
+  "highway": 3820
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd3e"
+  },
+  "fare_stage": 215,
+  "normal": 1339,
+  "semi": 1826,
+  "ac": 2435,
+  "super": 3195,
+  "highway": 3830
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd3f"
+  },
+  "fare_stage": 216,
+  "normal": 1346,
+  "semi": 1835,
+  "ac": 2445,
+  "super": 3215,
+  "highway": 3860
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd40"
+  },
+  "fare_stage": 217,
+  "normal": 1351,
+  "semi": 1842,
+  "ac": 2455,
+  "super": 3225,
+  "highway": 3870
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd41"
+  },
+  "fare_stage": 218,
+  "normal": 1358,
+  "semi": 1851,
+  "ac": 2470,
+  "super": 3240,
+  "highway": 3890
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd42"
+  },
+  "fare_stage": 219,
+  "normal": 1363,
+  "semi": 1859,
+  "ac": 2480,
+  "super": 3255,
+  "highway": 3900
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd43"
+  },
+  "fare_stage": 220,
+  "normal": 1370,
+  "semi": 1868,
+  "ac": 2490,
+  "super": 3270,
+  "highway": 3920
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd44"
+  },
+  "fare_stage": 221,
+  "normal": 1375,
+  "semi": 1875,
+  "ac": 2500,
+  "super": 3285,
+  "highway": 3940
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd45"
+  },
+  "fare_stage": 222,
+  "normal": 1382,
+  "semi": 1884,
+  "ac": 2510,
+  "super": 3300,
+  "highway": 3960
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd46"
+  },
+  "fare_stage": 223,
+  "normal": 1387,
+  "semi": 1892,
+  "ac": 2520,
+  "super": 3310,
+  "highway": 3970
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd47"
+  },
+  "fare_stage": 224,
+  "normal": 1394,
+  "semi": 1901,
+  "ac": 2535,
+  "super": 3330,
+  "highway": 3990
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd48"
+  },
+  "fare_stage": 225,
+  "normal": 1399,
+  "semi": 1908,
+  "ac": 2545,
+  "super": 3340,
+  "highway": 4010
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd49"
+  },
+  "fare_stage": 226,
+  "normal": 1406,
+  "semi": 1917,
+  "ac": 2555,
+  "super": 3355,
+  "highway": 4030
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd4a"
+  },
+  "fare_stage": 227,
+  "normal": 1411,
+  "semi": 1925,
+  "ac": 2565,
+  "super": 3370,
+  "highway": 4040
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd4b"
+  },
+  "fare_stage": 228,
+  "normal": 1417,
+  "semi": 1932,
+  "ac": 2575,
+  "super": 3380,
+  "highway": 4060
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd4c"
+  },
+  "fare_stage": 229,
+  "normal": 1423,
+  "semi": 1941,
+  "ac": 2590,
+  "super": 3400,
+  "highway": 4080
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd4d"
+  },
+  "fare_stage": 230,
+  "normal": 1429,
+  "semi": 1949,
+  "ac": 2600,
+  "super": 3410,
+  "highway": 4090
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd4e"
+  },
+  "fare_stage": 231,
+  "normal": 1436,
+  "semi": 1958,
+  "ac": 2610,
+  "super": 3425,
+  "highway": 4110
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd4f"
+  },
+  "fare_stage": 232,
+  "normal": 1441,
+  "semi": 1965,
+  "ac": 2620,
+  "super": 3440,
+  "highway": 4130
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd50"
+  },
+  "fare_stage": 233,
+  "normal": 1448,
+  "semi": 1974,
+  "ac": 2630,
+  "super": 3455,
+  "highway": 4150
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd51"
+  },
+  "fare_stage": 234,
+  "normal": 1453,
+  "semi": 1982,
+  "ac": 2640,
+  "super": 3470,
+  "highway": 4160
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd52"
+  },
+  "fare_stage": 235,
+  "normal": 1460,
+  "semi": 1991,
+  "ac": 2655,
+  "super": 3485,
+  "highway": 4180
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd53"
+  },
+  "fare_stage": 236,
+  "normal": 1465,
+  "semi": 1998,
+  "ac": 2665,
+  "super": 3495,
+  "highway": 4190
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd54"
+  },
+  "fare_stage": 237,
+  "normal": 1472,
+  "semi": 2007,
+  "ac": 2675,
+  "super": 3515,
+  "highway": 4220
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd55"
+  },
+  "fare_stage": 238,
+  "normal": 1477,
+  "semi": 2015,
+  "ac": 2685,
+  "super": 3525,
+  "highway": 4230
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd56"
+  },
+  "fare_stage": 239,
+  "normal": 1484,
+  "semi": 2024,
+  "ac": 2700,
+  "super": 3545,
+  "highway": 4250
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd57"
+  },
+  "fare_stage": 240,
+  "normal": 1489,
+  "semi": 2031,
+  "ac": 2710,
+  "super": 3555,
+  "highway": 4270
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd58"
+  },
+  "fare_stage": 241,
+  "normal": 1496,
+  "semi": 2040,
+  "ac": 2720,
+  "super": 3570,
+  "highway": 4280
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd59"
+  },
+  "fare_stage": 242,
+  "normal": 1501,
+  "semi": 2048,
+  "ac": 2730,
+  "super": 3585,
+  "highway": 4300
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd5a"
+  },
+  "fare_stage": 243,
+  "normal": 1508,
+  "semi": 2057,
+  "ac": 2740,
+  "super": 3600,
+  "highway": 4320
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd5b"
+  },
+  "fare_stage": 244,
+  "normal": 1513,
+  "semi": 2064,
+  "ac": 2750,
+  "super": 3615,
+  "highway": 4340
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd5c"
+  },
+  "fare_stage": 245,
+  "normal": 1520,
+  "semi": 2073,
+  "ac": 2765,
+  "super": 3630,
+  "highway": 4350
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd5d"
+  },
+  "fare_stage": 246,
+  "normal": 1526,
+  "semi": 2081,
+  "ac": 2775,
+  "super": 3640,
+  "highway": 4370
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd5e"
+  },
+  "fare_stage": 247,
+  "normal": 1532,
+  "semi": 2090,
+  "ac": 2785,
+  "super": 3660,
+  "highway": 4390
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd5f"
+  },
+  "fare_stage": 248,
+  "normal": 1538,
+  "semi": 2097,
+  "ac": 2795,
+  "super": 3670,
+  "highway": 4400
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd60"
+  },
+  "fare_stage": 249,
+  "normal": 1543,
+  "semi": 2105,
+  "ac": 2805,
+  "super": 3685,
+  "highway": 4420
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd61"
+  },
+  "fare_stage": 250,
+  "normal": 1550,
+  "semi": 2114,
+  "ac": 2820,
+  "super": 3700,
+  "highway": 4440
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd62"
+  },
+  "fare_stage": 251,
+  "normal": 1555,
+  "semi": 2121,
+  "ac": 2830,
+  "super": 3710,
+  "highway": 4450
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd63"
+  },
+  "fare_stage": 252,
+  "normal": 1562,
+  "semi": 2130,
+  "ac": 2840,
+  "super": 3730,
+  "highway": 4470
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd64"
+  },
+  "fare_stage": 253,
+  "normal": 1567,
+  "semi": 2138,
+  "ac": 2850,
+  "super": 3740,
+  "highway": 4490
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd65"
+  },
+  "fare_stage": 254,
+  "normal": 1574,
+  "semi": 2147,
+  "ac": 2860,
+  "super": 3755,
+  "highway": 4510
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd66"
+  },
+  "fare_stage": 255,
+  "normal": 1579,
+  "semi": 2154,
+  "ac": 2870,
+  "super": 3770,
+  "highway": 4520
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd67"
+  },
+  "fare_stage": 256,
+  "normal": 1586,
+  "semi": 2163,
+  "ac": 2885,
+  "super": 3785,
+  "highway": 4540
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd68"
+  },
+  "fare_stage": 257,
+  "normal": 1591,
+  "semi": 2171,
+  "ac": 2895,
+  "super": 3800,
+  "highway": 4560
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd69"
+  },
+  "fare_stage": 258,
+  "normal": 1598,
+  "semi": 2180,
+  "ac": 2905,
+  "super": 3815,
+  "highway": 4580
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd6a"
+  },
+  "fare_stage": 259,
+  "normal": 1603,
+  "semi": 2187,
+  "ac": 2915,
+  "super": 3830,
+  "highway": 4590
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd6b"
+  },
+  "fare_stage": 260,
+  "normal": 1610,
+  "semi": 2196,
+  "ac": 2930,
+  "super": 3845,
+  "highway": 4610
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd6c"
+  },
+  "fare_stage": 261,
+  "normal": 1615,
+  "semi": 2204,
+  "ac": 2940,
+  "super": 3855,
+  "highway": 4630
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd6d"
+  },
+  "fare_stage": 262,
+  "normal": 1622,
+  "semi": 2213,
+  "ac": 2950,
+  "super": 3875,
+  "highway": 4650
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd6e"
+  },
+  "fare_stage": 263,
+  "normal": 1628,
+  "semi": 2220,
+  "ac": 2960,
+  "super": 3885,
+  "highway": 4660
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd6f"
+  },
+  "fare_stage": 264,
+  "normal": 1634,
+  "semi": 2229,
+  "ac": 2970,
+  "super": 3900,
+  "highway": 4680
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd70"
+  },
+  "fare_stage": 265,
+  "normal": 1640,
+  "semi": 2237,
+  "ac": 2980,
+  "super": 3915,
+  "highway": 4700
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd71"
+  },
+  "fare_stage": 266,
+  "normal": 1647,
+  "semi": 2246,
+  "ac": 2995,
+  "super": 3930,
+  "highway": 4720
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd72"
+  },
+  "fare_stage": 267,
+  "normal": 1652,
+  "semi": 2253,
+  "ac": 3005,
+  "super": 3945,
+  "highway": 4730
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd73"
+  },
+  "fare_stage": 268,
+  "normal": 1659,
+  "semi": 2262,
+  "ac": 3015,
+  "super": 3960,
+  "highway": 4750
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd74"
+  },
+  "fare_stage": 269,
+  "normal": 1664,
+  "semi": 2270,
+  "ac": 3025,
+  "super": 3970,
+  "highway": 4760
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd75"
+  },
+  "fare_stage": 270,
+  "normal": 1671,
+  "semi": 2279,
+  "ac": 3040,
+  "super": 3990,
+  "highway": 4790
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd76"
+  },
+  "fare_stage": 271,
+  "normal": 1676,
+  "semi": 2286,
+  "ac": 3050,
+  "super": 4000,
+  "highway": 4800
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd77"
+  },
+  "fare_stage": 272,
+  "normal": 1681,
+  "semi": 2292,
+  "ac": 3055,
+  "super": 4015,
+  "highway": 4820
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd78"
+  },
+  "fare_stage": 273,
+  "normal": 1688,
+  "semi": 2303,
+  "ac": 3070,
+  "super": 4030,
+  "highway": 4830
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd79"
+  },
+  "fare_stage": 274,
+  "normal": 1693,
+  "semi": 2309,
+  "ac": 3080,
+  "super": 4040,
+  "highway": 4850
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd7a"
+  },
+  "fare_stage": 275,
+  "normal": 1700,
+  "semi": 2319,
+  "ac": 3090,
+  "super": 4060,
+  "highway": 4870
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd7b"
+  },
+  "fare_stage": 276,
+  "normal": 1705,
+  "semi": 2325,
+  "ac": 3100,
+  "super": 4070,
+  "highway": 4880
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd7c"
+  },
+  "fare_stage": 277,
+  "normal": 1712,
+  "semi": 2336,
+  "ac": 3115,
+  "super": 4090,
+  "highway": 4910
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd7d"
+  },
+  "fare_stage": 278,
+  "normal": 1718,
+  "semi": 2342,
+  "ac": 3120,
+  "super": 4100,
+  "highway": 4920
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd7e"
+  },
+  "fare_stage": 279,
+  "normal": 1724,
+  "semi": 2352,
+  "ac": 3135,
+  "super": 4115,
+  "highway": 4940
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd7f"
+  },
+  "fare_stage": 280,
+  "normal": 1730,
+  "semi": 2358,
+  "ac": 3145,
+  "super": 4130,
+  "highway": 4950
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd80"
+  },
+  "fare_stage": 281,
+  "normal": 1737,
+  "semi": 2369,
+  "ac": 3160,
+  "super": 4145,
+  "highway": 4970
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd81"
+  },
+  "fare_stage": 282,
+  "normal": 1742,
+  "semi": 2375,
+  "ac": 3165,
+  "super": 4160,
+  "highway": 4990
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd82"
+  },
+  "fare_stage": 283,
+  "normal": 1749,
+  "semi": 2385,
+  "ac": 3180,
+  "super": 4175,
+  "highway": 5010
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd83"
+  },
+  "fare_stage": 284,
+  "normal": 1754,
+  "semi": 2391,
+  "ac": 3190,
+  "super": 4185,
+  "highway": 5020
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd84"
+  },
+  "fare_stage": 285,
+  "normal": 1761,
+  "semi": 2402,
+  "ac": 3200,
+  "super": 4205,
+  "highway": 5040
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd85"
+  },
+  "fare_stage": 286,
+  "normal": 1766,
+  "semi": 2408,
+  "ac": 3210,
+  "super": 4215,
+  "highway": 5060
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd86"
+  },
+  "fare_stage": 287,
+  "normal": 1773,
+  "semi": 2418,
+  "ac": 3225,
+  "super": 4230,
+  "highway": 5080
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd87"
+  },
+  "fare_stage": 288,
+  "normal": 1778,
+  "semi": 2424,
+  "ac": 3230,
+  "super": 4245,
+  "highway": 5090
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd88"
+  },
+  "fare_stage": 289,
+  "normal": 1785,
+  "semi": 2435,
+  "ac": 3245,
+  "super": 4260,
+  "highway": 5110
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd89"
+  },
+  "fare_stage": 290,
+  "normal": 1790,
+  "semi": 2441,
+  "ac": 3255,
+  "super": 4275,
+  "highway": 5130
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd8a"
+  },
+  "fare_stage": 291,
+  "normal": 1797,
+  "semi": 2451,
+  "ac": 3270,
+  "super": 4290,
+  "highway": 5150
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd8b"
+  },
+  "fare_stage": 292,
+  "normal": 1802,
+  "semi": 2457,
+  "ac": 3275,
+  "super": 4300,
+  "highway": 5160
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd8c"
+  },
+  "fare_stage": 293,
+  "normal": 1807,
+  "semi": 2465,
+  "ac": 3285,
+  "super": 4315,
+  "highway": 5180
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd8d"
+  },
+  "fare_stage": 294,
+  "normal": 1814,
+  "semi": 2474,
+  "ac": 3300,
+  "super": 4330,
+  "highway": 5200
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd8e"
+  },
+  "fare_stage": 295,
+  "normal": 1820,
+  "semi": 2481,
+  "ac": 3310,
+  "super": 4345,
+  "highway": 5210
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd8f"
+  },
+  "fare_stage": 296,
+  "normal": 1826,
+  "semi": 2490,
+  "ac": 3320,
+  "super": 4360,
+  "highway": 5230
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd90"
+  },
+  "fare_stage": 297,
+  "normal": 1832,
+  "semi": 2498,
+  "ac": 3330,
+  "super": 4370,
+  "highway": 5240
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd91"
+  },
+  "fare_stage": 298,
+  "normal": 1839,
+  "semi": 2507,
+  "ac": 3340,
+  "super": 4390,
+  "highway": 5270
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd92"
+  },
+  "fare_stage": 299,
+  "normal": 1844,
+  "semi": 2514,
+  "ac": 3350,
+  "super": 4400,
+  "highway": 5280
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd93"
+  },
+  "fare_stage": 300,
+  "normal": 1851,
+  "semi": 2523,
+  "ac": 3365,
+  "super": 4420,
+  "highway": 5300
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd94"
+  },
+  "fare_stage": 301,
+  "normal": 1856,
+  "semi": 2531,
+  "ac": 3375,
+  "super": 4430,
+  "highway": 5320
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd95"
+  },
+  "fare_stage": 302,
+  "normal": 1863,
+  "semi": 2540,
+  "ac": 3385,
+  "super": 4445,
+  "highway": 5330
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd96"
+  },
+  "fare_stage": 303,
+  "normal": 1868,
+  "semi": 2547,
+  "ac": 3395,
+  "super": 4460,
+  "highway": 5350
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd97"
+  },
+  "fare_stage": 304,
+  "normal": 1875,
+  "semi": 2556,
+  "ac": 3410,
+  "super": 4475,
+  "highway": 5370
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd98"
+  },
+  "fare_stage": 305,
+  "normal": 1880,
+  "semi": 2564,
+  "ac": 3420,
+  "super": 4490,
+  "highway": 5390
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd99"
+  },
+  "fare_stage": 306,
+  "normal": 1887,
+  "semi": 2573,
+  "ac": 3430,
+  "super": 4505,
+  "highway": 5400
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd9a"
+  },
+  "fare_stage": 307,
+  "normal": 1894,
+  "semi": 2583,
+  "ac": 3445,
+  "super": 4520,
+  "highway": 5420
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd9b"
+  },
+  "fare_stage": 308,
+  "normal": 1901,
+  "semi": 2592,
+  "ac": 3455,
+  "super": 4540,
+  "highway": 5450
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd9c"
+  },
+  "fare_stage": 309,
+  "normal": 1906,
+  "semi": 2600,
+  "ac": 3465,
+  "super": 4550,
+  "highway": 5460
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd9d"
+  },
+  "fare_stage": 310,
+  "normal": 1913,
+  "semi": 2609,
+  "ac": 3480,
+  "super": 4565,
+  "highway": 5480
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd9e"
+  },
+  "fare_stage": 311,
+  "normal": 1918,
+  "semi": 2616,
+  "ac": 3490,
+  "super": 4580,
+  "highway": 5490
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dd9f"
+  },
+  "fare_stage": 312,
+  "normal": 1925,
+  "semi": 2625,
+  "ac": 3500,
+  "super": 4595,
+  "highway": 5510
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda0"
+  },
+  "fare_stage": 313,
+  "normal": 1930,
+  "semi": 2633,
+  "ac": 3510,
+  "super": 4610,
+  "highway": 5530
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda1"
+  },
+  "fare_stage": 314,
+  "normal": 1937,
+  "semi": 2642,
+  "ac": 3520,
+  "super": 4625,
+  "highway": 5550
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda2"
+  },
+  "fare_stage": 315,
+  "normal": 1944,
+  "semi": 2651,
+  "ac": 3535,
+  "super": 4640,
+  "highway": 5570
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda3"
+  },
+  "fare_stage": 316,
+  "normal": 1949,
+  "semi": 2658,
+  "ac": 3545,
+  "super": 4655,
+  "highway": 5580
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda4"
+  },
+  "fare_stage": 317,
+  "normal": 1956,
+  "semi": 2667,
+  "ac": 3555,
+  "super": 4670,
+  "highway": 5600
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda5"
+  },
+  "fare_stage": 318,
+  "normal": 1961,
+  "semi": 2675,
+  "ac": 3565,
+  "super": 4680,
+  "highway": 5620
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda6"
+  },
+  "fare_stage": 319,
+  "normal": 1968,
+  "semi": 2684,
+  "ac": 3580,
+  "super": 4700,
+  "highway": 5640
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda7"
+  },
+  "fare_stage": 320,
+  "normal": 1973,
+  "semi": 2691,
+  "ac": 3590,
+  "super": 4710,
+  "highway": 5650
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda8"
+  },
+  "fare_stage": 321,
+  "normal": 1980,
+  "semi": 2700,
+  "ac": 3600,
+  "super": 4725,
+  "highway": 5670
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17dda9"
+  },
+  "fare_stage": 322,
+  "normal": 1987,
+  "semi": 2711,
+  "ac": 3615,
+  "super": 4745,
+  "highway": 5690
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddaa"
+  },
+  "fare_stage": 323,
+  "normal": 1993,
+  "semi": 2717,
+  "ac": 3620,
+  "super": 4755,
+  "highway": 5710
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddab"
+  },
+  "fare_stage": 324,
+  "normal": 1999,
+  "semi": 2727,
+  "ac": 3635,
+  "super": 4775,
+  "highway": 5730
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddac"
+  },
+  "fare_stage": 325,
+  "normal": 2005,
+  "semi": 2733,
+  "ac": 3645,
+  "super": 4785,
+  "highway": 5740
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddad"
+  },
+  "fare_stage": 326,
+  "normal": 2012,
+  "semi": 2744,
+  "ac": 3660,
+  "super": 4800,
+  "highway": 5760
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddae"
+  },
+  "fare_stage": 327,
+  "normal": 2017,
+  "semi": 2750,
+  "ac": 3665,
+  "super": 4815,
+  "highway": 5780
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddaf"
+  },
+  "fare_stage": 328,
+  "normal": 2024,
+  "semi": 2760,
+  "ac": 3680,
+  "super": 4830,
+  "highway": 5800
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb0"
+  },
+  "fare_stage": 329,
+  "normal": 2029,
+  "semi": 2766,
+  "ac": 3690,
+  "super": 4845,
+  "highway": 5810
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb1"
+  },
+  "fare_stage": 330,
+  "normal": 2036,
+  "semi": 2777,
+  "ac": 3700,
+  "super": 4860,
+  "highway": 5830
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb2"
+  },
+  "fare_stage": 331,
+  "normal": 2043,
+  "semi": 2786,
+  "ac": 3715,
+  "super": 4875,
+  "highway": 5850
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb3"
+  },
+  "fare_stage": 332,
+  "normal": 2048,
+  "semi": 2793,
+  "ac": 3725,
+  "super": 4890,
+  "highway": 5870
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb4"
+  },
+  "fare_stage": 333,
+  "normal": 2055,
+  "semi": 2802,
+  "ac": 3735,
+  "super": 4905,
+  "highway": 5880
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb5"
+  },
+  "fare_stage": 334,
+  "normal": 2060,
+  "semi": 2810,
+  "ac": 3745,
+  "super": 4915,
+  "highway": 5900
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb6"
+  },
+  "fare_stage": 335,
+  "normal": 2067,
+  "semi": 2819,
+  "ac": 3760,
+  "super": 4935,
+  "highway": 5920
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb7"
+  },
+  "fare_stage": 336,
+  "normal": 2072,
+  "semi": 2826,
+  "ac": 3770,
+  "super": 4945,
+  "highway": 5930
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb8"
+  },
+  "fare_stage": 337,
+  "normal": 2079,
+  "semi": 2835,
+  "ac": 3780,
+  "super": 4965,
+  "highway": 5960
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddb9"
+  },
+  "fare_stage": 338,
+  "normal": 2086,
+  "semi": 2844,
+  "ac": 3790,
+  "super": 4980,
+  "highway": 5970
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddba"
+  },
+  "fare_stage": 339,
+  "normal": 2091,
+  "semi": 2852,
+  "ac": 3800,
+  "super": 4990,
+  "highway": 5990
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddbb"
+  },
+  "fare_stage": 340,
+  "normal": 2098,
+  "semi": 2861,
+  "ac": 3815,
+  "super": 5010,
+  "highway": 6010
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddbc"
+  },
+  "fare_stage": 341,
+  "normal": 2103,
+  "semi": 2868,
+  "ac": 3825,
+  "super": 5020,
+  "highway": 6020
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddbd"
+  },
+  "fare_stage": 342,
+  "normal": 2110,
+  "semi": 2877,
+  "ac": 3835,
+  "super": 5035,
+  "highway": 6040
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddbe"
+  },
+  "fare_stage": 343,
+  "normal": 2115,
+  "semi": 2885,
+  "ac": 3845,
+  "super": 5050,
+  "highway": 6060
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddbf"
+  },
+  "fare_stage": 344,
+  "normal": 2122,
+  "semi": 2894,
+  "ac": 3860,
+  "super": 5065,
+  "highway": 6080
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddc0"
+  },
+  "fare_stage": 345,
+  "normal": 2129,
+  "semi": 2904,
+  "ac": 3870,
+  "super": 5080,
+  "highway": 6100
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddc1"
+  },
+  "fare_stage": 346,
+  "normal": 2134,
+  "semi": 2910,
+  "ac": 3880,
+  "super": 5095,
+  "highway": 6110
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddc2"
+  },
+  "fare_stage": 347,
+  "normal": 2141,
+  "semi": 2921,
+  "ac": 3895,
+  "super": 5110,
+  "highway": 6130
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddc3"
+  },
+  "fare_stage": 348,
+  "normal": 2146,
+  "semi": 2927,
+  "ac": 3900,
+  "super": 5125,
+  "highway": 6150
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddc4"
+  },
+  "fare_stage": 349,
+  "normal": 2153,
+  "semi": 2937,
+  "ac": 3915,
+  "super": 5140,
+  "highway": 6170
+},
+{
+  "_id": {
+    "$oid": "68ca3f494118e95e5f17ddc5"
+  },
+  "fare_stage": 350,
+  "normal": 2159,
+  "semi": 2943,
+  "ac": 3925,
+  "super": 5155,
+  "highway": 6180
+}]

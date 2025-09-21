@@ -1,0 +1,8710 @@
+[{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddc7"
+  },
+  "Route_No": 1,
+  "Origin": "COLOMBO",
+  "Destination": "KANDY",
+  "Route_distance": 115,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddc8"
+  },
+  "Route_No": "1-1",
+  "Origin": "COLOMBO",
+  "Destination": "KEGALLE",
+  "Route_distance": 77.3,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කෑගල්ල",
+  "FareStages": 40
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddc9"
+  },
+  "Route_No": "1-1/245",
+  "Origin": "NEGOMBO",
+  "Destination": "KEGALLE",
+  "Route_distance": 74,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "කෑගල්ල",
+  "FareStages": 37
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddca"
+  },
+  "Route_No": "1-2",
+  "Origin": "COLOMBO",
+  "Destination": "MAWANELLA",
+  "Route_distance": 94.1,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාවනැල්ල",
+  "FareStages": 47
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddcb"
+  },
+  "Route_No": "1-3",
+  "Origin": "COLOMBO",
+  "Destination": "WARAKAPOLA",
+  "Route_distance": 56.2,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වරකාපොල",
+  "FareStages": 28
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddcc"
+  },
+  "Route_No": "1-4",
+  "Origin": "COLOMBO",
+  "Destination": "GALAPITAMADA",
+  "Route_distance": 59.3,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගලපිටමඩ",
+  "FareStages": 34
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddcd"
+  },
+  "Route_No": "1/245",
+  "Origin": "NEGOMBO",
+  "Destination": "KANDY",
+  "Route_distance": 108,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 59
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddce"
+  },
+  "Route_No": "1/625",
+  "Origin": "COLOMBO",
+  "Destination": "MANIKHINNA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මැණික්හින්න",
+  "FareStages": 70
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddcf"
+  },
+  "Route_No": "1/627",
+  "Origin": "COLOMBO",
+  "Destination": "NILDANDAHINNA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "නිල්දණ්ඩාහින්න",
+  "FareStages": 102
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd0"
+  },
+  "Route_No": "1/744",
+  "Origin": "COLOMBO",
+  "Destination": "PADIYAPELELLA",
+  "Route_distance": 158,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පදියපැලැල්ල",
+  "FareStages": 86
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd1"
+  },
+  "Route_No": 2,
+  "Origin": "COLOMBO",
+  "Destination": "MATARA",
+  "Route_distance": 163,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාතර",
+  "FareStages": 79
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd2"
+  },
+  "Route_No": "2-1",
+  "Origin": "COLOMBO",
+  "Destination": "GALLE",
+  "Route_distance": 116,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගාල්ල",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd3"
+  },
+  "Route_No": "2-3",
+  "Origin": "COLOMBO",
+  "Destination": "AMBALANGODA",
+  "Route_distance": 84.1,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අම්බලන්ගොඩ",
+  "FareStages": 42
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd4"
+  },
+  "Route_No": "2-4",
+  "Origin": "COLOMBO",
+  "Destination": "YATIYANA",
+  "Route_distance": 176,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "යටියන",
+  "FareStages": 88
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd5"
+  },
+  "Route_No": "2-6",
+  "Origin": "COLOMBO",
+  "Destination": "DEYYANDARA",
+  "Route_distance": 196,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙයියන්දර",
+  "FareStages": 98
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd6"
+  },
+  "Route_No": "2-9 ",
+  "Origin": "COLOMBO",
+  "Destination": "DEYYANDARA",
+  "Route_distance": 197,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙයියන්දර",
+  "FareStages": 95
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd7"
+  },
+  "Route_No": "2-10 ",
+  "Origin": "COLOMBO",
+  "Destination": "DEYYANDARA",
+  "Route_distance": 199,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙයියන්දර",
+  "FareStages": 97
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd8"
+  },
+  "Route_No": "2-12",
+  "Origin": "COLOMBO",
+  "Destination": "KIRINDA",
+  "Route_distance": 182,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කිරින්ද",
+  "FareStages": 93
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddd9"
+  },
+  "Route_No": "2/13",
+  "Origin": "COLOMBO",
+  "Destination": "MAWARALA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාවරල",
+  "FareStages": 99
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddda"
+  },
+  "Route_No": "2/4-3 ",
+  "Origin": "MATARA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 359,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 179
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dddb"
+  },
+  "Route_No": "2/8",
+  "Origin": "MATARA",
+  "Destination": "MATALE",
+  "Route_distance": 310,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "මාතලේ",
+  "FareStages": 152
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dddc"
+  },
+  "Route_No": "2/48",
+  "Origin": "MATARA",
+  "Destination": "KADURUWELA",
+  "Route_distance": 380,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 191
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dddd"
+  },
+  "Route_No": "2/187",
+  "Origin": "MATARA",
+  "Destination": "KATUNAYAKE",
+  "Route_distance": 190,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "කටුනායක",
+  "FareStages": 94
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddde"
+  },
+  "Route_No": "2/366",
+  "Origin": "COLOMBO",
+  "Destination": "AKURESSA",
+  "Route_distance": 164,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අකුරැස්ස",
+  "FareStages": 82
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dddf"
+  },
+  "Route_No": "2/368",
+  "Origin": "COLOMBO",
+  "Destination": "URUBOKKE",
+  "Route_distance": 218,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඌරුබොක්ක",
+  "FareStages": 109
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde0"
+  },
+  "Route_No": "2/382",
+  "Origin": "COLOMBO",
+  "Destination": "AKURESSA",
+  "Route_distance": 156,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අකුරැස්ස",
+  "FareStages": 78
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde1"
+  },
+  "Route_No": 3,
+  "Origin": "COLOMBO",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 260,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 136
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde2"
+  },
+  "Route_No": "3-1",
+  "Origin": "COLOMBO",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 168,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 84
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde3"
+  },
+  "Route_No": "3-4",
+  "Origin": "COLOMBO",
+  "Destination": "HAMBANTHOTA",
+  "Route_distance": 220,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හම්බන්තොට",
+  "FareStages": 111
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde4"
+  },
+  "Route_No": "3/15/87",
+  "Origin": "HAMBANTHOTA",
+  "Destination": "JAFFNA",
+  "Route_distance": 488,
+  "Origin_sin": "හම්බන්තොට",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 289
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde5"
+  },
+  "Route_No": "3/363",
+  "Origin": "COLOMBO",
+  "Destination": "WALASMULLA",
+  "Route_distance": 216,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වලස්මුල්ල",
+  "FareStages": 108
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde6"
+  },
+  "Route_No": "3/461-5",
+  "Origin": "COLOMBO",
+  "Destination": "KOLONNA",
+  "Route_distance": 194,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කොලොන්න",
+  "FareStages": 97
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde7"
+  },
+  "Route_No": "3/497",
+  "Origin": "COLOMBO",
+  "Destination": "SURIYAWEWA",
+  "Route_distance": 190,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "සූරියවැව",
+  "FareStages": 95
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde8"
+  },
+  "Route_No": 4,
+  "Origin": "COLOMBO",
+  "Destination": "MANNAR",
+  "Route_distance": 312,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මන්නාරම",
+  "FareStages": 156
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dde9"
+  },
+  "Route_No": "4-1",
+  "Origin": "COLOMBO",
+  "Destination": "THALAIMANNAR",
+  "Route_distance": 362,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තලෙයිමන්නාරම",
+  "FareStages": 172
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddea"
+  },
+  "Route_No": "4-1-1",
+  "Origin": "NEGOMBO",
+  "Destination": "THALAIMANNAR",
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "තලෙයිමන්නාරම",
+  "FareStages": 155
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddeb"
+  },
+  "Route_No": "4-3",
+  "Origin": "COLOMBO",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 216,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 100
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddec"
+  },
+  "Route_No": "4-3/141",
+  "Origin": "PANADURA",
+  "Destination": "ANURADHAPURA",
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 112
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dded"
+  },
+  "Route_No": "4-3/842-1",
+  "Origin": "COLOMBO",
+  "Destination": "PULMUDAI",
+  "Route_distance": 310,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පුල්මුඩේ",
+  "FareStages": 155
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddee"
+  },
+  "Route_No": "4-7",
+  "Origin": "COLOMBO",
+  "Destination": "PUTTLAM",
+  "Route_distance": 137,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පුත්තලම",
+  "FareStages": 64
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddef"
+  },
+  "Route_No": "4-9",
+  "Origin": "COLOMBO",
+  "Destination": "ANAMADUWA",
+  "Route_distance": 129,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ආනමඩුව",
+  "FareStages": 61
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf0"
+  },
+  "Route_No": "4-10",
+  "Origin": "COLOMBO",
+  "Destination": "ELUWANKULAMA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "එළුවන්කුලම",
+  "FareStages": 79
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf1"
+  },
+  "Route_No": "4-11",
+  "Origin": "COLOMBO",
+  "Destination": "CHILAW",
+  "Route_distance": 82.8,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හලාවත",
+  "FareStages": 38
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf2"
+  },
+  "Route_No": "4-13",
+  "Origin": "PUTTLAM ",
+  "Destination": "MANNAR",
+  "Origin_sin": "පුත්තලම",
+  "Destination_Sin": "මන්නාරම",
+  "FareStages": 92
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf3"
+  },
+  "Route_No": "4/86",
+  "Origin": "PUTTLAM",
+  "Destination": "KALMUNAI",
+  "Route_distance": 314,
+  "Origin_sin": "පුත්තලම",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 157
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf4"
+  },
+  "Route_No": "4/86-10",
+  "Origin": "KALPITIYA",
+  "Destination": "POTHUWIL",
+  "Origin_sin": "කල්පිටිය",
+  "Destination_Sin": "පොතුවිල්",
+  "FareStages": 210
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf5"
+  },
+  "Route_No": "4/844",
+  "Origin": "COLOMBO",
+  "Destination": "SRIPURA",
+  "Route_distance": 308,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ශ්‍රීපුර",
+  "FareStages": 154
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf6"
+  },
+  "Route_No": 5,
+  "Origin": "COLOMBO",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 95.8,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 47
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf7"
+  },
+  "Route_No": "5-11",
+  "Origin": "COLOMBO",
+  "Destination": "WARIYAPOLA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වාරියපොල",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf8"
+  },
+  "Route_No": "5/57/540",
+  "Origin": "KATUNAYAKE",
+  "Destination": "GALNEWA",
+  "Route_distance": 188,
+  "Origin_sin": "කටුනායක",
+  "Destination_Sin": "ගල්නෑව",
+  "FareStages": 94
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddf9"
+  },
+  "Route_No": "5/245",
+  "Origin": "KATUNAYAKE",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 72,
+  "Origin_sin": "කටුනායක",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 36
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddfa"
+  },
+  "Route_No": 6,
+  "Origin": "COLOMBO",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 93.4,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 47
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddfb"
+  },
+  "Route_No": "6/57/540",
+  "Origin": "COLOMBO",
+  "Destination": "GALNEWA",
+  "Route_distance": 210,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගල්නෑව",
+  "FareStages": 105
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddfc"
+  },
+  "Route_No": 7,
+  "Origin": "COLOMBO",
+  "Destination": "KALPITIYA",
+  "Route_distance": 164,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කල්පිටිය",
+  "FareStages": 82
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddfd"
+  },
+  "Route_No": "7-1",
+  "Origin": "NEGOMBO",
+  "Destination": "KALPITIYA",
+  "Route_distance": 130,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "කල්පිටිය",
+  "FareStages": 65
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddfe"
+  },
+  "Route_No": 8,
+  "Origin": "COLOMBO",
+  "Destination": "MATALE",
+  "Route_distance": 141,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාතලේ",
+  "FareStages": 73
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ddff"
+  },
+  "Route_No": 9,
+  "Origin": "COLOMBO",
+  "Destination": "TELDENIYA",
+  "Route_distance": 140,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තෙල්දෙනිය",
+  "FareStages": 74
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de00"
+  },
+  "Route_No": "9-1",
+  "Origin": "COLOMBO",
+  "Destination": "WATTEGAMA",
+  "Route_distance": 129,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වත්තේගම",
+  "FareStages": 67
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de01"
+  },
+  "Route_No": "9-2",
+  "Origin": "COLOMBO",
+  "Destination": "DIGANA",
+  "Route_distance": 140,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දිගන",
+  "FareStages": 69
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de02"
+  },
+  "Route_No": 10,
+  "Origin": "KATARAGAMA",
+  "Destination": "KANDY",
+  "Route_distance": 280,
+  "Origin_sin": "කතරගම",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 140
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de03"
+  },
+  "Route_No": 11,
+  "Origin": "MATARA",
+  "Destination": "RATHNAPURA",
+  "Route_distance": 172,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "රත්නපුර",
+  "FareStages": 87
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de04"
+  },
+  "Route_No": "11-1",
+  "Origin": "MATARA",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 106,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 47
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de05"
+  },
+  "Route_No": "11-1-1",
+  "Origin": "MATARA",
+  "Destination": "EMBILIPITIYA",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 45
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de06"
+  },
+  "Route_No": "11-3",
+  "Origin": "MATARA",
+  "Destination": "SURIYAWEWA",
+  "Route_distance": 120,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "සූරියවැව",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de07"
+  },
+  "Route_No": "11/342",
+  "Origin": "MATARA",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 94.1,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 47
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de08"
+  },
+  "Route_No": "13-2",
+  "Origin": "COLOMBO",
+  "Destination": "DAYAGAMA",
+  "Route_distance": 167,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඩයගම",
+  "FareStages": 87
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de09"
+  },
+  "Route_No": 14,
+  "Origin": "KANDY",
+  "Destination": "MONARAGALA",
+  "Route_distance": 160,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මොණරාගල",
+  "FareStages": 88
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de0a"
+  },
+  "Route_No": 15,
+  "Origin": "COLOMBO",
+  "Destination": "JAFFNA",
+  "Route_distance": 429,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 206
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de0b"
+  },
+  "Route_No": "15-1",
+  "Origin": "COLOMBO",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 229,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 115
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de0c"
+  },
+  "Route_No": "15-1-1",
+  "Origin": "COLOMBO",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 222,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 111
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de0d"
+  },
+  "Route_No": "15-4",
+  "Origin": "COLOMBO",
+  "Destination": "GALNEWA",
+  "Route_distance": 198,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගල්නෑව",
+  "FareStages": 99
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de0e"
+  },
+  "Route_No": "15-5",
+  "Origin": "KURUNEGALA",
+  "Destination": "KEKIRAWA ",
+  "Route_distance": 81.2,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "කැකිරාව",
+  "FareStages": 40
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de0f"
+  },
+  "Route_No": "15-5/544-1",
+  "Origin": "KURUNEGALA",
+  "Destination": "BULNEEWA",
+  "Route_distance": 68.6,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "බුල්නෑව",
+  "FareStages": 45
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de10"
+  },
+  "Route_No": "15-6",
+  "Origin": "COLOMBO",
+  "Destination": "GALENBINDUNUWEWA",
+  "Route_distance": 207,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගලෙන්බිඳුනුවැව",
+  "FareStages": 105
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de11"
+  },
+  "Route_No": "15-7",
+  "Origin": "COLOMBO",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 276,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 130
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de12"
+  },
+  "Route_No": "15-11",
+  "Origin": "COLOMBO",
+  "Destination": "JANAKAPURA",
+  "Route_distance": 354,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ජානකපුර",
+  "FareStages": 177
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de13"
+  },
+  "Route_No": "15-17",
+  "Origin": "KURUNEGALA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 118,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 68
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de14"
+  },
+  "Route_No": "15-18",
+  "Origin": "KEGALLE",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 198,
+  "Origin_sin": "කෑගල්ල",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 100
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de15"
+  },
+  "Route_No": "15-22/87/769",
+  "Origin": "MORATUWA",
+  "Destination": "KANKASANTHURAI",
+  "Route_distance": 438,
+  "Origin_sin": "මොරටුව",
+  "Destination_Sin": "කන්කසන්තුරේ",
+  "FareStages": 221
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de16"
+  },
+  "Route_No": "15/82",
+  "Origin": "COLOMBO",
+  "Destination": "MULATHIVU",
+  "Route_distance": 328,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මුලතිව්",
+  "FareStages": 180
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de17"
+  },
+  "Route_No": "15/87/759",
+  "Origin": "COLOMBO",
+  "Destination": "POINT PEDRO",
+  "Route_distance": 389,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පේදුරුතුඩුව",
+  "FareStages": 203
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de18"
+  },
+  "Route_No": "15/819",
+  "Origin": "COLOMBO",
+  "Destination": "NANDIKADAL",
+  "Route_distance": 402,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "නන්දිකඩාල්",
+  "FareStages": 201
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de19"
+  },
+  "Route_No": "15/825",
+  "Origin": "COLOMBO",
+  "Destination": "DUTUWEWA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දුටුවැව",
+  "FareStages": 113
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de1a"
+  },
+  "Route_No": "15/835",
+  "Origin": "COLOMBO",
+  "Destination": "HOROWPATHANA",
+  "Route_distance": 283,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හොරොව්පතාන",
+  "FareStages": 130
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de1b"
+  },
+  "Route_No": "15/968",
+  "Origin": "COLOMBO",
+  "Destination": "WEWALA",
+  "Route_distance": 174,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වෑවල",
+  "FareStages": 87
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de1c"
+  },
+  "Route_No": 16,
+  "Origin": "COLOMBO",
+  "Destination": "NAWALAPITIYA",
+  "Route_distance": 140,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "නාවලපිටිය",
+  "FareStages": 73
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de1d"
+  },
+  "Route_No": "16-2",
+  "Origin": "COLOMBO",
+  "Destination": "HATTON",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හැටන්",
+  "FareStages": 92
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de1e"
+  },
+  "Route_No": 17,
+  "Origin": "PANADURA",
+  "Destination": "KANDY",
+  "Route_distance": 147,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 74
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de1f"
+  },
+  "Route_No": "17-1",
+  "Origin": "PANADURA",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 122,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 61
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de20"
+  },
+  "Route_No": "17/6",
+  "Origin": "BATTARAMULLA",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 96.7,
+  "Origin_sin": "බත්තරමුල්ල",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 47
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de21"
+  },
+  "Route_No": "17/15-1",
+  "Origin": "PANADURA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 258,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 125
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de22"
+  },
+  "Route_No": "17/48",
+  "Origin": "PANADURA",
+  "Destination": "KADURUWELA",
+  "Route_distance": 252,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 126
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de23"
+  },
+  "Route_No": "17/49",
+  "Origin": "PANADURA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 290,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 145
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de24"
+  },
+  "Route_No": "17/255",
+  "Origin": "KANDY",
+  "Destination": "PANADURA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "පානදුර",
+  "FareStages": 75
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de25"
+  },
+  "Route_No": "18-2",
+  "Origin": "COLOMBO",
+  "Destination": "HATTON",
+  "Route_distance": 120,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හැටන්",
+  "FareStages": 63
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de26"
+  },
+  "Route_No": "18-6",
+  "Origin": "COLOMBO",
+  "Destination": "BAGAWANTHALAWA",
+  "Route_distance": 141,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බගවන්තලාව",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de27"
+  },
+  "Route_No": "18-7",
+  "Origin": "COLOMBO",
+  "Destination": "THALAWAKELE",
+  "Route_distance": 137,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තලවකැලේ",
+  "FareStages": 72
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de28"
+  },
+  "Route_No": "18/727",
+  "Origin": "COLOMBO",
+  "Destination": "UDUPUSSELLAWA",
+  "Route_distance": 224,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "උඩුපුස්සැල්ලාව",
+  "FareStages": 112
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de29"
+  },
+  "Route_No": "19-2",
+  "Origin": "COLOMBO",
+  "Destination": "GAMPOLA",
+  "Route_distance": 123,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගම්පොල",
+  "FareStages": 64
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de2a"
+  },
+  "Route_No": 21,
+  "Origin": "KANDY",
+  "Destination": "BADULLA",
+  "Route_distance": 141,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "බදුල්ල",
+  "FareStages": 68
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de2b"
+  },
+  "Route_No": "21-6",
+  "Origin": "COLOMBO",
+  "Destination": "BADULLA",
+  "Route_distance": 258,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බදුල්ල",
+  "FareStages": 128
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de2c"
+  },
+  "Route_No": "21/1/245",
+  "Origin": "BADULLA",
+  "Destination": "KATUNAYAKE",
+  "Route_distance": 249,
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "කටුනායක",
+  "FareStages": 123
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de2d"
+  },
+  "Route_No": "21/910-1",
+  "Origin": "COLOMBO",
+  "Destination": "KALMUNAI",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 183
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de2e"
+  },
+  "Route_No": "22-1",
+  "Origin": "KANDY",
+  "Destination": "AKKARAIPATTU ",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අක්කරෙයිපත්තු",
+  "FareStages": 120
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de2f"
+  },
+  "Route_No": "22-2",
+  "Origin": "KANDY",
+  "Destination": "AMPARA",
+  "Route_distance": 197,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 106
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de30"
+  },
+  "Route_No": "22-3",
+  "Origin": "KANDY",
+  "Destination": "TEMPITITYA",
+  "Route_distance": 164,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "ටැම්පිටිය",
+  "FareStages": 82
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de31"
+  },
+  "Route_No": "22-4",
+  "Origin": "MAHIYANGANAYA",
+  "Destination": "AMPARA",
+  "Route_distance": 119,
+  "Origin_sin": "මහියංගනය",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de32"
+  },
+  "Route_No": "22-5",
+  "Origin": "KANDY",
+  "Destination": "MAHIYANGANAYA",
+  "Route_distance": 79.7,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මහියංගනය",
+  "FareStages": 46
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de33"
+  },
+  "Route_No": "22-6",
+  "Origin": "KANDY",
+  "Destination": "SIRIPURA",
+  "Route_distance": 136,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "සිරිපුර",
+  "FareStages": 71
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de34"
+  },
+  "Route_No": "22-6-1",
+  "Origin": "KANDY",
+  "Destination": "DEHIATTAKANDIYA",
+  "Route_distance": 120,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "දෙහිඅත්තකණ්ඩිය",
+  "FareStages": 67
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de35"
+  },
+  "Route_No": "22-6-2",
+  "Origin": "KANDY",
+  "Destination": "NUWARAGALA",
+  "Route_distance": 137,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "නුවරගල",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de36"
+  },
+  "Route_No": "22-7",
+  "Origin": "COLOMBO",
+  "Destination": "KALMUNAI",
+  "Route_distance": 552,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 180
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de37"
+  },
+  "Route_No": "22-8",
+  "Origin": "COLOMBO",
+  "Destination": "AMPARA",
+  "Route_distance": 334,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 166
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de38"
+  },
+  "Route_No": "22-9",
+  "Origin": "COLOMBO",
+  "Destination": "NINTHAVOOR",
+  "Route_distance": 360,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "නින්දවූර්",
+  "FareStages": 179
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de39"
+  },
+  "Route_No": "22-011",
+  "Origin": "KANDY",
+  "Destination": "BIBILA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "බිබිල",
+  "FareStages": 66
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de3a"
+  },
+  "Route_No": "22-012",
+  "Origin": "KANDY",
+  "Destination": "MAHAOYA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මහඔය",
+  "FareStages": 74
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de3b"
+  },
+  "Route_No": "22/75",
+  "Origin": "KANDY",
+  "Destination": "AMPARA",
+  "Route_distance": 324,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 109
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de3c"
+  },
+  "Route_No": "22/218",
+  "Origin": "KANDY",
+  "Destination": "PUSSELAWINNA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "පුස්සැලවින්න",
+  "FareStages": 75
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de3d"
+  },
+  "Route_No": "22/218/75",
+  "Origin": "AMPARA",
+  "Destination": "ANURADHAPURA",
+  "Origin_sin": "අම්පාර",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 167
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de3e"
+  },
+  "Route_No": "22/756/48",
+  "Origin": "KURUNEGALA",
+  "Destination": "AMPARA",
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 128
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de3f"
+  },
+  "Route_No": 23,
+  "Origin": "AVISSAWELLA",
+  "Destination": "KITHULGALA",
+  "Route_distance": 40.2,
+  "Origin_sin": "අවිස්සාවේල්ල",
+  "Destination_Sin": "කිතුල්ගල",
+  "FareStages": 20
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de40"
+  },
+  "Route_No": 25,
+  "Origin": "URUBOKKE",
+  "Destination": "WANDAMA",
+  "Origin_sin": "ඌරුබොක්ක",
+  "Destination_Sin": "වන්දම",
+  "FareStages": 81
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de41"
+  },
+  "Route_No": "25-1",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "WEHERAGALA",
+  "Route_distance": 252,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "වෙහෙරගල",
+  "FareStages": 126
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de42"
+  },
+  "Route_No": "25/76",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "TRINCOMALEE",
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 210
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de43"
+  },
+  "Route_No": "25/27/218",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "WELIKANDA",
+  "Route_distance": 286,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "වැලිකන්ද",
+  "FareStages": 143
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de44"
+  },
+  "Route_No": "25/363",
+  "Origin": "MULATIYANA",
+  "Destination": "MONARAGALA",
+  "Route_distance": 176,
+  "Origin_sin": "මුලටියන",
+  "Destination_Sin": "මොණරාගල",
+  "FareStages": 88
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de45"
+  },
+  "Route_No": 26,
+  "Origin": "COLOMBO",
+  "Destination": "HAKMANA",
+  "Route_distance": 184,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හක්මණ",
+  "FareStages": 91
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de46"
+  },
+  "Route_No": "26-1",
+  "Origin": "COLOMBO",
+  "Destination": "MIDDENIYA",
+  "Route_distance": 222,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මිද්දෙනිය",
+  "FareStages": 111
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de47"
+  },
+  "Route_No": "26-3",
+  "Origin": "COLOMBO",
+  "Destination": "DEYYANDARA",
+  "Route_distance": 196,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙයියන්දර",
+  "FareStages": 98
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de48"
+  },
+  "Route_No": "27/218/49",
+  "Origin": "HAMBANTHOTA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 425,
+  "Origin_sin": "හම්බන්තොට",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 211
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de49"
+  },
+  "Route_No": "27/218/58",
+  "Origin": "WELLAWAYA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 318,
+  "Origin_sin": "වැල්ලවාය",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 159
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de4a"
+  },
+  "Route_No": "27/218/75",
+  "Origin": "THANAMALWILA",
+  "Destination": "ANURADHAPURA",
+  "Origin_sin": "තණමල්විල",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 185
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de4b"
+  },
+  "Route_No": 31,
+  "Origin": "MATARA",
+  "Destination": "BANDARAWELA",
+  "Route_distance": 216,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "බණ්ඩාරවෙල",
+  "FareStages": 108
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de4c"
+  },
+  "Route_No": "31-1",
+  "Origin": "MATARA",
+  "Destination": "NUWARAELIYA",
+  "Route_distance": 251,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "නුවරඑළිය",
+  "FareStages": 137
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de4d"
+  },
+  "Route_No": "31-2",
+  "Origin": "MATARA",
+  "Destination": "BADULLA",
+  "Route_distance": 230,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "බදුල්ල",
+  "FareStages": 115
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de4e"
+  },
+  "Route_No": 32,
+  "Origin": "COLOMBO",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 291,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 146
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de4f"
+  },
+  "Route_No": "32-1",
+  "Origin": "COLOMBO",
+  "Destination": "HAMBANTHOTA",
+  "Route_distance": 241,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හම්බන්තොට",
+  "FareStages": 121
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de50"
+  },
+  "Route_No": "32-2",
+  "Origin": "COLOMBO",
+  "Destination": "LUNUGAMWEHERA",
+  "Route_distance": 282,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ලුණුගම්වෙහෙර",
+  "FareStages": 141
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de51"
+  },
+  "Route_No": "32-4",
+  "Origin": "COLOMBO",
+  "Destination": "TANGALLE",
+  "Route_distance": 201,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තංගල්ල",
+  "FareStages": 100
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de52"
+  },
+  "Route_No": "32-4/87",
+  "Origin": "TANGALLE",
+  "Destination": "JAFFNA",
+  "Route_distance": 604,
+  "Origin_sin": "තංගල්ල",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 302
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de53"
+  },
+  "Route_No": "32-5",
+  "Origin": "COLOMBO",
+  "Destination": "MIDDENIYA",
+  "Route_distance": 223,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මිද්දෙනිය",
+  "FareStages": 121
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de54"
+  },
+  "Route_No": "32-6",
+  "Origin": "ELPITIYA",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 220,
+  "Origin_sin": "ඇල්පිටිය",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 114
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de55"
+  },
+  "Route_No": "32-7",
+  "Origin": "GALLE",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 174,
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 89
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de56"
+  },
+  "Route_No": "32-7/1",
+  "Origin": "WALASMULLA",
+  "Destination": "KANDY",
+  "Route_distance": 313,
+  "Origin_sin": "වලස්මුල්ල",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 164
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de57"
+  },
+  "Route_No": "32/49",
+  "Origin": "TANGALLE",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 462,
+  "Origin_sin": "තංගල්ල",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 231
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de58"
+  },
+  "Route_No": "32-87-3",
+  "Origin": "TANGALLE",
+  "Destination": "MULATHIVU",
+  "Route_distance": 556,
+  "Origin_sin": "තංගල්ල",
+  "Destination_Sin": "මුලතිව්",
+  "FareStages": 278
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de59"
+  },
+  "Route_No": "32/493",
+  "Origin": "COLOMBO",
+  "Destination": "ANGUNUKOLAPELESSA",
+  "Route_distance": 220,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අඟුණුකොලපෑලැස්ස",
+  "FareStages": 110
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de5a"
+  },
+  "Route_No": "32/574",
+  "Origin": "COLOMBO",
+  "Destination": "ANGUNUKOLAPELESSA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අඟුණුකොලපැලැස්ස",
+  "FareStages": 119
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de5b"
+  },
+  "Route_No": "34-3",
+  "Origin": "NEGOMBO",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 74.8,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 37
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de5c"
+  },
+  "Route_No": "34-4",
+  "Origin": "NEGOMBO",
+  "Destination": "GIRIULLA",
+  "Route_distance": 42.7,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "ගිරිඋල්ල",
+  "FareStages": 21
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de5d"
+  },
+  "Route_No": "35*",
+  "Origin": "GALLE",
+  "Destination": "AMPARA",
+  "Route_distance": 346,
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 171
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de5e"
+  },
+  "Route_No": "35-1",
+  "Origin": "MATARA",
+  "Destination": "AMPARA",
+  "Route_distance": 292,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 151
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de5f"
+  },
+  "Route_No": "35-3",
+  "Origin": "MATARA",
+  "Destination": "MONARAGALA",
+  "Route_distance": 193,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "මොණරාගල",
+  "FareStages": 102
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de60"
+  },
+  "Route_No": "35-7*",
+  "Origin": "AMBALANGODA",
+  "Destination": "AMPARA",
+  "Route_distance": 376,
+  "Origin_sin": "අම්බලන්ගොඩ",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 186
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de61"
+  },
+  "Route_No": "35/881-5",
+  "Origin": "MATARA",
+  "Destination": "KALMUNAI",
+  "Route_distance": 311,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 173
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de62"
+  },
+  "Route_No": "35/881-6",
+  "Origin": "GALLE",
+  "Destination": "KALMUNAI",
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 195
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de63"
+  },
+  "Route_No": "35/935",
+  "Origin": "GALLE",
+  "Destination": "BATTICALOA",
+  "Route_distance": 394,
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 199
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de64"
+  },
+  "Route_No": 38,
+  "Origin": "COLOMBO",
+  "Destination": "BIBILA",
+  "Route_distance": 254,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බිබිල",
+  "FareStages": 126
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de65"
+  },
+  "Route_No": "38-1",
+  "Origin": "COLOMBO",
+  "Destination": "MAHIYANGANAYA",
+  "Route_distance": 214,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මහියංගනය",
+  "FareStages": 106
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de66"
+  },
+  "Route_No": "38-3",
+  "Origin": "COLOMBO",
+  "Destination": "DEHIATTAKANDIYA",
+  "Route_distance": 256,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙහිඅත්තකණ්ඩිය",
+  "FareStages": 127
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de67"
+  },
+  "Route_No": "38-4",
+  "Origin": "COLOMBO",
+  "Destination": "AMPARA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 169
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de68"
+  },
+  "Route_No": "38-6",
+  "Origin": "COLOMBO",
+  "Destination": "MEEGAHAKIVULA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මීගහකිවුල",
+  "FareStages": 129
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de69"
+  },
+  "Route_No": "38/75",
+  "Origin": "COLOMBO",
+  "Destination": "AMPARA",
+  "Route_distance": 212,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 169
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de6a"
+  },
+  "Route_No": "41-1/962",
+  "Origin": "KANDY",
+  "Destination": "SOMAWATHIYA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "සෝමාවතිය",
+  "FareStages": 90
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de6b"
+  },
+  "Route_No": "41-2",
+  "Origin": "KANDY",
+  "Destination": "KADURUWELA",
+  "Route_distance": 145,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 71
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de6c"
+  },
+  "Route_No": "41-2/686",
+  "Origin": "KANDY",
+  "Destination": "BIMPOKUNA",
+  "Route_distance": 175,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "බිම්පොකුණ",
+  "FareStages": 88
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de6d"
+  },
+  "Route_No": "41-2/962",
+  "Origin": "KANDY",
+  "Destination": "SUNGAWILA",
+  "Route_distance": 170,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "සුංගාවිල",
+  "FareStages": 83
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de6e"
+  },
+  "Route_No": "41-2/962-1",
+  "Origin": "KANDY",
+  "Destination": "SUNGAWILA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "සුංගාවිල",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de6f"
+  },
+  "Route_No": "41-3",
+  "Origin": "KANDY",
+  "Destination": "BUDDHAYAYA",
+  "Route_distance": 140,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "බුද්ධයාය",
+  "FareStages": 71
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de70"
+  },
+  "Route_No": "41-10",
+  "Origin": "KANDY",
+  "Destination": "ONEGAMA",
+  "Route_distance": 155,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "ඕනෑගම",
+  "FareStages": 78
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de71"
+  },
+  "Route_No": "41-11",
+  "Origin": "KANDY",
+  "Destination": "ARUNAPURA",
+  "Route_distance": 190,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අරුණපුර",
+  "FareStages": 93
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de72"
+  },
+  "Route_No": "41-12/48",
+  "Origin": "GAMPOLA",
+  "Destination": "BATTICALOA",
+  "Route_distance": 245,
+  "Origin_sin": "ගම්පොල",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 128
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de73"
+  },
+  "Route_No": "41/48",
+  "Origin": "KANDY",
+  "Destination": "BATTICALOA",
+  "Route_distance": 233,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 117
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de74"
+  },
+  "Route_No": 42,
+  "Origin": "COLOMBO",
+  "Destination": "UDUGAMA",
+  "Route_distance": 134,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "උඩුගම",
+  "FareStages": 67
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de75"
+  },
+  "Route_No": "42-2",
+  "Origin": "KANDY",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 148,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 74
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de76"
+  },
+  "Route_No": "42-5",
+  "Origin": "KANDY",
+  "Destination": "NOCHCHIYAGAMA",
+  "Route_distance": 170,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "නොච්චියාගම",
+  "FareStages": 83
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de77"
+  },
+  "Route_No": "42-8",
+  "Origin": "COLOMBO",
+  "Destination": "MAPALAGAMA",
+  "Route_distance": 114,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාපලගම",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de78"
+  },
+  "Route_No": "42-9",
+  "Origin": "COLOMBO",
+  "Destination": "THAWALAMA",
+  "Route_distance": 122,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තවලම",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de79"
+  },
+  "Route_No": "42-14",
+  "Origin": "MATALE",
+  "Destination": "KEKIRAWA",
+  "Route_distance": 67.3,
+  "Origin_sin": "මාතලේ",
+  "Destination_Sin": "කැකිරාව",
+  "FareStages": 33
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de7a"
+  },
+  "Route_No": "42/369",
+  "Origin": "COLOMBO",
+  "Destination": "OPATHA",
+  "Route_distance": 146,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඕපාත",
+  "FareStages": 73
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de7b"
+  },
+  "Route_No": "42/384-2",
+  "Origin": "COLOMBO",
+  "Destination": "BELIATTAKUMBURA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බෙලිඅත්තකුඹුර",
+  "FareStages": 99
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de7c"
+  },
+  "Route_No": "42/410",
+  "Origin": "COLOMBO",
+  "Destination": "THAWALAMA",
+  "Route_distance": 130,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තවලම",
+  "FareStages": 65
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de7d"
+  },
+  "Route_No": "42/430",
+  "Origin": "COLOMBO",
+  "Destination": "MORAWAKA",
+  "Route_distance": 148,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මොරවක",
+  "FareStages": 74
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de7e"
+  },
+  "Route_No": "42/825",
+  "Origin": "KANDY",
+  "Destination": "KAHATAGASDIGILIYA",
+  "Route_distance": 162,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "කහටගස්දිගිලිය",
+  "FareStages": 79
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de7f"
+  },
+  "Route_No": "42/825/835",
+  "Origin": "KANDY",
+  "Destination": "GOMARANKADAWALA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "ගෝමරන්කඩවල",
+  "FareStages": 100
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de80"
+  },
+  "Route_No": 43,
+  "Origin": "KANDY",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 141,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 70
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de81"
+  },
+  "Route_No": "43-1",
+  "Origin": "KANDY",
+  "Destination": "MANNAR",
+  "Route_distance": 242,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මන්නාරම",
+  "FareStages": 119
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de82"
+  },
+  "Route_No": "43/87",
+  "Origin": "KANDY",
+  "Destination": "JAFFNA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 165
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de83"
+  },
+  "Route_No": "43/857",
+  "Origin": "KANDY",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 182,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 89
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de84"
+  },
+  "Route_No": 45,
+  "Origin": "KANDY",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 181,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 90
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de85"
+  },
+  "Route_No": "45/950",
+  "Origin": "KANDY",
+  "Destination": "MUTTUR",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මුතූර්",
+  "FareStages": 104
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de86"
+  },
+  "Route_No": 46,
+  "Origin": "KEGALLE",
+  "Destination": "KADURUWELA",
+  "Route_distance": 164,
+  "Origin_sin": "කෑගල්ල",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 82
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de87"
+  },
+  "Route_No": "47-3",
+  "Origin": "KANDY",
+  "Destination": "WELIMADA",
+  "Route_distance": 104,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "වැලිමඩ",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de88"
+  },
+  "Route_No": "47-1/43/87",
+  "Origin": "DIYATHALAWA",
+  "Destination": "JAFFNA",
+  "Route_distance": 486,
+  "Origin_sin": "දියතලාව",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 243
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de89"
+  },
+  "Route_No": "47-3/328",
+  "Origin": "KANDY",
+  "Destination": "LUNUWATTA",
+  "Route_distance": 115,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "ලූණුවත්ත",
+  "FareStages": 66
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de8a"
+  },
+  "Route_No": 48,
+  "Origin": "COLOMBO",
+  "Destination": "KALMUNAI",
+  "Route_distance": 356,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 178
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de8b"
+  },
+  "Route_No": "48-1",
+  "Origin": "COLOMBO",
+  "Destination": "BATTICALOA",
+  "Route_distance": 314,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 158
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de8c"
+  },
+  "Route_No": "48-2",
+  "Origin": "COLOMBO",
+  "Destination": "DIYASENPURA",
+  "Route_distance": 234,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දියසෙන්පුර",
+  "FareStages": 117
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de8d"
+  },
+  "Route_No": "48-3",
+  "Origin": "COLOMBO",
+  "Destination": "KADURUWELA",
+  "Route_distance": 224,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 112
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de8e"
+  },
+  "Route_No": "48-4",
+  "Origin": "COLOMBO",
+  "Destination": "MEDIRIGIRIYA",
+  "Route_distance": 228,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මැදිරිගිරිය",
+  "FareStages": 114
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de8f"
+  },
+  "Route_No": "48-5",
+  "Origin": "COLOMBO",
+  "Destination": "ODDAMAWADI",
+  "Route_distance": 282,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඔඩ්ඩමාවඩි",
+  "FareStages": 141
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de90"
+  },
+  "Route_No": "48-8",
+  "Origin": "KURUNEGALA",
+  "Destination": "KADURUWELA",
+  "Route_distance": 130,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 65
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de91"
+  },
+  "Route_No": "48-9",
+  "Origin": "KURUNEGALA",
+  "Destination": "HINGURAKGODA",
+  "Route_distance": 203,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "හිඟුරක්ගොඩ",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de92"
+  },
+  "Route_No": "48-10",
+  "Origin": "KADURUWELA",
+  "Destination": "BATTICALOA",
+  "Origin_sin": "කදුරුවෙල",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 46
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de93"
+  },
+  "Route_No": "48-12",
+  "Origin": "COLOMBO",
+  "Destination": "AKKARAIPATTU ",
+  "Route_distance": 378,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අක්කරෙයිපත්තු",
+  "FareStages": 189
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de94"
+  },
+  "Route_No": "48-12/962",
+  "Origin": "AKKARAIPATTU",
+  "Destination": "SUNGAWILA",
+  "Route_distance": 184,
+  "Origin_sin": "අක්කරෙයිපත්තු",
+  "Destination_Sin": "සුංගාවිල",
+  "FareStages": 92
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de95"
+  },
+  "Route_No": "48-13",
+  "Origin": "COLOMBO",
+  "Destination": "THIRUKKOVIL",
+  "Route_distance": 392,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තිරුක්කෝවිල්",
+  "FareStages": 196
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de96"
+  },
+  "Route_No": "48-14",
+  "Origin": "COLOMBO",
+  "Destination": "KATHTHANKUDI",
+  "Route_distance": 324,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කාත්තන්කුඩි",
+  "FareStages": 162
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de97"
+  },
+  "Route_No": "48-15",
+  "Origin": "COLOMBO",
+  "Destination": "SUNGAWILA",
+  "Route_distance": 230,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "සුංගාවිල",
+  "FareStages": 124
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de98"
+  },
+  "Route_No": "48-16",
+  "Origin": "COLOMBO",
+  "Destination": "MADURUOYA",
+  "Route_distance": 276,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාදුරුඔය",
+  "FareStages": 138
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de99"
+  },
+  "Route_No": "48-17",
+  "Origin": "COLOMBO",
+  "Destination": "WELIKANDA",
+  "Route_distance": 248,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වැලිකන්ද",
+  "FareStages": 124
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de9a"
+  },
+  "Route_No": "48-19",
+  "Origin": "KADURUWELA",
+  "Destination": "KATHTHANKUDI",
+  "Route_distance": 101,
+  "Origin_sin": "කදුරුවෙල",
+  "Destination_Sin": "කාත්තන්කුඩි",
+  "FareStages": 50
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de9b"
+  },
+  "Route_No": "48-20",
+  "Origin": "COLOMBO",
+  "Destination": "AMBAGASWEWA",
+  "Route_distance": 250,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අඹගස්වැව",
+  "FareStages": 125
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de9c"
+  },
+  "Route_No": "48-23",
+  "Origin": "COLOMBO",
+  "Destination": "MEEGASWEWA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මීගස්වැව",
+  "FareStages": 123
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de9d"
+  },
+  "Route_No": "48-27",
+  "Origin": "KURUNEGALA",
+  "Destination": "WELIKANDA",
+  "Route_distance": 154,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "වැලිකන්ද",
+  "FareStages": 77
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de9e"
+  },
+  "Route_No": "48-27/218",
+  "Origin": "MAHIYANGANAYA",
+  "Destination": "KURULUBEDDA",
+  "Route_distance": 310,
+  "Origin_sin": "මහියංගනය",
+  "Destination_Sin": "කුරුළුබැද්ද",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17de9f"
+  },
+  "Route_No": "48-29",
+  "Origin": "KADURUWELA",
+  "Destination": "KALMUNAI",
+  "Origin_sin": "කදුරුවෙල",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 66
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea0"
+  },
+  "Route_No": "48-31",
+  "Origin": "COLOMBO",
+  "Destination": "KOKADICHOLE",
+  "Route_distance": 340,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කොක්අඩිචෝලේ",
+  "FareStages": 170
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea1"
+  },
+  "Route_No": "48-33",
+  "Origin": "COLOMBO",
+  "Destination": "KALAHAGALA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කලහගල",
+  "FareStages": 123
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea2"
+  },
+  "Route_No": "48/217/29",
+  "Origin": "KURUNEGALA",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 368,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 184
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea3"
+  },
+  "Route_No": "48/218",
+  "Origin": "COLOMBO",
+  "Destination": "DEHIATTAKANDIYA",
+  "Route_distance": 374,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙහිඅත්තකණ්ඩිය",
+  "FareStages": 137
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea4"
+  },
+  "Route_No": "48/218-1",
+  "Origin": "COLOMBO",
+  "Destination": "SIRIPURA",
+  "Route_distance": 266,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "සිරිපුර",
+  "FareStages": 133
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea5"
+  },
+  "Route_No": "48/218-2",
+  "Origin": "COLOMBO",
+  "Destination": "GIRANDURUKOTTE",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගිරාඳුරුකෝට්ටේ",
+  "FareStages": 149
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea6"
+  },
+  "Route_No": "48/962",
+  "Origin": "KALMUNAI",
+  "Destination": "SUNGAWILA",
+  "Route_distance": 162,
+  "Origin_sin": "කල්මුනේ",
+  "Destination_Sin": "සුංගාවිල",
+  "FareStages": 81
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea7"
+  },
+  "Route_No": 49,
+  "Origin": "COLOMBO",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 258,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 131
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea8"
+  },
+  "Route_No": "49-1",
+  "Origin": "KURUNEGALA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 165,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 84
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dea9"
+  },
+  "Route_No": "49-2",
+  "Origin_sin": "දෙහිවල",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 136
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deaa"
+  },
+  "Route_No": "49/866",
+  "Origin": "COLOMBO",
+  "Destination": "KINNIYA",
+  "Route_distance": 258,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කින්නිය",
+  "FareStages": 129
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deab"
+  },
+  "Route_No": "49/867",
+  "Origin": "COLOMBO",
+  "Destination": "PULMUDAI",
+  "Route_distance": 532,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පුල්මුඩේ",
+  "FareStages": 161
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deac"
+  },
+  "Route_No": "49/900",
+  "Origin": "COLOMBO",
+  "Destination": "KUCHCHAWELI",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කුච්චවේලි",
+  "FareStages": 149
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dead"
+  },
+  "Route_No": "49/950",
+  "Origin": "COLOMBO",
+  "Destination": "MUTTUR",
+  "Route_distance": 292,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මුත්තූර්",
+  "FareStages": 145
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deae"
+  },
+  "Route_No": "49/950-2",
+  "Origin": "COLOMBO",
+  "Destination": "SERUWILA",
+  "Route_distance": 270,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "සේරුවිල",
+  "FareStages": 135
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deaf"
+  },
+  "Route_No": "52-3",
+  "Origin": "KANDY",
+  "Destination": "HINGURAKGODA",
+  "Route_distance": 130,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "හිඟුරක්ගොඩ",
+  "FareStages": 63
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb0"
+  },
+  "Route_No": "52-3/996-2",
+  "Origin": "KANDY",
+  "Destination": "SIYAMBALAGAS HANDIYA",
+  "Route_distance": 162,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "සියඹලාගස්හංදිය",
+  "FareStages": 79
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb1"
+  },
+  "Route_No": "52-6",
+  "Origin": "KANDY",
+  "Destination": "AMBAGASWEWA",
+  "Route_distance": 166,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අඹගස්වැව",
+  "FareStages": 84
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb2"
+  },
+  "Route_No": "52-8",
+  "Origin": "KANDY",
+  "Destination": "DIYASENPURA",
+  "Route_distance": 150,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "දියසෙන්පුර",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb3"
+  },
+  "Route_No": 57,
+  "Origin": "COLOMBO",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 211,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 104
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb4"
+  },
+  "Route_No": "57-1",
+  "Origin": "COLOMBO",
+  "Destination": "GALGAMUWA",
+  "Route_distance": 178,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගල්ගමුව",
+  "FareStages": 81
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb5"
+  },
+  "Route_No": "57-2",
+  "Origin": "KURUNEGALA",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 166,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 83
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb6"
+  },
+  "Route_No": "57/3",
+  "Origin": "COLOMBO",
+  "Destination": "VAVUNIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 130
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb7"
+  },
+  "Route_No": "57-5",
+  "Origin": "KURUNEGALA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 118,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb8"
+  },
+  "Route_No": "57-9",
+  "Origin": "KEGALLE",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 148,
+  "Origin_sin": "කෑගල්ල",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 74
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deb9"
+  },
+  "Route_No": "57-10",
+  "Origin": "KURUNEGALA",
+  "Destination": "MEDAWACHCHIYA",
+  "Route_distance": 142,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "මැදවච්චිය",
+  "FareStages": 71
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deba"
+  },
+  "Route_No": "57-18",
+  "Origin": "COLOMBO",
+  "Destination": "VILACHCHIYA",
+  "Route_distance": 246,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "විලච්චිය",
+  "FareStages": 123
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17debb"
+  },
+  "Route_No": "57/87",
+  "Origin": "COLOMBO",
+  "Destination": "JAFFNA",
+  "Route_distance": 412,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 206
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17debc"
+  },
+  "Route_No": "57/221/420",
+  "Origin": "KALUTARA",
+  "Destination": "ANURADHAPURA",
+  "Origin_sin": "කළුතර",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 125
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17debd"
+  },
+  "Route_No": "57/904",
+  "Origin": "KURUNEGALA",
+  "Destination": "DEMATAWEWA",
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "දෙමටවැව",
+  "FareStages": 89
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17debe"
+  },
+  "Route_No": "57/928",
+  "Origin": "DEMATAWEWA",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 120,
+  "Origin_sin": "දෙමටවැව",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 93
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17debf"
+  },
+  "Route_No": "57/978",
+  "Origin": "COLOMBO",
+  "Destination": "RAJANGANAYA (KALA OYA)",
+  "Route_distance": 208,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කලාඔය",
+  "FareStages": 104
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec0"
+  },
+  "Route_No": 60,
+  "Origin": "COLOMBO",
+  "Destination": "DENIYAYA",
+  "Route_distance": 200,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙනියාය",
+  "FareStages": 101
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec1"
+  },
+  "Route_No": "60-1",
+  "Origin": "COLOMBO",
+  "Destination": "AKURESSA",
+  "Route_distance": 154,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අකුරැස්ස",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec2"
+  },
+  "Route_No": "60-3",
+  "Origin": "COLOMBO",
+  "Destination": "DEYYANDARA",
+  "Route_distance": 176,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙයියන්දර",
+  "FareStages": 88
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec3"
+  },
+  "Route_No": "60-4",
+  "Origin": "COLOMBO",
+  "Destination": "URUBOKKE",
+  "Route_distance": 214,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඌරුබොක්ක",
+  "FareStages": 107
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec4"
+  },
+  "Route_No": "60-6",
+  "Origin": "COLOMBO",
+  "Destination": "PALLEGAMA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පල්ලෙගම",
+  "FareStages": 104
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec5"
+  },
+  "Route_No": "60/32",
+  "Origin": "DENIYAYA",
+  "Destination": "KATARAGAMA",
+  "Origin_sin": "දෙනියාය",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 99
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec6"
+  },
+  "Route_No": "60/369",
+  "Origin": "COLOMBO",
+  "Destination": "DEERANGALA",
+  "Route_distance": 340,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෑරංගල",
+  "FareStages": 86
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec7"
+  },
+  "Route_No": "64/98",
+  "Origin": "PANADURA",
+  "Destination": "AMPARA",
+  "Route_distance": 340,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 170
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec8"
+  },
+  "Route_No": 67,
+  "Origin": "COLOMBO",
+  "Destination": "RAKWANA",
+  "Route_distance": 134,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "රක්වාන",
+  "FareStages": 71
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dec9"
+  },
+  "Route_No": "67-1",
+  "Origin": "COLOMBO",
+  "Destination": "KOLONNA",
+  "Route_distance": 178,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කොලොන්න",
+  "FareStages": 89
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deca"
+  },
+  "Route_No": "68/218",
+  "Origin": "KATARAGAMA",
+  "Destination": "JAFFNA",
+  "Origin_sin": "කතරගම",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 270
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17decb"
+  },
+  "Route_No": "68/580",
+  "Origin": "KATARAGAMA",
+  "Destination": "JAFFNA",
+  "Route_distance": 509,
+  "Origin_sin": "කතරගම",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 255
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17decc"
+  },
+  "Route_No": 69,
+  "Origin": "KANDY",
+  "Destination": "RATHNAPURA",
+  "Route_distance": 130,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "රත්නපුර",
+  "FareStages": 68
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17decd"
+  },
+  "Route_No": "69-1",
+  "Origin": "KANDY",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 206,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 108
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dece"
+  },
+  "Route_No": "69-4",
+  "Origin": "KANDY",
+  "Destination": "AVISSAWELLA",
+  "Route_distance": 86.5,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "අවිස්සාවේල්ල",
+  "FareStages": 46
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17decf"
+  },
+  "Route_No": "69/15-7",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 372,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 186
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded0"
+  },
+  "Route_No": "69/15-7/87",
+  "Origin": "WALASMULLA",
+  "Destination": "JAFFNA",
+  "Route_distance": 568,
+  "Origin_sin": "වලස්මුල්ල",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 284
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded1"
+  },
+  "Route_No": "69/15-8",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 342,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 171
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded2"
+  },
+  "Route_No": "69/15/87",
+  "Origin": "HAMBANTHOTA",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 420,
+  "Origin_sin": "හම්බන්තොට",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 210
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded3"
+  },
+  "Route_No": "69/15/87-1",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "JAFFNA",
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 262
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded4"
+  },
+  "Route_No": "75-1",
+  "Origin": "BADULLA",
+  "Destination": "AMPARA",
+  "Route_distance": 154,
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 77
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded5"
+  },
+  "Route_No": "76/218/314",
+  "Origin": "BADULLA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 263,
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 150
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded6"
+  },
+  "Route_No": "76/218/314-1",
+  "Origin": "DIYATHALAWA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 263,
+  "Origin_sin": "දියතලාව",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 171
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded7"
+  },
+  "Route_No": 78,
+  "Origin": "COLOMBO",
+  "Destination": "NAWALAPITIYA",
+  "Route_distance": 112,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "නාවලපිටිය",
+  "FareStages": 58
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded8"
+  },
+  "Route_No": 79,
+  "Origin": "COLOMBO",
+  "Destination": "NUWARAELIYA",
+  "Route_distance": 180,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "නුවරඑළිය",
+  "FareStages": 98
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17ded9"
+  },
+  "Route_No": "79-1",
+  "Origin": "COLOMBO",
+  "Destination": "WELIMADA",
+  "Route_distance": 199,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වැලිමඩ",
+  "FareStages": 114
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deda"
+  },
+  "Route_No": "79/743-1",
+  "Origin": "COLOMBO",
+  "Destination": "UDUPUSSELLAWA",
+  "Route_distance": 240,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "උඩුපුසුසැල්ලාව",
+  "FareStages": 120
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dedb"
+  },
+  "Route_No": "81/48",
+  "Origin": "PUTTLAM ",
+  "Destination": "BATTICALOA",
+  "Route_distance": 312,
+  "Origin_sin": "පුත්තලම",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 156
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dedc"
+  },
+  "Route_No": 82,
+  "Origin": "COLOMBO",
+  "Destination": "MULATHIVU",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මුලතිව්",
+  "FareStages": 176
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dedd"
+  },
+  "Route_No": "82/580/22",
+  "Origin": "MULATHIVU",
+  "Destination": "AMPARA",
+  "Route_distance": 352,
+  "Origin_sin": "මුලතිව්",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 216
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dede"
+  },
+  "Route_No": 83,
+  "Origin": "VAUNIYA",
+  "Destination": "MANNAR",
+  "Route_distance": 78.6,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "මන්නාරම",
+  "FareStages": 40
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dedf"
+  },
+  "Route_No": "84/580/314",
+  "Origin": "MANNAR",
+  "Destination": "DIYATHALAWA",
+  "Route_distance": 339,
+  "Origin_sin": "මන්නාරම",
+  "Destination_Sin": "දියතලාව",
+  "FareStages": 195
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee0"
+  },
+  "Route_No": 86,
+  "Origin": "BATTICALOA",
+  "Destination": "JAFFNA",
+  "Route_distance": 414,
+  "Origin_sin": "මඩකලපුව",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 197
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee1"
+  },
+  "Route_No": "86-1",
+  "Origin": "VAUNIYA",
+  "Destination": "BATTICALOA",
+  "Route_distance": 242,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 121
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee2"
+  },
+  "Route_No": "86-2",
+  "Origin": "VAUNIYA",
+  "Destination": "AKKARAIPATTU ",
+  "Route_distance": 302,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "අක්කරෙයිපත්තු",
+  "FareStages": 152
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee3"
+  },
+  "Route_No": "86-6",
+  "Origin": "VAUNIYA",
+  "Destination": "KALMUNAI",
+  "Route_distance": 282,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 141
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee4"
+  },
+  "Route_No": "86-7",
+  "Origin": "THIRUKKOWIL",
+  "Destination": "JAFFNA",
+  "Route_distance": 443,
+  "Origin_sin": "තිරුක්කොවිල්",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 235
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee5"
+  },
+  "Route_No": "86-8",
+  "Origin": "KALMUNAI",
+  "Destination": "KILINOCHCHI",
+  "Route_distance": 369,
+  "Origin_sin": "කල්මුනේ",
+  "Destination_Sin": "කිලිනොච්චි",
+  "FareStages": 181
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee6"
+  },
+  "Route_No": "86-9",
+  "Origin": "VAUNIYA",
+  "Destination": "THIRUKKOVIL",
+  "Route_distance": 304,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "තිරුක්කොවිල්",
+  "FareStages": 159
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee7"
+  },
+  "Route_No": "86/218/22",
+  "Origin": "VAUNIYA",
+  "Destination": "AMPARA",
+  "Route_distance": 362,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 181
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee8"
+  },
+  "Route_No": 87,
+  "Origin": "COLOMBO",
+  "Destination": "JAFFNA",
+  "Route_distance": 415,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 202
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dee9"
+  },
+  "Route_No": "87-2",
+  "Origin": "COLOMBO",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 270,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 126
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deea"
+  },
+  "Route_No": "87-3",
+  "Origin": "VAUNIYA",
+  "Destination": "JAFFNA",
+  "Route_distance": 152,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deeb"
+  },
+  "Route_No": "87-5/759",
+  "Origin": "PANADURA",
+  "Destination": "POINT PEDRO",
+  "Route_distance": 450,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "පේදුරුතුඩුව",
+  "FareStages": 211
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deec"
+  },
+  "Route_No": "87-5/782",
+  "Origin": "PANADURA",
+  "Destination": "KARAINAGAR",
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "කරෙයිනගර්",
+  "FareStages": 229
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deed"
+  },
+  "Route_No": "87-6",
+  "Origin": "MADU",
+  "Destination": "JAFFNA",
+  "Route_distance": 202,
+  "Origin_sin": "මඩු",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 98
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deee"
+  },
+  "Route_No": "87-6-1",
+  "Origin": "COLOMBO",
+  "Destination": "KILINOCHCHI",
+  "Route_distance": 332,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කිලිනොච්චි",
+  "FareStages": 166
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deef"
+  },
+  "Route_No": "87/759",
+  "Origin": "COLOMBO",
+  "Destination": "POINT PEDRO",
+  "Route_distance": 388,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පේදුරුතුඩුව",
+  "FareStages": 199
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def0"
+  },
+  "Route_No": "87/769",
+  "Origin": "COLOMBO",
+  "Destination": "KANKASANTHURAI",
+  "Route_distance": 415,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කන්කසන්තුරේ",
+  "FareStages": 209
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def1"
+  },
+  "Route_No": "87/782",
+  "Origin": "COLOMBO",
+  "Destination": "KARAINAGAR",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කරෙයිනගර්",
+  "FareStages": 217
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def2"
+  },
+  "Route_No": "87/816",
+  "Origin": "COLOMBO",
+  "Destination": "THUNUKKAI",
+  "Route_distance": 320,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තුනුක්කායි",
+  "FareStages": 160
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def3"
+  },
+  "Route_No": "87/816-5",
+  "Origin": "COLOMBO",
+  "Destination": "NATTANKANDAL",
+  "Route_distance": 332,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "නට්ටාන්කණ්ඩල්",
+  "FareStages": 166
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def4"
+  },
+  "Route_No": "87/903-1",
+  "Origin": "COLOMBO",
+  "Destination": "BOGASWEWA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බෝගස්වැව",
+  "FareStages": 144
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def5"
+  },
+  "Route_No": 88,
+  "Origin": "TRINCOMALEE",
+  "Destination": "JAFFNA",
+  "Route_distance": 245,
+  "Origin_sin": "ත්‍රිකුණාමලය",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 127
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def6"
+  },
+  "Route_No": "88-2",
+  "Origin": "VAUNIYA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 102,
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 51
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def7"
+  },
+  "Route_No": "88-6",
+  "Origin": "MANNAR",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 182,
+  "Origin_sin": "මන්නාරම",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 91
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def8"
+  },
+  "Route_No": "89 -  1",
+  "Origin": "AKKARAIPATTU",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 318,
+  "Origin_sin": "අක්කරෙයිපත්තු",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 152
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17def9"
+  },
+  "Route_No": "92-4",
+  "Origin": "COLOMBO",
+  "Destination": "KULIYAPITIYA",
+  "Route_distance": 86.1,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කුලියාපිටිය",
+  "FareStages": 42
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17defa"
+  },
+  "Route_No": "92-5",
+  "Origin": "NEGOMBO",
+  "Destination": "KULIYAPITIYA",
+  "Route_distance": 51.1,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "කුලියාපිටිය",
+  "FareStages": 25
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17defb"
+  },
+  "Route_No": "92/929",
+  "Origin": "COLOMBO",
+  "Destination": "KULIYAPITIYA",
+  "Route_distance": 88.5,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කුලියාපිටිය",
+  "FareStages": 44
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17defc"
+  },
+  "Route_No": "92/929-1",
+  "Origin": "COLOMBO",
+  "Destination": "PANDUWASNUWARA",
+  "Route_distance": 132,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පඬුවස්නුවර",
+  "FareStages": 53
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17defd"
+  },
+  "Route_No": 98,
+  "Origin": "COLOMBO",
+  "Destination": "AKKARAIPATTU ",
+  "Route_distance": 404,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අක්කරෙයිපත්තු",
+  "FareStages": 192
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17defe"
+  },
+  "Route_No": "98-1",
+  "Origin": "COLOMBO",
+  "Destination": "AMPARA",
+  "Route_distance": 376,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 184
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17deff"
+  },
+  "Route_No": "98-1EMB",
+  "Origin": "COLOMBO",
+  "Destination": "AMPARA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 188
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df00"
+  },
+  "Route_No": "98-2",
+  "Origin": "COLOMBO",
+  "Destination": "MONARAGALA",
+  "Route_distance": 243,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මොණරාගල",
+  "FareStages": 135
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df01"
+  },
+  "Route_No": "98-3",
+  "Origin": "COLOMBO",
+  "Destination": "KALMUNAI",
+  "Route_distance": 346,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 196
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df02"
+  },
+  "Route_No": "98-4",
+  "Origin": "COLOMBO",
+  "Destination": "POTHUWIL",
+  "Route_distance": 342,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පොතුවිල්",
+  "FareStages": 171
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df03"
+  },
+  "Route_No": "98-6",
+  "Origin": "COLOMBO",
+  "Destination": "BALANGODA",
+  "Route_distance": 132,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බලංගොඩ",
+  "FareStages": 68
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df04"
+  },
+  "Route_No": "98-8",
+  "Origin": "COLOMBO",
+  "Destination": "PANAMA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පානම",
+  "FareStages": 180
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df05"
+  },
+  "Route_No": "98-11",
+  "Origin": "COLOMBO",
+  "Destination": "BADALKUMBURA",
+  "Route_distance": 262,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බඩල්කුඹුර",
+  "FareStages": 131
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df06"
+  },
+  "Route_No": "98-17",
+  "Origin": "COLOMBO",
+  "Destination": "AKKARAIPATTU ",
+  "Route_distance": 368,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අක්කරෙයිපත්තු",
+  "FareStages": 197
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df07"
+  },
+  "Route_No": "98-19",
+  "Origin": "COLOMBO",
+  "Destination": "KALMUNAI",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කල්මුනේ",
+  "FareStages": 203
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df08"
+  },
+  "Route_No": "98/486-1",
+  "Origin": "COLOMBO",
+  "Destination": "WELIOYA",
+  "Route_distance": 174,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වේලිඔය",
+  "FareStages": 87
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df09"
+  },
+  "Route_No": "98/487",
+  "Origin": "COLOMBO",
+  "Destination": "WELIPATHAYAYA",
+  "Route_distance": 182,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වැලිපතයාය",
+  "FareStages": 91
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df0a"
+  },
+  "Route_No": 99,
+  "Origin": "COLOMBO",
+  "Destination": "BADULLA",
+  "Route_distance": 223,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බදුල්ල",
+  "FareStages": 130
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df0b"
+  },
+  "Route_No": "99-4",
+  "Origin": "COLOMBO",
+  "Destination": "BALANGODA",
+  "Route_distance": 152,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බලංගොඩ",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df0c"
+  },
+  "Route_No": "99-8",
+  "Origin": "COLOMBO",
+  "Destination": "PASSARA",
+  "Route_distance": 284,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "පස්සර",
+  "FareStages": 142
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df0d"
+  },
+  "Route_No": "99-9",
+  "Origin": "COLOMBO",
+  "Destination": "LUNUGALA",
+  "Route_distance": 310,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ලුණුගල",
+  "FareStages": 155
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df0e"
+  },
+  "Route_No": "99-10",
+  "Origin": "COLOMBO",
+  "Destination": "WELIMADA",
+  "Route_distance": 252,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වැලිමඩ",
+  "FareStages": 126
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df0f"
+  },
+  "Route_No": "99/314",
+  "Origin": "COLOMBO",
+  "Destination": "MEEGAHAKIVULA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මීගහකිවුල",
+  "FareStages": 145
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df10"
+  },
+  "Route_No": "99/318",
+  "Origin": "COLOMBO",
+  "Destination": "MADOLSIMA",
+  "Route_distance": 300,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මඩොල්සිම",
+  "FareStages": 150
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df11"
+  },
+  "Route_No": 122,
+  "Origin": "COLOMBO",
+  "Destination": "RATHNAPURA",
+  "Route_distance": 98.7,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "රත්නපුර",
+  "FareStages": 52
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df12"
+  },
+  "Route_No": "122-2",
+  "Origin": "COLOMBO",
+  "Destination": "RATHNAPURA",
+  "Route_distance": 98.8,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "රත්නපුර",
+  "FareStages": 52
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df13"
+  },
+  "Route_No": "122-5",
+  "Origin": "KOSGAMA",
+  "Destination": "RATHNAPURA",
+  "Route_distance": 53.8,
+  "Origin_sin": "කොස්ගම",
+  "Destination_Sin": "රත්නපුර",
+  "FareStages": 28
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df14"
+  },
+  "Route_No": "122/98-19",
+  "Origin": "COLOMBO",
+  "Destination": "OBBEGODA",
+  "Route_distance": 252,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඔබ්බෙගොඩ",
+  "FareStages": 146
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df15"
+  },
+  "Route_No": "122/98/199/02",
+  "Origin": "COLOMBO",
+  "Destination": "MEDAGAMA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මැදගම",
+  "FareStages": 156
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df16"
+  },
+  "Route_No": "122/98/236",
+  "Origin": "COLOMBO",
+  "Destination": "MALIGAWILA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාළිගාවිල",
+  "FareStages": 145
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df17"
+  },
+  "Route_No": "122/210",
+  "Origin": "COLOMBO",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 184,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 92
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df18"
+  },
+  "Route_No": "122/210-1",
+  "Origin": "COLOMBO",
+  "Destination": "SURIYAWEWA",
+  "Route_distance": 210,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "සූරියවැව",
+  "FareStages": 105
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df19"
+  },
+  "Route_No": "122/210-2",
+  "Origin": "COLOMBO",
+  "Destination": "MIDDENIYA",
+  "Route_distance": 198,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මිද්දෙනිය",
+  "FareStages": 103
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df1a"
+  },
+  "Route_No": "122/210-4",
+  "Origin": "COLOMBO",
+  "Destination": "ANGUNUKOLAPELESSA",
+  "Route_distance": 224,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අඟුණුකොලපෑලැස්ස",
+  "FareStages": 112
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df1b"
+  },
+  "Route_No": "122/210-5",
+  "Origin": "COLOMBO",
+  "Destination": "SEWANAGALA",
+  "Route_distance": 194,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "සෙවනගල",
+  "FareStages": 97
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df1c"
+  },
+  "Route_No": "122/210/168",
+  "Origin": "COLOMBO",
+  "Destination": "URUBOKKE",
+  "Route_distance": 255,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඌරුබොක්ක",
+  "FareStages": 110
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df1d"
+  },
+  "Route_No": "122/210/211",
+  "Origin": "COLOMBO",
+  "Destination": "HAMBANTHOTA",
+  "Route_distance": 222,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හම්බන්තොට",
+  "FareStages": 116
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df1e"
+  },
+  "Route_No": "122/467",
+  "Origin": "COLOMBO",
+  "Destination": "RAKWANA",
+  "Route_distance": 145,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "රක්වාන",
+  "FareStages": 79
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df1f"
+  },
+  "Route_No": "126/69",
+  "Origin": "PANADURA",
+  "Destination": "MATALE",
+  "Route_distance": 174,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "මාතලේ",
+  "FareStages": 98
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df20"
+  },
+  "Route_No": "168-2",
+  "Origin": "URUBOKKE",
+  "Destination": "KEELLA",
+  "Route_distance": 17.5,
+  "Origin_sin": "ඌරුබොක්ක",
+  "Destination_Sin": "කෑල්ල",
+  "FareStages": 11
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df21"
+  },
+  "Route_No": 211,
+  "Origin": "EMBILIPITIYA",
+  "Destination": "HAMBANTHOTA",
+  "Route_distance": 45.2,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "හම්බන්තොට",
+  "FareStages": 27
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df22"
+  },
+  "Route_No": "211/69/45",
+  "Origin": "HAMBANTHOTA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 433,
+  "Origin_sin": "හම්බන්තොට",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 228
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df23"
+  },
+  "Route_No": "217/022-004",
+  "Origin": "DEHIATTAKANDIYA",
+  "Destination": "AMPARA",
+  "Route_distance": 162,
+  "Origin_sin": "දෙහිඅත්තකණ්ඩිය",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 81
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df24"
+  },
+  "Route_No": "218-2",
+  "Origin": "MAHIYANGANAYA",
+  "Destination": "KADURUWELA",
+  "Route_distance": 92.3,
+  "Origin_sin": "මහියංගනය",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 46
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df25"
+  },
+  "Route_No": "218-4",
+  "Origin": "BADULLA",
+  "Destination": "WEHERAGALA",
+  "Route_distance": 138,
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "වෙහෙරගල",
+  "FareStages": 69
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df26"
+  },
+  "Route_No": "218-6",
+  "Origin": "BADULLA",
+  "Destination": "SIRIPURA",
+  "Route_distance": 126,
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "සිරිපුර",
+  "FareStages": 63
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df27"
+  },
+  "Route_No": "218-8",
+  "Origin": "MAHIYANGANAYA",
+  "Destination": "MINNERIYA",
+  "Origin_sin": "මහියංගනය",
+  "Destination_Sin": "මින්නේරිය",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df28"
+  },
+  "Route_No": "218/22",
+  "Origin": "ARALAGANVILA",
+  "Destination": "AMPARA",
+  "Route_distance": 188,
+  "Origin_sin": "අරලගංවිල",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 94
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df29"
+  },
+  "Route_No": "218/314",
+  "Origin": "BADULLA",
+  "Destination": "KADURUWELA",
+  "Route_distance": 168,
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 84
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df2a"
+  },
+  "Route_No": "218/685",
+  "Origin": "DEHIATTAKANDIYA",
+  "Destination": "HANGURANKETHA",
+  "Route_distance": 124,
+  "Origin_sin": "දෙහිඅත්තකණ්ඩිය",
+  "Destination_Sin": "හඟුරන්කෙත",
+  "FareStages": 62
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df2b"
+  },
+  "Route_No": "221-1",
+  "Origin": "MAHIYANGANAYA",
+  "Destination": "SIRIPURA",
+  "Route_distance": 50.2,
+  "Origin_sin": "මහියංගනය",
+  "Destination_Sin": "සිරිපුර",
+  "FareStages": 25
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df2c"
+  },
+  "Route_No": 226,
+  "Origin": "BALANGODA",
+  "Destination": "BANDARAWELA",
+  "Route_distance": 58.6,
+  "Origin_sin": "බලංගොඩ",
+  "Destination_Sin": "බණ්ඩාරවෙල",
+  "FareStages": 37
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df2d"
+  },
+  "Route_No": "234/580/87",
+  "Origin": "MONARAGALA",
+  "Destination": "JAFFNA",
+  "Origin_sin": "මොණරාගල",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 246
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df2e"
+  },
+  "Route_No": "234/580/84",
+  "Origin": "MONARAGALA",
+  "Destination": "MANNAR",
+  "Origin_sin": "මොණරාගල",
+  "Destination_Sin": "මන්නාරම",
+  "FareStages": 192
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df2f"
+  },
+  "Route_No": "245-1/182/18-2",
+  "Origin": "NEGOMBO",
+  "Destination": "HATTON",
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "හැටන්",
+  "FareStages": 85
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df30"
+  },
+  "Route_No": "270/17/2",
+  "Origin": "NEGOMBO",
+  "Destination": "MATARA",
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "මාතර",
+  "FareStages": 112
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df31"
+  },
+  "Route_No": "270/228/3",
+  "Origin": "NEGOMBO",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 310,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 155
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df32"
+  },
+  "Route_No": "285/1",
+  "Origin": "MATHUGAMA",
+  "Destination": "KANDY",
+  "Origin_sin": "මතුගම",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 91
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df33"
+  },
+  "Route_No": "285/6/15-12",
+  "Origin": "MATHUGAMA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 284,
+  "Origin_sin": "මතුගම",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 142
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df34"
+  },
+  "Route_No": "301/218",
+  "Origin": "BIBILA",
+  "Destination": "KADURUWELA",
+  "Route_distance": 132,
+  "Origin_sin": "බිබිල",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 66
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df35"
+  },
+  "Route_No": "303-1",
+  "Origin": "MONARAGALA",
+  "Destination": "PANAMA",
+  "Route_distance": 91.2,
+  "Origin_sin": "මොණරාගල",
+  "Destination_Sin": "පානම",
+  "FareStages": 45
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df36"
+  },
+  "Route_No": "311-2",
+  "Origin": "NUWARAELIYA",
+  "Destination": "WELIMADA",
+  "Route_distance": 27.1,
+  "Origin_sin": "නුවරඑළිය",
+  "Destination_Sin": "වැලිමඩ",
+  "FareStages": 16
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df37"
+  },
+  "Route_No": "311/488/98",
+  "Origin": "NUWARAELIYA",
+  "Destination": "AMPARA",
+  "Route_distance": 184,
+  "Origin_sin": "නුවරඑළිය",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 123
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df38"
+  },
+  "Route_No": "312/218",
+  "Origin": "GALAUDA",
+  "Destination": "SURIYAPOKUNA",
+  "Origin_sin": "ගලඋඩ",
+  "Destination_Sin": "සූරියපොකුණ",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df39"
+  },
+  "Route_No": "314/580/15-7",
+  "Origin": "BANDARAWELA",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 322,
+  "Origin_sin": "බණ්ඩාරවෙල",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 161
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df3a"
+  },
+  "Route_No": "314/580/42",
+  "Origin": "BADULLA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": 440,
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "අනුරාධපුරය",
+  "FareStages": 129
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df3b"
+  },
+  "Route_No": "314/580/87",
+  "Origin": "BADULLA",
+  "Destination": "JAFFNA",
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 220
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df3c"
+  },
+  "Route_No": "315/1",
+  "Origin": "HORANA",
+  "Destination": "KANDY",
+  "Route_distance": 140,
+  "Origin_sin": "හොරණ",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 69
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df3d"
+  },
+  "Route_No": "315/1/30",
+  "Origin": "HORANA",
+  "Destination": "WAKARAI",
+  "Route_distance": 375,
+  "Origin_sin": "හොරණ",
+  "Destination_Sin": "වාකරේ",
+  "FareStages": 185
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df3e"
+  },
+  "Route_No": 333,
+  "Origin": "MATARA",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 138,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 69
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df3f"
+  },
+  "Route_No": "335-1",
+  "Origin": "THISSA",
+  "Destination": "THANAMALWILA",
+  "Route_distance": 30.1,
+  "Origin_sin": "තිස්ස",
+  "Destination_Sin": "තණමල්විල",
+  "FareStages": 15
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df40"
+  },
+  "Route_No": "339-4",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "MIDDENIYA",
+  "Route_distance": 20.9,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "මිද්දෙනිය",
+  "FareStages": 14
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df41"
+  },
+  "Route_No": 345,
+  "Origin": "THIHAGODA",
+  "Destination": "KATARAGAMA",
+  "Route_distance": 117,
+  "Origin_sin": "තිහගොඩ",
+  "Destination_Sin": "කතරගම",
+  "FareStages": 65
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df42"
+  },
+  "Route_No": 348,
+  "Origin": "NITTAMBUWA",
+  "Destination": "RUWANWELLA",
+  "Route_distance": 30.2,
+  "Origin_sin": "නිට්ටඹුව",
+  "Destination_Sin": "රුවන්වැල්ල",
+  "FareStages": 16
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df43"
+  },
+  "Route_No": "363-2",
+  "Origin": "PEELLA",
+  "Destination": "SURIYAWEWA",
+  "Route_distance": 92.3,
+  "Origin_sin": "පීල්ල",
+  "Destination_Sin": "සූරියවැව",
+  "FareStages": 46
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df44"
+  },
+  "Route_No": "363-2-1",
+  "Origin": "HAKMANA",
+  "Destination": "SURIYAWEWA",
+  "Route_distance": 80,
+  "Origin_sin": "හක්මණ",
+  "Destination_Sin": "සූරියවැව",
+  "FareStages": 40
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df45"
+  },
+  "Route_No": "363-5",
+  "Origin": "KAMBURUPITIYA",
+  "Destination": "VIHARAGALA",
+  "Route_distance": 157,
+  "Origin_sin": "කඹුරුපිටිය",
+  "Destination_Sin": "විහාරගල",
+  "FareStages": 50
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df46"
+  },
+  "Route_No": "363-6",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "MIDDENIYA",
+  "Route_distance": 18.1,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "මිද්දෙනිය",
+  "FareStages": 15
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df47"
+  },
+  "Route_No": "363-11",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "WALASMULLA",
+  "Route_distance": 44.5,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "වලස්මුල්ල",
+  "FareStages": 22
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df48"
+  },
+  "Route_No": "363-12",
+  "Origin": "MATARA",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 87,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 46
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df49"
+  },
+  "Route_No": "363-13",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "KARAPITIYA",
+  "Route_distance": 122,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "කරාපිටිය",
+  "FareStages": 66
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df4a"
+  },
+  "Route_No": "363-18",
+  "Origin": "WALASMULLA",
+  "Destination": "WELIARA",
+  "Origin_sin": "වලස්මුල්ල",
+  "Destination_Sin": "වැලිආර",
+  "FareStages": 35
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df4b"
+  },
+  "Route_No": "363/98",
+  "Origin": "URUBOKKE",
+  "Destination": "WANDAMA",
+  "Origin_sin": "ඌරුබොක්ක",
+  "Destination_Sin": "වන්දම",
+  "FareStages": 81
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df4c"
+  },
+  "Route_No": "366-2",
+  "Origin": "COLOMBO",
+  "Destination": "RADAWELA",
+  "Route_distance": 186,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "රදාවෙල",
+  "FareStages": 93
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df4d"
+  },
+  "Route_No": "377-2",
+  "Origin": "COLOMBO",
+  "Destination": "UDUGAMA",
+  "Route_distance": 156,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "උඩුගම",
+  "FareStages": 76
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df4e"
+  },
+  "Route_No": 393,
+  "Origin": "COLOMBO",
+  "Destination": "YAKKALAMULLA",
+  "Route_distance": 134,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "යක්කලමුල්ල",
+  "FareStages": 67
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df4f"
+  },
+  "Route_No": "393-2",
+  "Origin": "COLOMBO",
+  "Destination": "BADDEGAMA",
+  "Route_distance": 110,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බද්දේගම",
+  "FareStages": 55
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df50"
+  },
+  "Route_No": 399,
+  "Origin": "MATHUGAMA",
+  "Destination": "PITIGALA",
+  "Route_distance": 36.8,
+  "Origin_sin": "මතුගම",
+  "Destination_Sin": "පිටිගල",
+  "FareStages": 18
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df51"
+  },
+  "Route_No": 401,
+  "Origin": "COLOMBO",
+  "Destination": "ELPITIYA",
+  "Route_distance": 103,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඇල්පිටිය",
+  "FareStages": 45
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df52"
+  },
+  "Route_No": "401-1",
+  "Origin": "ALUTHGAMA",
+  "Destination": "ELPITIYA",
+  "Route_distance": 30.2,
+  "Origin_sin": "අළුත්ගම",
+  "Destination_Sin": "ඇල්පිටිය",
+  "FareStages": 15
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df53"
+  },
+  "Route_No": 403,
+  "Origin": "MATHUGAMA",
+  "Destination": "NELUWA",
+  "Route_distance": 52.1,
+  "Origin_sin": "මතුගම",
+  "Destination_Sin": "නෙළුව",
+  "FareStages": 29
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df54"
+  },
+  "Route_No": 449,
+  "Origin": "HORANA",
+  "Destination": "KARADANA",
+  "Route_distance": 34.5,
+  "Origin_sin": "හොරණ",
+  "Destination_Sin": "කරඳන",
+  "FareStages": 17
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df55"
+  },
+  "Route_No": 450,
+  "Origin": "PANADURA",
+  "Destination": "RATHNAPURA",
+  "Route_distance": 70.2,
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "රත්නපුර",
+  "FareStages": 35
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df56"
+  },
+  "Route_No": "458/1",
+  "Origin": "MATHUGAMA",
+  "Destination": "KANDY",
+  "Route_distance": 174,
+  "Origin_sin": "මතුගම",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 86
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df57"
+  },
+  "Route_No": "458/15/87",
+  "Origin": "MATHUGAMA",
+  "Destination": "JAFFNA",
+  "Route_distance": 464,
+  "Origin_sin": "මතුගම",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 232
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df58"
+  },
+  "Route_No": 470,
+  "Origin": "AVISSAWELLA",
+  "Destination": "EHELIYAGODA",
+  "Route_distance": 14.3,
+  "Origin_sin": "අවිස්සාවේල්ල",
+  "Destination_Sin": "ඇහැලියගොඩ",
+  "FareStages": 7
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df59"
+  },
+  "Route_No": "470-2",
+  "Origin": "AVISSAWELLA",
+  "Destination": "RATHNAPURA",
+  "Route_distance": 44.1,
+  "Origin_sin": "අවිස්සාවේල්ල",
+  "Destination_Sin": "රත්නපුර",
+  "FareStages": 22
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df5a"
+  },
+  "Route_No": "473/7",
+  "Origin": "COLOMBO",
+  "Destination": "KALAWANA",
+  "Route_distance": 110,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කලවාන",
+  "FareStages": 55
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df5b"
+  },
+  "Route_No": 482,
+  "Origin": "MATHUGAMA",
+  "Destination": "KALAWANA",
+  "Route_distance": 44.2,
+  "Origin_sin": "මතුගම",
+  "Destination_Sin": "කලවාන",
+  "FareStages": 22
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df5c"
+  },
+  "Route_No": "482/98",
+  "Origin": "ALUTHGAMA",
+  "Destination": "AKKARAIPATTU ",
+  "Route_distance": 600,
+  "Origin_sin": "අලුත්ගම",
+  "Destination_Sin": "අක්කරෙයිපත්තු",
+  "FareStages": 198
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df5d"
+  },
+  "Route_No": 488,
+  "Origin": "BALANGODA",
+  "Destination": "HATTON",
+  "Route_distance": 76,
+  "Origin_sin": "බලංගොඩ",
+  "Destination_Sin": "හැටන්",
+  "FareStages": 38
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df5e"
+  },
+  "Route_No": "493-1",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "BELIATTA",
+  "Route_distance": 94.1,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "බෙලිඅත්ත",
+  "FareStages": 27
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df5f"
+  },
+  "Route_No": "493-2",
+  "Origin": "MATARA",
+  "Destination": "KIRIIBBANARA",
+  "Route_distance": 94.1,
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "කිරිඉබ්බන්ආර",
+  "FareStages": 49
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df60"
+  },
+  "Route_No": "493-3",
+  "Origin": "HAKMANA",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 66.3,
+  "Origin_sin": "හක්මණ",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 33
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df61"
+  },
+  "Route_No": "493-4",
+  "Origin": "GALLE",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": 128,
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "ඇඹිලිපිටිය",
+  "FareStages": 66
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df62"
+  },
+  "Route_No": 497,
+  "Origin": "EMBILIPITIYA",
+  "Destination": "SURIYAWEWA",
+  "Route_distance": 22.3,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "සූරියවැව",
+  "FareStages": 11
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df63"
+  },
+  "Route_No": 507,
+  "Origin": "KURUNEGALA",
+  "Destination": "KEGALLE",
+  "Route_distance": 34.2,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "කෑගල්ල",
+  "FareStages": 17
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df64"
+  },
+  "Route_No": 508,
+  "Origin": "KURUNEGALA",
+  "Destination": "RAMBUKKANA",
+  "Route_distance": 26.1,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "රඹුක්කන",
+  "FareStages": 13
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df65"
+  },
+  "Route_No": 509,
+  "Origin": "KURUNEGALA",
+  "Destination": "RAMBUKKANA",
+  "Route_distance": 28.2,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "රඹුක්කන",
+  "FareStages": 14
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df66"
+  },
+  "Route_No": 548,
+  "Origin": "KURUNEGALA",
+  "Destination": "KEKIRAWA",
+  "Route_distance": 87.1,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "කැකිරාව",
+  "FareStages": 46
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df67"
+  },
+  "Route_No": "548-1",
+  "Origin": "KURUNEGALA",
+  "Destination": "GALNEWA",
+  "Route_distance": 96.5,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "ගල්නෑව",
+  "FareStages": 48
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df68"
+  },
+  "Route_No": 549,
+  "Origin": "KURUNEGALA",
+  "Destination": "DAMBULLA",
+  "Route_distance": 58,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "දඹුල්ල",
+  "FareStages": 29
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df69"
+  },
+  "Route_No": "549-1",
+  "Origin": "KURUNEGALA",
+  "Destination": "WEWALA WEWA",
+  "Route_distance": 80.2,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "වෑවල",
+  "FareStages": 40
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df6a"
+  },
+  "Route_No": "549-4",
+  "Origin": "KURUNEGALA",
+  "Destination": "GALKIRIYAGAMA",
+  "Route_distance": 82.3,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "ගල්කිරියාගම",
+  "FareStages": 41
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df6b"
+  },
+  "Route_No": "549/499",
+  "Origin": "KURUNEGALA",
+  "Destination": "SIGIRIYA",
+  "Route_distance": 78,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "සීගිරිය",
+  "FareStages": 39
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df6c"
+  },
+  "Route_No": "549/580",
+  "Origin": "KURUNEGALA",
+  "Destination": "HANDUNGAMUWA",
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "හඳුන්ගමුව",
+  "FareStages": 75
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df6d"
+  },
+  "Route_No": 556,
+  "Origin": "KURUNEGALA",
+  "Destination": "MATALE",
+  "Route_distance": 96.5,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "මාතලේ",
+  "FareStages": 28
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df6e"
+  },
+  "Route_No": "564-6",
+  "Origin": "KURUNEGALA",
+  "Destination": "MIRISSALA",
+  "Route_distance": 48.8,
+  "Origin_sin": "කුරුණෑගල",
+  "Destination_Sin": "මිරිස්සල",
+  "FareStages": 24
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df6f"
+  },
+  "Route_No": 566,
+  "Origin": "MAWATHAGAMA",
+  "Destination": "RAMBUKKANA",
+  "Route_distance": 19.1,
+  "Origin_sin": "රඹුක්කන",
+  "Destination_Sin": "මාවතගම",
+  "FareStages": 9
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df70"
+  },
+  "Route_No": "581-1",
+  "Origin": "MATALE",
+  "Destination": "KADURUWELA",
+  "Route_distance": 108,
+  "Origin_sin": "මාතලේ",
+  "Destination_Sin": "කදුරුවෙල",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df71"
+  },
+  "Route_No": "581-3",
+  "Origin": "MATALE",
+  "Destination": "KADURUWELA",
+  "Route_distance": 111,
+  "Origin_sin": "මාතලේ",
+  "Destination_Sin": "කදුරුවෙල ",
+  "FareStages": 59
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df72"
+  },
+  "Route_No": 602,
+  "Origin": "KANDY",
+  "Destination": "KURUNEGALA",
+  "Route_distance": 43,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "කුරුණෑගල",
+  "FareStages": 22
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df73"
+  },
+  "Route_No": "626/43/87",
+  "Origin": "NUWARAELIYA",
+  "Destination": "JAFFNA",
+  "Route_distance": 392,
+  "Origin_sin": "නුවරඑළිය",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 223
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df74"
+  },
+  "Route_No": 662,
+  "Origin": "KANDY",
+  "Destination": "KEGALLE",
+  "Route_distance": 42.3,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "කෑගල්ල",
+  "FareStages": 20
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df75"
+  },
+  "Route_No": "662-1",
+  "Origin": "KANDY",
+  "Destination": "MAWANELLA",
+  "Route_distance": 39.1,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මාවනැල්ල",
+  "FareStages": 13
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df76"
+  },
+  "Route_No": 670,
+  "Origin": "NITTAMBUWA",
+  "Destination": "WARAKAPOLA",
+  "Route_distance": 16.3,
+  "Origin_sin": "නිට්ටඹුව",
+  "Destination_Sin": "වරකාපොල",
+  "FareStages": 8
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df77"
+  },
+  "Route_No": "674-1",
+  "Origin": "COLOMBO",
+  "Destination": "KOTIYAKUMBURA",
+  "Route_distance": 76.6,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කොටියාකුඹුර",
+  "FareStages": 37
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df78"
+  },
+  "Route_No": "674-3",
+  "Origin": "AVISSAWELLA",
+  "Destination": "KEGALLE",
+  "Route_distance": 48.1,
+  "Origin_sin": "අවිස්සාවේල්ල",
+  "Destination_Sin": "කෑගල්ල",
+  "FareStages": 26
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df79"
+  },
+  "Route_No": 677,
+  "Origin": "COLOMBO",
+  "Destination": "BULATHKOHUPITIYA",
+  "Route_distance": 78.5,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බුලත්කොහුපිටිය",
+  "FareStages": 39
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df7a"
+  },
+  "Route_No": "677-4",
+  "Origin": "AVISSAWELLA",
+  "Destination": "BULATHKOHUPITIYA",
+  "Route_distance": 34.2,
+  "Origin_sin": "අවිස්සාවේල්ල",
+  "Destination_Sin": "බුලත්කොහුපිටිය",
+  "FareStages": 17
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df7b"
+  },
+  "Route_No": "725/43/87",
+  "Origin": "HATTON",
+  "Destination": "JAFFNA",
+  "Route_distance": 414,
+  "Origin_sin": "හැටන්",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 203
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df7c"
+  },
+  "Route_No": "750/3",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "HAMBANTHOTA",
+  "Route_distance": 54.2,
+  "Origin_sin": "ඇඹිලිපිටිය",
+  "Destination_Sin": "හම්බන්තොට",
+  "FareStages": 27
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df7d"
+  },
+  "Route_No": "819-4",
+  "Origin": "TRINCOMALEE",
+  "Destination": "MULATHIVU",
+  "Route_distance": 160,
+  "Origin_sin": "ත්‍රිකුණාමලය",
+  "Destination_Sin": "මුලතිව්",
+  "FareStages": 86
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df7e"
+  },
+  "Route_No": 825,
+  "Origin": "KANDY",
+  "Destination": "DUTUWEWA",
+  "Route_distance": 126,
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "දුටුවැව",
+  "FareStages": 72
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df7f"
+  },
+  "Route_No": 835,
+  "Origin": "ANURADHAPURA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": 113,
+  "Origin_sin": "අනුරාධපුරය",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 57
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df80"
+  },
+  "Route_No": 842,
+  "Origin": "ANURADHAPURA",
+  "Destination": "PULMUDAI",
+  "Route_distance": 112,
+  "Origin_sin": "අනුරාධපුරය",
+  "Destination_Sin": "පුල්මුඩේ",
+  "FareStages": 56
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df81"
+  },
+  "Route_No": 857,
+  "Origin": "ANURADHAPURA",
+  "Destination": "VAVUNIYA",
+  "Route_distance": 54.2,
+  "Origin_sin": "අනුරාධපුරය",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 27
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df82"
+  },
+  "Route_No": "901/943",
+  "Origin": "KALPITIYA",
+  "Destination": "MANNAR",
+  "Origin_sin": "කල්පිටිය",
+  "Destination_Sin": "මන්නාරම",
+  "FareStages": 93
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df83"
+  },
+  "Route_No": 907,
+  "Origin": "NEGOMBO",
+  "Destination": "CHILAW",
+  "Route_distance": 42.3,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "හලාවත",
+  "FareStages": 21
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df84"
+  },
+  "Route_No": 909,
+  "Origin": "MONARAGALA",
+  "Destination": "AMPARA",
+  "Route_distance": 84.2,
+  "Origin_sin": "මොණරාගල",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 48
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df85"
+  },
+  "Route_No": "929-1",
+  "Origin": "NEGOMBO",
+  "Destination": "ELIWILA",
+  "Route_distance": 26,
+  "Origin_sin": "මීගමුව",
+  "Destination_Sin": "එලිවිල",
+  "FareStages": 15
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df86"
+  },
+  "Route_No": "86/816-5",
+  "Origin": "BATTICALOA",
+  "Destination": "NATTANKANDAL",
+  "Origin_sin": "මඩකලපුව",
+  "Destination_Sin": "නට්ටාන්කන්ඩල්",
+  "FareStages": 444
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df87"
+  },
+  "Route_No": "314/580/87",
+  "Origin": "BADULLA",
+  "Destination": "JAFFNA",
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 444
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df88"
+  },
+  "Route_No": "98-4-881",
+  "Origin": "COLOMBO",
+  "Destination": "AKKARAIPATTU ",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අක්කරෙයිපත්තු",
+  "FareStages": 444
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df89"
+  },
+  "Route_No": "8 නව මාර්ග",
+  "Origin": "COLOMBO",
+  "Destination": "MATHALE",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාතලේ",
+  "FareStages": 444
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df8a"
+  },
+  "Route_No": "87-7/769",
+  "Origin": "MORATUWA",
+  "Destination": "KANKASANTHURAI",
+  "Origin_sin": "මොරටුව",
+  "Destination_Sin": "කන්කසන්තුරේ",
+  "FareStages": 218
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df8b"
+  },
+  "Route_No": "87-7",
+  "Origin": "PUTTLAM ",
+  "Destination": "MANNAR",
+  "Origin_sin": "පුත්තලම",
+  "Destination_Sin": "මන්නාරම",
+  "FareStages": 444
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df8c"
+  },
+  "Route_No": "69/45",
+  "Origin": "MAKUMBURA",
+  "Destination": "TRINCOMCLEE",
+  "Origin_sin": "මාකුඹුර",
+  "Destination_Sin": "ත්‍රිකුණාමලය",
+  "FareStages": 158
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df8d"
+  },
+  "Route_No": "22-6-5",
+  "Origin": "KANDY",
+  "Destination": "WEKANDA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "වෑකන්ද",
+  "FareStages": 75
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df8e"
+  },
+  "Route_No": "22-6-4",
+  "Origin": "KANDY",
+  "Destination": "MAHADAMANA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මහදමන",
+  "FareStages": 80
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df8f"
+  },
+  "Route_No": "60-7",
+  "Origin": "COLOMBO",
+  "Destination": "MEDERIPITIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මෙදේරිපිටිය",
+  "FareStages": 444
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df90"
+  },
+  "Route_No": "52-13",
+  "Origin": "KANDY",
+  "Destination": "MEEGASWEWA",
+  "Origin_sin": "මහනුවර",
+  "Destination_Sin": "මීගස්වැව",
+  "FareStages": 84
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df91"
+  },
+  "Route_No": "314/218-7",
+  "Origin": "BADULLA",
+  "Destination": "SURIYAPOKUNA",
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "සූරියපොකුණ",
+  "FareStages": 444
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df92"
+  },
+  "Route_No": "903-1",
+  "Origin": "VAUNIYA",
+  "Destination": "BOGAS JUNCTION",
+  "Origin_sin": "වව්නියාව",
+  "Destination_Sin": "බෝගස්හංදිය",
+  "FareStages": 169
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df93"
+  },
+  "Route_No": "234/580/015",
+  "Origin": "MONARAGALA",
+  "Destination": "VAVUNIYA",
+  "Origin_sin": "මොණරාගල",
+  "Destination_Sin": "වව්නියාව",
+  "FareStages": 148
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df94"
+  },
+  "Route_No": "87-5",
+  "Origin": "PANADURA",
+  "Destination": "JAFFNA",
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 214
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df95"
+  },
+  "Route_No": "3-1/339",
+  "Origin": "COLOMBO",
+  "Destination": "MIDDENIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මිද්දෙනිය",
+  "FareStages": 96
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df96"
+  },
+  "Route_No": "314/218-9",
+  "Origin": "BADULLA",
+  "Destination": "WELIKANDA",
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "වැලිකන්ද",
+  "FareStages": 86
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df97"
+  },
+  "Route_No": "314/22-4",
+  "Origin": "BADULLA",
+  "Destination": "AMPARA",
+  "Origin_sin": "බදුල්ල",
+  "Destination_Sin": "අම්පාර",
+  "FareStages": 98
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df98"
+  },
+  "Route_No": "18-2/711",
+  "Origin": "COLOMBO",
+  "Destination": "DAYAGAMA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඩයගම",
+  "FareStages": 77
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df99"
+  },
+  "Route_No": "86-10",
+  "Origin": "AKKARAIPATU",
+  "Destination": "JAFFNA",
+  "Origin_sin": "අක්කරෙයිපත්තු",
+  "Destination_Sin": "යාපනය",
+  "FareStages": 228
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df9a"
+  },
+  "Route_No": "48-001/962",
+  "Origin": "SUNGAWILA",
+  "Destination": "BATTICALOA",
+  "Origin_sin": "සුංගාවිල",
+  "Destination_Sin": "මඩකලපුව",
+  "FareStages": 61
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df9b"
+  },
+  "Route_No": "EX 1",
+  "Origin": "GALLE",
+  "Destination": "MAKUMBURA",
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "මාකුඹුර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df9c"
+  },
+  "Route_No": "EX 1-1",
+  "Origin": "MAKUMBURA",
+  "Destination": "MATARA",
+  "Origin_sin": "මාකුඹුර",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df9d"
+  },
+  "Route_No": "EX 1-2",
+  "Origin": "KADUWELA",
+  "Destination": "MATARA",
+  "Origin_sin": "කඩුවෙල",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df9e"
+  },
+  "Route_No": "EX 1-3",
+  "Origin": "MATARA",
+  "Destination": "NEGAMBO",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තංගල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17df9f"
+  },
+  "Route_No": "EX 1-4",
+  "Origin": "COLOMBO",
+  "Destination": "DIKWELLA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දික්වැල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa0"
+  },
+  "Route_No": "EX 1-5/26",
+  "Origin": "COLOMBO ",
+  "Destination": "HAKMANA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හක්මන"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa1"
+  },
+  "Route_No": "EX 1-6/270",
+  "Origin": "MATARA",
+  "Destination": "NEGOMBO",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "මීගමුව"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa2"
+  },
+  "Route_No": "EX 1-7/26",
+  "Origin": "COLOMBO ",
+  "Destination": "MIDDENIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මිද්දෙනිය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa3"
+  },
+  "Route_No": "EX 1-8",
+  "Origin": "COLOMBO",
+  "Destination": "GALLE",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa4"
+  },
+  "Route_No": "EX 1-9/211",
+  "Origin": "COLOMBO ",
+  "Destination": "EMBILIPITIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඇඹිලිපිටිය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa5"
+  },
+  "Route_No": "EX 1-10/60",
+  "Origin": "COLOMBO ",
+  "Destination": "AKURESSA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අකුරැස්ස"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa6"
+  },
+  "Route_No": "EX 1-11/32",
+  "Origin": "COLOMBO ",
+  "Destination": "WEERAKETIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වීරකැටිය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa7"
+  },
+  "Route_No": "EX 1-12/32",
+  "Origin": "COLOMBO ",
+  "Destination": "KATARAGAMA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කතරගම"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa8"
+  },
+  "Route_No": "EX 1-13/353",
+  "Origin": "COLOMBO ",
+  "Destination": "DEYIYANDARA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙයියන්දර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfa9"
+  },
+  "Route_No": "EX 1-14/60",
+  "Origin": "COLOMBO ",
+  "Destination": "DENIYAYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "දෙනියාය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfaa"
+  },
+  "Route_No": "EX 1-15",
+  "Origin": "COLOMBO ",
+  "Destination": "HAMBANTHOTA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "හම්බන්තොට"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfab"
+  },
+  "Route_No": "EX 1-16",
+  "Origin": "COLOMBO ",
+  "Destination": "ELPITIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ඇල්පිටිය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfac"
+  },
+  "Route_No": "EX 1-17",
+  "Origin": "MAKUMBURA",
+  "Destination": "HAMBANTHOTA",
+  "Origin_sin": "මාකුඹුර",
+  "Destination_Sin": "හම්බන්තොට"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfad"
+  },
+  "Route_No": "EX 1-18",
+  "Origin": "COLOMBO ",
+  "Destination": "MATARA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfae"
+  },
+  "Route_No": "EX 1-19",
+  "Origin": "KOTTAWA",
+  "Destination": "GALLE",
+  "Origin_sin": "කොට්ටාව",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfaf"
+  },
+  "Route_No": "EX 1-20",
+  "Origin": "HOMAGAMA",
+  "Destination": "MATARA",
+  "Origin_sin": "හෝමාගම",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb0"
+  },
+  "Route_No": "EX 1-21",
+  "Origin": "KADAWATHA",
+  "Destination": "GALLE",
+  "Origin_sin": "කඩවත",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb1"
+  },
+  "Route_No": "EX 1-22",
+  "Origin": "KADAWATHA",
+  "Destination": "MATARA",
+  "Origin_sin": "කඩවත",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb2"
+  },
+  "Route_No": "EX 1-23",
+  "Origin": "KADUWELA",
+  "Destination": "GALLE",
+  "Origin_sin": "කඩුවෙල",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb3"
+  },
+  "Route_No": "EX 1-24/1",
+  "Origin": "MATARA",
+  "Destination": "KANDY",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "නුවර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb4"
+  },
+  "Route_No": "EX 1-25/450",
+  "Origin": "PANADURA",
+  "Destination": "MATARA",
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb5"
+  },
+  "Route_No": "EX 1-26",
+  "Origin": "PILIYANDALA",
+  "Destination": "MATARA",
+  "Origin_sin": "පිළියන්දල",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb6"
+  },
+  "Route_No": "EX 1-27/01",
+  "Origin": "GALLE",
+  "Destination": "KANDY",
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "නුවර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb7"
+  },
+  "Route_No": "EX 1-28/270",
+  "Origin": "KATARAGAMA",
+  "Destination": "NEGOMBO",
+  "Origin_sin": "කතරගම",
+  "Destination_Sin": "මීගමුව"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb8"
+  },
+  "Route_No": "EX 1-29/353",
+  "Origin": "COLOMBO ",
+  "Destination": "KAMBURUPITIYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "කඹුරුපිටිය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfb9"
+  },
+  "Route_No": "EX 1-30/48",
+  "Origin": "MATARA",
+  "Destination": "KADURUWELA",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "කදුරුවෙල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfba"
+  },
+  "Route_No": "EX 1-31/6",
+  "Origin": "MATARA",
+  "Destination": "KURUNEGALA",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "කුරුණෑගල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfbb"
+  },
+  "Route_No": "EX 1-32/6",
+  "Origin": "GALLE",
+  "Destination": "KURUNEGALA",
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "කුරුණෑගල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfbc"
+  },
+  "Route_No": "EX 1-33/270",
+  "Origin": "GALLE",
+  "Destination": "NEGOMBO",
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "මීගමුව"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfbd"
+  },
+  "Route_No": "EX 1-34/450/1",
+  "Origin": "PANADURA",
+  "Destination": "KANDY",
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "මහනුවර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfbe"
+  },
+  "Route_No": "EX 1-35/441",
+  "Origin": "MATARA",
+  "Destination": "ALUTHGAMA",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "අලුත්ගම"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfbf"
+  },
+  "Route_No": "EX 1-36/174",
+  "Origin": "MATARA",
+  "Destination": "BATTARAMULLA",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "බත්තරමුල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc0"
+  },
+  "Route_No": "EX 1-37/174",
+  "Origin": "GALLE",
+  "Destination": "BATTARAMULLA",
+  "Origin_sin": "ගාල්ල",
+  "Destination_Sin": "බත්තරමුල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc1"
+  },
+  "Route_No": "EX 1-38",
+  "Origin": "MATARA",
+  "Destination": "MAKUMBURA",
+  "Origin_sin": "මාතර",
+  "Destination_Sin": "මාකුඹුර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc2"
+  },
+  "Route_No": "EX 1-39",
+  "Origin": "MAKUMBURA",
+  "Destination": "TANGALLE",
+  "Origin_sin": "මාකුඹුර",
+  "Destination_Sin": "තංගල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc3"
+  },
+  "Route_No": "EX-1-40",
+  "Origin": "TANGALLE",
+  "Destination": "TRINCOMCLEE",
+  "Origin_sin": "තංගල්ල",
+  "Destination_Sin": "ත්‍රිකුණාමලය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc4"
+  },
+  "Route_No": "EX 1-41",
+  "Origin": "AMBALANGODA",
+  "Destination": "COLOMBO",
+  "Origin_sin": "අම්බලන්ගොඩ",
+  "Destination_Sin": "කොළඹ"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc5"
+  },
+  "Route_No": "EX 1-42",
+  "Origin": "COLOMBO",
+  "Destination": "BADDEGAMA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බද්දේගම"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc6"
+  },
+  "Route_No": "EX 1-43",
+  "Origin": "KADAWATHA",
+  "Destination": "ELPITIYA",
+  "Origin_sin": "කඩවත",
+  "Destination_Sin": "ඇල්පිටිය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc7"
+  },
+  "Route_No": "EX 1-44",
+  "Origin": "HORANA",
+  "Destination": "MATARA",
+  "Origin_sin": "හොරණ",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc8"
+  },
+  "Route_No": "EX 1-45",
+  "Origin": "HORANA",
+  "Destination": "GALLE",
+  "Origin_sin": "හොරණ",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfc9"
+  },
+  "Route_No": "EX 1-46",
+  "Origin": "KATUBEDDA",
+  "Destination": "MATARA",
+  "Origin_sin": "කටුබැද්ද",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfca"
+  },
+  "Route_No": "EX 1-47",
+  "Origin": "KATUBEDDA",
+  "Destination": "GALLE",
+  "Origin_sin": "කටුබැද්ද",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfcb"
+  },
+  "Route_No": "EX 1-48",
+  "Origin": "KADAWATHA",
+  "Destination": "AMBALANGODA",
+  "Origin_sin": "කඩවත",
+  "Destination_Sin": "අම්බලන්ගොඩ"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfcc"
+  },
+  "Route_No": "EX 1-49",
+  "Origin": "PANADURA",
+  "Destination": "GALLE",
+  "Origin_sin": "පානදුර",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfcd"
+  },
+  "Route_No": "EX 1-50/120",
+  "Origin": "COLOMBO ",
+  "Destination": "GALLE",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "ගාල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfce"
+  },
+  "Route_No": "EX 1-51/35",
+  "Origin": "COLOMBO ",
+  "Destination": "AMPARA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "අම්පාර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfcf"
+  },
+  "Route_No": "EX 1-52/35",
+  "Origin": "COLOMBO ",
+  "Destination": "MONARAGALA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මොණරාගල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd0"
+  },
+  "Route_No": "EX 1-53/35",
+  "Origin": "COLOMBO ",
+  "Destination": "WELLAWAYA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "වැල්ලවාය"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd1"
+  },
+  "Route_No": "EX 1-54",
+  "Origin": "COLOMBO ",
+  "Destination": "THANAMALWILA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "තණමල්විල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd2"
+  },
+  "Route_No": "EX 1-55/31",
+  "Origin": "COLOMBO ",
+  "Destination": "BADULLA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "බදුල්ල"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd3"
+  },
+  "Route_No": "EX 1-55",
+  "Origin": "COLOMBO ",
+  "Destination": "MATARA",
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මාතර"
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd4"
+  },
+  "Route_No": "EX 001-003-04",
+  "Origin": "GALLE",
+  "Destination": "KURUNEGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd5"
+  },
+  "Route_No": "EX 001-004-49",
+  "Origin": "MATARA",
+  "Destination": "TRINCO",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd6"
+  },
+  "Route_No": "EX-007/026",
+  "Origin": "COLOMBO",
+  "Destination": "MIDDENIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd7"
+  },
+  "Route_No": "EX-012/032",
+  "Origin": "COLOMBO",
+  "Destination": "KATARAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd8"
+  },
+  "Route_No": "EX 001-026/119",
+  "Origin": "DEHIWALA",
+  "Destination": "MATARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfd9"
+  },
+  "Route_No": "EX-027/001",
+  "Origin": "GALLE",
+  "Destination": "KANDY",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfda"
+  },
+  "Route_No": "EX-013/353",
+  "Origin": "COLOMBO",
+  "Destination": "KAMBURUPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfdb"
+  },
+  "Route_No": "EX001-46",
+  "Origin": "MORATUWA CAMPUS",
+  "Destination": "MATARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfdc"
+  },
+  "Route_No": "EX -001-51/35-MAK",
+  "Origin": "COLOMBO",
+  "Destination": "AMPARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfdd"
+  },
+  "Route_No": "EX-001-52/35-2",
+  "Origin": "COLOMBO",
+  "Destination": "MONARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfde"
+  },
+  "Route_No": "EX1-60",
+  "Origin": "COLOMBO",
+  "Destination": "AKKAREIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfdf"
+  },
+  "Route_No": "EX-1-72",
+  "Origin": "COLOMBO",
+  "Destination": "ANGUNUKOLAPELESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe0"
+  },
+  "Route_No": "EX-1-73/35/2",
+  "Origin": "MAKUMBURA",
+  "Destination": "MONARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe1"
+  },
+  "Route_No": "EX-1-74/31-2",
+  "Origin": "MAKUMBURA",
+  "Destination": "BADULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe2"
+  },
+  "Route_No": "EX-1-75/211",
+  "Origin": "MAKUMBURA",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe3"
+  },
+  "Route_No": "EX-1-77/35",
+  "Origin": "MAKUMBURA",
+  "Destination": "AMPARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe4"
+  },
+  "Route_No": "EX-1-78/35/881",
+  "Origin": "MAKUMBURA",
+  "Destination": "AKKAREIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe5"
+  },
+  "Route_No": "EX-1-81/29",
+  "Origin": "MAKUMBURA",
+  "Destination": "MADOLSIMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe6"
+  },
+  "Route_No": "EX-001-83/493",
+  "Origin": "COLOMBO",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe7"
+  },
+  "Route_No": "EX-001-84/366",
+  "Origin": "COLOMBO",
+  "Destination": "AKURESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe8"
+  },
+  "Route_No": "EX-001-85/360",
+  "Origin": "COLOMBO",
+  "Destination": "AKURESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfe9"
+  },
+  "Route_No": "EX-1-87",
+  "Origin": "MAKUMBURA",
+  "Destination": "ANGUNUKOLAPELESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfea"
+  },
+  "Route_No": "EX-01-88/574",
+  "Origin": "COLOMBO",
+  "Destination": "ANGUNUKOLAPELESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfeb"
+  },
+  "Route_No": "EX-01-90/493",
+  "Origin": "COLOMBO",
+  "Destination": "ANGUNUKOLAPELESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfec"
+  },
+  "Route_No": "EX-01-96/211",
+  "Origin": "COLOMBO",
+  "Destination": "KOLONNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfed"
+  },
+  "Route_No": "EX-01-97/211",
+  "Origin": "COLOMBO",
+  "Destination": "UDAWALAWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfee"
+  },
+  "Route_No": "EX-01-109",
+  "Origin": "COLOMBO",
+  "Destination": "MATARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfef"
+  },
+  "Route_No": "EX001-39",
+  "Origin": "MAKUMBURA",
+  "Destination": "TANGALLE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff0"
+  },
+  "Route_No": "EX001-42",
+  "Origin": "COLOMBO",
+  "Destination": "BADDEGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff1"
+  },
+  "Route_No": "EX001-43",
+  "Origin": "KADAWATHA",
+  "Destination": "ELPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff2"
+  },
+  "Route_No": "EX-1-67",
+  "Origin": "KADAWATHA",
+  "Destination": "TANGALLE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff3"
+  },
+  "Route_No": "EX-1-69",
+  "Origin": "NEGAMBO",
+  "Destination": "TANGALLE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff4"
+  },
+  "Route_No": "EX-01-92",
+  "Origin": "MAKUMBURA",
+  "Destination": "HAMBANTOTA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff5"
+  },
+  "Route_No": "EX-01-94/EX03/EX04",
+  "Origin": "MATARA",
+  "Destination": "KURUNEGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff6"
+  },
+  "Route_No": "EX-01-95/31/314",
+  "Origin": "MAKUMBURA",
+  "Destination": "MEEGAHAKIVULA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff7"
+  },
+  "Route_No": "EX-01-98",
+  "Origin": "MAKUMBURA",
+  "Destination": "ELPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff8"
+  },
+  "Route_No": "EX-01-99",
+  "Origin": "COLOMBO",
+  "Destination": "TANGALLE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dff9"
+  },
+  "Route_No": "EX001-100/382",
+  "Origin": "COLOMBO",
+  "Destination": "AKURESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dffa"
+  },
+  "Route_No": "EX01-101-366",
+  "Origin": "KADAWATHA",
+  "Destination": "AKURESSA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dffb"
+  },
+  "Route_No": "EX01-102-129",
+  "Origin": "HOMAGAMA",
+  "Destination": "GALLE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dffc"
+  },
+  "Route_No": "EX01-103",
+  "Origin": "MAKUMBURA",
+  "Destination": "AMBALANGODA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dffd"
+  },
+  "Route_No": "EX01-104/35",
+  "Origin": "MATARA",
+  "Destination": "AMPARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dffe"
+  },
+  "Route_No": "EX01-105/11",
+  "Origin": "MATARA",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17dfff"
+  },
+  "Route_No": "EX01-106/11",
+  "Origin": "KARAPITIYA",
+  "Destination": "EMBILIPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e000"
+  },
+  "Route_No": "EX01-107/42",
+  "Origin": "COLOMBO",
+  "Destination": "NELUWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e001"
+  },
+  "Route_No": "EX01-108/35-2",
+  "Origin": "MATARA",
+  "Destination": "MONARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e002"
+  },
+  "Route_No": "EX03/EX01/35/881",
+  "Origin": "NEGAMBO",
+  "Destination": "AKKAREIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e003"
+  },
+  "Route_No": "EX03/EX01/35/881-1",
+  "Origin": "COLOMBO",
+  "Destination": "AKKAREIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e004"
+  },
+  "Route_No": "1/627-5",
+  "Origin": "COLOMBO",
+  "Destination": "RUPAHA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e005"
+  },
+  "Route_No": "004-009/916/057",
+  "Origin": "COLOMBO",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e006"
+  },
+  "Route_No": 401,
+  "Origin": "COLOMBO",
+  "Destination": "ELPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e007"
+  },
+  "Route_No": 303,
+  "Origin": "MONARAGALA",
+  "Destination": "POTHUWIL",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e008"
+  },
+  "Route_No": 311,
+  "Origin": "NUWARAELIYA",
+  "Destination": "BADULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e009"
+  },
+  "Route_No": "2-7/3",
+  "Origin": "COLOMBO",
+  "Destination": "RADAWELA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e00a"
+  },
+  "Route_No": "2-8",
+  "Origin": "COLOMBO",
+  "Destination": "MEETIYAGODA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e00b"
+  },
+  "Route_No": "2-11",
+  "Origin": "COLOMBO",
+  "Destination": "DEIYANDARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e00c"
+  },
+  "Route_No": "4/48",
+  "Origin": "KALPITIYA",
+  "Destination": "AKKARAIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e00d"
+  },
+  "Route_No": "4/82",
+  "Origin": "UDAPPUWA",
+  "Destination": "MULATHIVU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e00e"
+  },
+  "Route_No": "4-2",
+  "Origin": "NEGOMBO",
+  "Destination": "MANNAR",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e00f"
+  },
+  "Route_No": "4-5",
+  "Origin": "NEGOMBO",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e010"
+  },
+  "Route_No": "4-8",
+  "Origin": "COLOMBO",
+  "Destination": "KALAOYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e011"
+  },
+  "Route_No": "4-9/916",
+  "Origin": "COLOMBO",
+  "Destination": "GALGAMUWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e012"
+  },
+  "Route_No": "4-9/916/57",
+  "Origin": "COLOMBO",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e013"
+  },
+  "Route_No": "4-9/916-1",
+  "Origin": "COLOMBO",
+  "Destination": "NAWAGATHTHEGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e014"
+  },
+  "Route_No": "4-12",
+  "Origin": "KALPITIYA",
+  "Destination": "MANNAR",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e015"
+  },
+  "Route_No": "6/558",
+  "Origin": "COLOMBO",
+  "Destination": "MORAGOLLAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e016"
+  },
+  "Route_No": "7-4",
+  "Origin": "JA ELA",
+  "Destination": "KALPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e017"
+  },
+  "Route_No": "11-2",
+  "Origin": "EMBILIPITIYA",
+  "Destination": "KARAPITIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e018"
+  },
+  "Route_No": "13-4",
+  "Origin": "HATTON",
+  "Destination": "BADULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e019"
+  },
+  "Route_No": "14/21",
+  "Origin": "KANDY",
+  "Destination": "MONARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e01a"
+  },
+  "Route_No": "15/87",
+  "Origin": "COLOMBO",
+  "Destination": "JAFFNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e01b"
+  },
+  "Route_No": "15-2",
+  "Origin": "COLOMBO",
+  "Destination": "SRI PURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e01c"
+  },
+  "Route_No": "15-3",
+  "Origin": "COLOMBO",
+  "Destination": "KEKIRAWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e01d"
+  },
+  "Route_No": "15-5/544",
+  "Origin": "KURUNEGALA",
+  "Destination": "GALNEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e01e"
+  },
+  "Route_No": "15-8",
+  "Origin": "KEGALLE",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e01f"
+  },
+  "Route_No": "15-9",
+  "Origin": "KURUNEGALA",
+  "Destination": "GALENBINDUNAWEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e020"
+  },
+  "Route_No": "15-10",
+  "Origin": "INGIRIYA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e021"
+  },
+  "Route_No": "15-13",
+  "Origin": "COLOMBO",
+  "Destination": "GALNEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e022"
+  },
+  "Route_No": "15-14",
+  "Origin": "KURUNEGALA",
+  "Destination": "GALNEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e023"
+  },
+  "Route_No": "15-15",
+  "Origin": "KURUNEGALA",
+  "Destination": "GALKIRIYAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e024"
+  },
+  "Route_No": "15-21/490",
+  "Origin": "COLOMBO",
+  "Destination": "GALNEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e025"
+  },
+  "Route_No": "16/716",
+  "Origin": "COLOMBO",
+  "Destination": "PUNDALUOYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e026"
+  },
+  "Route_No": "17/15-1-1",
+  "Origin": "PANADURA",
+  "Destination": "ANURADHAPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e027"
+  },
+  "Route_No": "17/98",
+  "Origin": "ALUTHGAMA",
+  "Destination": "AKKARAIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e028"
+  },
+  "Route_No": "17-6N",
+  "Origin": "BATTARAMULLA",
+  "Destination": "KURUNEGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e029"
+  },
+  "Route_No": "18-1",
+  "Origin": "COLOMBO",
+  "Destination": "LAXAPANA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e02a"
+  },
+  "Route_No": "18-5",
+  "Origin": "COLOMBO",
+  "Destination": "PUNDALUOYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e02b"
+  },
+  "Route_No": "18-701",
+  "Origin": "COLOMBO",
+  "Destination": "RAWANAGODA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e02c"
+  },
+  "Route_No": "21/38/210",
+  "Origin": "COLOMBO",
+  "Destination": "KALMUNAI",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e02d"
+  },
+  "Route_No": "21/742",
+  "Origin": "COLOMBO",
+  "Destination": "THERIPEHE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e02e"
+  },
+  "Route_No": "21-7",
+  "Origin": "COLOMBO",
+  "Destination": "MEEGAHAKIVULA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e02f"
+  },
+  "Route_No": "21-8",
+  "Origin": "COLOMBO",
+  "Destination": "WALAPANE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e030"
+  },
+  "Route_No": "22/17",
+  "Origin": "KANDY",
+  "Destination": "PUSSALAWINNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e031"
+  },
+  "Route_No": "22-5/217",
+  "Origin": "ARALAGANVILA",
+  "Destination": "ASHOKARAMAYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e032"
+  },
+  "Route_No": "25/218/866",
+  "Origin": "21 BRIDGE",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e033"
+  },
+  "Route_No": "26-2",
+  "Origin": "COLOMBO",
+  "Destination": "KIRINDA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e034"
+  },
+  "Route_No": "27/218/87",
+  "Origin": "HAMBANTHOTA",
+  "Destination": "JAFFNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e035"
+  },
+  "Route_No": "27-2",
+  "Origin": "GALLE",
+  "Destination": "DEHIATTAKANDIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e036"
+  },
+  "Route_No": "31-3",
+  "Origin": "GALLE",
+  "Destination": "BADULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e037"
+  },
+  "Route_No": "31-4",
+  "Origin": "BELIATTA",
+  "Destination": "BANDARAWELA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e038"
+  },
+  "Route_No": "32/87-2",
+  "Origin": "KATARAGAMA",
+  "Destination": "VAUNIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e039"
+  },
+  "Route_No": "32/87-3",
+  "Origin": "TANGALLE",
+  "Destination": "MULLATHIVU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e03a"
+  },
+  "Route_No": "32-000/NEW",
+  "Origin": "MATARA",
+  "Destination": "HAMBANTHOTA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e03b"
+  },
+  "Route_No": "32-2-1",
+  "Origin": "GALLE",
+  "Destination": "KATARAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e03c"
+  },
+  "Route_No": "32-7/1",
+  "Origin": "WALASMULLA",
+  "Destination": "KANDY",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e03d"
+  },
+  "Route_No": "32-8",
+  "Origin": "COLOMBO",
+  "Destination": "KIRINDA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e03e"
+  },
+  "Route_No": "34-10",
+  "Origin": "NEGOMBO",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e03f"
+  },
+  "Route_No": "35/234/218",
+  "Origin": "MATARA",
+  "Destination": "KADURUWELA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e040"
+  },
+  "Route_No": "35/935-2",
+  "Origin": "MATARA",
+  "Destination": "KATHTHANKUDI",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e041"
+  },
+  "Route_No": "35-6",
+  "Origin": "GALLE",
+  "Destination": "MAHAOYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e042"
+  },
+  "Route_No": "35-8",
+  "Origin": "KARAPITIYA",
+  "Destination": "MONARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e043"
+  },
+  "Route_No": "35-303",
+  "Origin": "MATARA",
+  "Destination": "POTHUWIL",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e044"
+  },
+  "Route_No": "36-1",
+  "Origin": "KANDY",
+  "Destination": "MAHIYANGANAYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e045"
+  },
+  "Route_No": "45-1",
+  "Origin": "MATALE",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e046"
+  },
+  "Route_No": "45-2",
+  "Origin": "HATTON",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e047"
+  },
+  "Route_No": "47/43/87",
+  "Origin": "DIYATHALAWA",
+  "Destination": "JAFFNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e048"
+  },
+  "Route_No": "48/218/685",
+  "Origin": "KURULUBEDDA",
+  "Destination": "HANGURANKETHA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e049"
+  },
+  "Route_No": "48-1/962",
+  "Origin": "BATTICALOA",
+  "Destination": "SUNGAWILA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e04a"
+  },
+  "Route_No": "48-6",
+  "Origin": "MALIGAWATTA",
+  "Destination": "HINGURAKGODA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e04b"
+  },
+  "Route_No": "48-11",
+  "Origin": "POLATTAPITIYA",
+  "Destination": "HORIWILA WEDHAGEDARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e04c"
+  },
+  "Route_No": "48-18",
+  "Origin": "KADURUWELA",
+  "Destination": "BATTICOLOA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e04d"
+  },
+  "Route_No": "48-21",
+  "Origin": "KADURUWELA",
+  "Destination": "AKKARAIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e04e"
+  },
+  "Route_No": "48-22",
+  "Origin": "KURUNEGALA",
+  "Destination": "DIYASENPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e04f"
+  },
+  "Route_No": "48-24",
+  "Origin": "KURUNEGALA",
+  "Destination": "MEEGASWEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e050"
+  },
+  "Route_No": "48-28",
+  "Origin": "KURUNEGALA",
+  "Destination": "NUWARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e051"
+  },
+  "Route_No": "48-30",
+  "Origin": "COLOMBO",
+  "Destination": "WAKEREI GOVIJANA SEVA OFFICE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e052"
+  },
+  "Route_No": "48-32",
+  "Origin": "DEHIWALA",
+  "Destination": "BATTICALOA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e053"
+  },
+  "Route_No": "55/245",
+  "Origin": "NEGOMBO",
+  "Destination": "NUWARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e054"
+  },
+  "Route_No": "57-7",
+  "Origin": "ANURADHAPURA",
+  "Destination": "POLGAHAWELA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e055"
+  },
+  "Route_No": "57-11",
+  "Origin": "COLOMBO",
+  "Destination": "JANAKAPURA ARMY CAMP",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e056"
+  },
+  "Route_No": "57-16",
+  "Origin": "KURUNEGALA",
+  "Destination": "MANNAR",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e057"
+  },
+  "Route_No": "57-17",
+  "Origin": "COLOMBO",
+  "Destination": "KEBITHIGOLLEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e058"
+  },
+  "Route_No": "69/15-1",
+  "Origin": "WALASMULLA",
+  "Destination": "ANURADHAPURA NEW BUS STAND",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e059"
+  },
+  "Route_No": "69/45",
+  "Origin": "MAKUMBURA",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e05a"
+  },
+  "Route_No": "86/816",
+  "Origin": "BATTICALOA",
+  "Destination": "THUNUKKAI SECRATERIAL OFFICE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e05b"
+  },
+  "Route_No": "86/816-1",
+  "Origin": "BATTIBOLAA",
+  "Destination": "MULLATHIVU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e05c"
+  },
+  "Route_No": "86-1",
+  "Origin": "VAUNIYA",
+  "Destination": "BATTICOLOA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e05d"
+  },
+  "Route_No": "86-3",
+  "Origin": "BATTICOLOA",
+  "Destination": "KILINOCHCHI",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e05e"
+  },
+  "Route_No": "86-4",
+  "Origin": "MANNAR",
+  "Destination": "BATTICOLOA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e05f"
+  },
+  "Route_No": "86-5",
+  "Origin": "MANNAR",
+  "Destination": "KALMUNAI",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e060"
+  },
+  "Route_No": "86-10",
+  "Origin": "AKKARAIPATTU",
+  "Destination": "JAFFNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e061"
+  },
+  "Route_No": "87/4",
+  "Origin": "DEHIWALA",
+  "Destination": "MANNAR",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e062"
+  },
+  "Route_No": "87/903",
+  "Origin": "COLOMBO",
+  "Destination": "BOGASWEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e063"
+  },
+  "Route_No": "87-1",
+  "Origin": "COLOMBO",
+  "Destination": "JAFFNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e064"
+  },
+  "Route_No": "87-4",
+  "Origin": "VAUNIYA",
+  "Destination": "KILINOCHCHI",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e065"
+  },
+  "Route_No": "87-5-1",
+  "Origin": "ALUTHGAMA",
+  "Destination": "MULLATHIVU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e066"
+  },
+  "Route_No": "88/816-1",
+  "Origin": "TRINCOMALEE",
+  "Destination": "MULLATHIVU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e067"
+  },
+  "Route_No": "88-3",
+  "Origin": "TRINCOMALEE",
+  "Destination": "KILINOCHCHI",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e068"
+  },
+  "Route_No": "98-5",
+  "Origin": "COLOMBO",
+  "Destination": "WELLAWAYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e069"
+  },
+  "Route_No": "98-7",
+  "Origin": "COLOMBO",
+  "Destination": "BADULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e06a"
+  },
+  "Route_No": "98-9",
+  "Origin": "MONARAGALA",
+  "Destination": "KALMUNAI",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e06b"
+  },
+  "Route_No": "98-10",
+  "Origin": "MONARAGALA",
+  "Destination": "AKKARAIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e06c"
+  },
+  "Route_No": "98-13",
+  "Origin": "COLOMBO",
+  "Destination": "AMPARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e06d"
+  },
+  "Route_No": "98-14",
+  "Origin": "COLOMBO",
+  "Destination": "MONARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e06e"
+  },
+  "Route_No": "98-15",
+  "Origin": "COLOMBO",
+  "Destination": "WELLAWAYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e06f"
+  },
+  "Route_No": "98-16",
+  "Origin": "COLOMBO",
+  "Destination": "AKKARAIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e070"
+  },
+  "Route_No": "98-881",
+  "Origin": "COLOMBO",
+  "Destination": "AKKARAIPATTU",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e071"
+  },
+  "Route_No": "122/69/45",
+  "Origin": "COLOMBO",
+  "Destination": "TRINCOMALEE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e072"
+  },
+  "Route_No": "122/210/497",
+  "Origin": "COLOMBO",
+  "Destination": "SURIYAWEWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e073"
+  },
+  "Route_No": "122/210-3",
+  "Origin": "COLOMBO",
+  "Destination": "WALASMULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e074"
+  },
+  "Route_No": "122/210-6",
+  "Origin": "COLOMBO",
+  "Destination": "KOLONNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e075"
+  },
+  "Route_No": "122/750",
+  "Origin": "COLOMBO",
+  "Destination": "HAMBANTHOTA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e076"
+  },
+  "Route_No": "122-210-5",
+  "Origin": "COLOMBO",
+  "Destination": "SEVANAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e077"
+  },
+  "Route_No": "217/22-4",
+  "Origin": "DEHIATTAKANDIYA",
+  "Destination": "AMPARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e078"
+  },
+  "Route_No": "218/68",
+  "Origin": "DEHIATTAKANDIYA",
+  "Destination": "MONARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e079"
+  },
+  "Route_No": "210/685-1",
+  "Origin": "DEHIATTAKANDIYA",
+  "Destination": "KANDY",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e07a"
+  },
+  "Route_No": "218-3",
+  "Origin": "MAHIYANGANAYA",
+  "Destination": "WELIKANDA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e07b"
+  },
+  "Route_No": "218-5",
+  "Origin": "KURUNEGALA",
+  "Destination": "MAHIYANGANAYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e07c"
+  },
+  "Route_No": "218-7",
+  "Origin": "DEHIATTAKANDIYA",
+  "Destination": "KADURUWELA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e07d"
+  },
+  "Route_No": "218-22",
+  "Origin": "ARALAGANVILA",
+  "Destination": "AMPARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e07e"
+  },
+  "Route_No": "221-1/22",
+  "Origin": "GIRANDURUKOTTE",
+  "Destination": "AMPARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e07f"
+  },
+  "Route_No": "234/580/15",
+  "Origin": "MONARAGALA",
+  "Destination": "VAUNIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e080"
+  },
+  "Route_No": "255/98-8",
+  "Origin": "PANADURA",
+  "Destination": "ARUGAMBAY",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e081"
+  },
+  "Route_No": "270-17-2",
+  "Origin": "NEGOMBO",
+  "Destination": "MATARA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e082"
+  },
+  "Route_No": "285/15",
+  "Origin": "MATHUGAMA",
+  "Destination": "ANURADHAPURA NEW BUS STAND",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e083"
+  },
+  "Route_No": "302/218",
+  "Origin": "BIBILA",
+  "Destination": "MONARAGALa",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e084"
+  },
+  "Route_No": "311/99",
+  "Origin": "NUWARAELIYA",
+  "Destination": "BALANGODA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e085"
+  },
+  "Route_No": "311/99/62",
+  "Origin": "NUWARAELIYA",
+  "Destination": "GALLE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e086"
+  },
+  "Route_No": "311/310",
+  "Origin": "NUWARAELIYA",
+  "Destination": "BANDARAWELA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e087"
+  },
+  "Route_No": "314/580(I)/042",
+  "Origin": "BADULLA",
+  "Destination": "ANURADHAPURA NEW BUS STAND",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e088"
+  },
+  "Route_No": "314/580/015-007",
+  "Origin": "BANDARAWELA",
+  "Destination": "VAUNIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e089"
+  },
+  "Route_No": "314-005/580/087",
+  "Origin": "DIYATHALAWA",
+  "Destination": "JAFFNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e08a"
+  },
+  "Route_No": "314-580-87",
+  "Origin": "BADULLA",
+  "Destination": "JAFFNA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e08b"
+  },
+  "Route_No": "315/580/15-7",
+  "Origin": "BANDARAWELA",
+  "Destination": "VAUNIYA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e08c"
+  },
+  "Route_No": "315-1",
+  "Origin": "HORANA",
+  "Destination": "KANDY",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e08d"
+  },
+  "Route_No": "345-1",
+  "Origin": "BELIATTA",
+  "Destination": "KATARAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e08e"
+  },
+  "Route_No": "345-2",
+  "Origin": "THIHAGODA",
+  "Destination": "KATARAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e08f"
+  },
+  "Route_No": "450-000",
+  "Origin": "MT.LAVINIYA",
+  "Destination": "RATNAPURA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e090"
+  },
+  "Route_No": "458/15",
+  "Origin": "MATHUGAMA",
+  "Destination": "ANURADHAPURA NEW BUS STAND",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e091"
+  },
+  "Route_No": "548-5",
+  "Origin": "GALEWELA",
+  "Destination": "KEKIRAWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e092"
+  },
+  "Route_No": "609-1",
+  "Origin": "AVISSAWELA",
+  "Destination": "NAPALAWA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e093"
+  },
+  "Route_No": "1-1/677",
+  "Origin": "COLOMBO",
+  "Destination": "THANNIMALE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e094"
+  },
+  "Route_No": "1-2/402",
+  "Origin": "COLOMBO",
+  "Destination": "HEMMATHAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e095"
+  },
+  "Route_No": "1-2/178",
+  "Origin": "MAWANELLA",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e096"
+  },
+  "Route_No": "1-4/671",
+  "Origin": "COLOMBO",
+  "Destination": "IMBULOWITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e097"
+  },
+  "Route_No": "1/154/103",
+  "Origin": "KANDY",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e098"
+  },
+  "Route_No": "2/1/141",
+  "Origin": "GALLE",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e099"
+  },
+  "Route_No": "2/1/425/162",
+  "Origin": "GALLE",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e09a"
+  },
+  "Route_No": "4-11/174",
+  "Origin": "CHILAW",
+  "Destination": "MAHARAGAMA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e09b"
+  },
+  "Route_No": "004-011/174",
+  "Origin": "CHILAW",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e09c"
+  },
+  "Route_No": "004-011/178/174",
+  "Origin": "CHILAW",
+  "Destination": "BATHTHARAMULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e09d"
+  },
+  "Route_No": "004-011/937",
+  "Origin": "BORALUWEWA",
+  "Destination": "COLOMBO",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e09e"
+  },
+  "Route_No": "4-827",
+  "Origin": "KURAKKANHENA",
+  "Destination": "MANNAR",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e09f"
+  },
+  "Route_No": "5/178/174",
+  "Origin": "KURUNEGALA",
+  "Destination": "BATTARAMULLA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a0"
+  },
+  "Route_No": "6/154/103",
+  "Origin": "KURUNEGALA",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a1"
+  },
+  "Route_No": "6/154/174",
+  "Origin": "CHILAW",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a2"
+  },
+  "Route_No": "5/556",
+  "Origin": "COLOMBO",
+  "Destination": "MATALE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a3"
+  },
+  "Route_No": "7-1-1",
+  "Origin": "COLOMBO",
+  "Destination": "THALAWILA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a4"
+  },
+  "Route_No": "7-1-2",
+  "Origin": "NEGOMBO",
+  "Destination": "NARAHENPITA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a5"
+  },
+  "Route_No": "8/560-5",
+  "Origin": "COLOMBO",
+  "Destination": "RATHTOTA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a6"
+  },
+  "Route_No": "9-1/622-3",
+  "Origin": "COLOMBO",
+  "Destination": "KABARAGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a7"
+  },
+  "Route_No": "1 -> FROM CO",
+  "Origin": "COLOMBO",
+  "Destination": "KANDY",
+  "Route_distance": 115,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a8"
+  },
+  "Route_No": "1 -> FROM KA",
+  "Origin": "KANDY",
+  "Destination": "COLOMBO",
+  "Route_distance": 115,
+  "Origin_sin": "කොළඹ",
+  "Destination_Sin": "මහනුවර",
+  "FareStages": 60
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0a9"
+  },
+  "Route_No": "EX02/EX04/602 ",
+  "Origin": "MAKUMBURA",
+  "Destination": "KANDY",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0aa"
+  },
+  "Route_No": "EX02/EX04/602-1",
+  "Origin": "MAKUMBURA",
+  "Destination": "MATHALE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0ab"
+  },
+  "Route_No": "EX02/01-01 ",
+  "Origin": "MAKUMBURA",
+  "Destination": "KEGALLE",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0ac"
+  },
+  "Route_No": "EX03/EX04/602 ",
+  "Origin": "COLOMBO",
+  "Destination": "KANDY",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+},
+{
+  "_id": {
+    "$oid": "68ca40394118e95e5f17e0ad"
+  },
+  "Route_No": "EX03/EX04 ",
+  "Origin": "COLOMBO",
+  "Destination": "KURUNEGALA",
+  "Route_distance": null,
+  "Origin_sin": null,
+  "Destination_Sin": null,
+  "FareStages": null
+}]
