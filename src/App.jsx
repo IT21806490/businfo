@@ -28,21 +28,8 @@ const App = () => {
     setPath(to);
   };
 
-  return (
-    <div>
-      {/* Navigation */}
-      <nav>
-        <a href="/" onClick={(e) => { e.preventDefault(); navigate("/"); }}>Home</a>
-        <a href="/routes" onClick={(e) => { e.preventDefault(); navigate("/routes"); }}>Routes</a>
-        <a href="/fares" onClick={(e) => { e.preventDefault(); navigate("/fares"); }}>Fares</a>
-        <a href="/highway-fares" onClick={(e) => { e.preventDefault(); navigate("/highway-fares"); }}>Highway Fares</a>
-        <a href="/contact" onClick={(e) => { e.preventDefault(); navigate("/contact"); }}>Contact</a>
-      </nav>
 
-      {/* Render page */}
-      <main>{routes[path] || <Home />}</main>
-    </div>
-  );
 };
 
 export default App;
+
