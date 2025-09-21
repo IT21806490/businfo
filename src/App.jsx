@@ -5,7 +5,7 @@ import FindRoutes from './components/FindRoutes';
 import Contact from './components/Contact';
 import Fares from './components/Fares';
 import HighwayFareCalculator from './components/HighwayFareCalculator';
-// import '../src/main';
+import '../src/main';
 
 const App = () => {
   return (
