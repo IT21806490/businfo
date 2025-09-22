@@ -1,0 +1,328 @@
+[{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee81"
+  },
+  "route_no": 1,
+  "distance": 115.2,
+  "travel_time": 3.15
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee82"
+  },
+  "route_no": "1-2",
+  "distance": 90,
+  "travel_time": 2.35
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee83"
+  },
+  "route_no": 2,
+  "distance": 160.4,
+  "travel_time": 4.3
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee84"
+  },
+  "route_no": "2-1",
+  "distance": 116.4,
+  "travel_time": 3.15
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee85"
+  },
+  "route_no": "2-3",
+  "distance": 85.5,
+  "travel_time": 2.3
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee86"
+  },
+  "route_no": "4-7",
+  "distance": 137.2,
+  "travel_time": 3.3
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee87"
+  },
+  "route_no": "4-9",
+  "distance": 129,
+  "travel_time": 3.2
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee88"
+  },
+  "route_no": "4-11",
+  "distance": 82.8,
+  "travel_time": 2.3
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee89"
+  },
+  "route_no": 6,
+  "distance": 93.4,
+  "travel_time": 2.35
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee8a"
+  },
+  "route_no": 8,
+  "distance": 141.3,
+  "travel_time": 4
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee8b"
+  },
+  "route_no": "9-1",
+  "distance": 129.8,
+  "travel_time": 3.45
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee8c"
+  },
+  "route_no": "15-1-1",
+  "distance": 222.3,
+  "travel_time": 5.45
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee8d"
+  },
+  "route_no": "15-7",
+  "distance": 285.7,
+  "travel_time": 6.45
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee8e"
+  },
+  "route_no": "18-2",
+  "distance": 120.6,
+  "travel_time": 4
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee8f"
+  },
+  "route_no": "18-7",
+  "distance": 137,
+  "travel_time": 4.4
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee90"
+  },
+  "route_no": "19-2",
+  "distance": 123.7,
+  "travel_time": 3.3
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee91"
+  },
+  "route_no": "22-2",
+  "distance": 197.7,
+  "travel_time": 5
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee92"
+  },
+  "route_no": "22-7",
+  "distance": 342,
+  "travel_time": 9
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee93"
+  },
+  "route_no": "22-9",
+  "distance": 339.6,
+  "travel_time": 8.55
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee94"
+  },
+  "route_no": 26,
+  "distance": 184.5,
+  "travel_time": 5
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee95"
+  },
+  "route_no": "34-3",
+  "distance": 76.3,
+  "travel_time": 2
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee96"
+  },
+  "route_no": "42-2",
+  "distance": 148.9,
+  "travel_time": 4.15
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee97"
+  },
+  "route_no": 43,
+  "distance": 141.3,
+  "travel_time": 4
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee98"
+  },
+  "route_no": "48-1",
+  "distance": 314.9,
+  "travel_time": 8
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee99"
+  },
+  "route_no": "48-12",
+  "distance": 378.7,
+  "travel_time": 10.1
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee9a"
+  },
+  "route_no": 49,
+  "distance": 262.3,
+  "travel_time": 6.45
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee9b"
+  },
+  "route_no": 60,
+  "distance": 200.8,
+  "travel_time": 5.5
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee9c"
+  },
+  "route_no": "60-1",
+  "distance": 154.7,
+  "travel_time": 4.3
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee9d"
+  },
+  "route_no": "69-4",
+  "distance": 86.5,
+  "travel_time": 2.2
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee9e"
+  },
+  "route_no": 79,
+  "distance": 180,
+  "travel_time": 5.15
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9cee9f"
+  },
+  "route_no": "79-1",
+  "distance": 208.4,
+  "travel_time": 6.05
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea0"
+  },
+  "route_no": "92-4",
+  "distance": 86.1,
+  "travel_time": 2.2
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea1"
+  },
+  "route_no": 98,
+  "distance": 404.4,
+  "travel_time": 10.3
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea2"
+  },
+  "route_no": 99,
+  "distance": 238,
+  "travel_time": 7
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea3"
+  },
+  "route_no": "99-8",
+  "distance": 257.7,
+  "travel_time": 7.4
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea4"
+  },
+  "route_no": 122,
+  "distance": 103.1,
+  "travel_time": 2.5
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea5"
+  },
+  "route_no": "122/210",
+  "distance": 180.5,
+  "travel_time": 4.45
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea6"
+  },
+  "route_no": "211/69/45",
+  "distance": 433.2,
+  "travel_time": 11
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea7"
+  },
+  "route_no": "366-2",
+  "distance": 186.5,
+  "travel_time": 5
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea8"
+  },
+  "route_no": 401,
+  "distance": 95.5,
+  "travel_time": 2.45
+},
+{
+  "_id": {
+    "$oid": "68d1728025e711931b9ceea9"
+  },
+  "route_no": 602,
+  "distance": 43,
+  "travel_time": 1.1
+}]

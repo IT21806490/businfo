@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import allSectionsData from "../data/all_section.json";
 import allRoutesData from "../data/allroutes.json";
-import { Bus, RefreshCw, Trash2 } from "lucide-react";
+import normalData from "../data/normal.json";
+import semiData from "../data/semi.json";
+import acData from "../data/ac.json";
+import { Bus, RefreshCw, Trash2, Users, Clock } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -13,40 +16,29 @@ const FindRoutes = () => {
   const [loading, setLoading] = useState(false);
   const [sectionMap, setSectionMap] = useState({});
   const [routeMap, setRouteMap] = useState({});
-
   const [showOriginSuggestions, setShowOriginSuggestions] = useState(false);
-  const [showDestinationSuggestions, setShowDestinationSuggestions] =
-    useState(false);
+  const [showDestinationSuggestions, setShowDestinationSuggestions] = useState(false);
+
+  const [normalMap, setNormalMap] = useState({});
+  const [semiMap, setSemiMap] = useState({});
+  const [acMap, setAcMap] = useState({});
 
   const originRef = useRef(null);
   const destinationRef = useRef(null);
 
-  // normalization
-const normalizeRouteNo = (routeNo) => {
-  if (!routeNo) return "";
-
-  // Convert to string and trim spaces
-  const strRouteNo = String(routeNo).trim();
-
-  // Split by "-" or "/" while keeping separators
-  const parts = strRouteNo.split(/([-/])/);
-
-  return parts
-    .map((part) => {
-      if (part === "-" || part === "/") return part;
-
-      // Remove leading zeros from numeric prefix
-      const match = part.match(/^0*(\d+)(.*)$/);
-      if (match) return match[1] + (match[2] || "");
-
-      return part;
-    })
-    .join("");
-};
-
-
-
-
+  const normalizeRouteNo = (routeNo) => {
+    if (!routeNo) return "";
+    const strRouteNo = String(routeNo).trim();
+    const parts = strRouteNo.split(/([-/])/);
+    return parts
+      .map((part) => {
+        if (part === "-" || part === "/") return part;
+        const match = part.match(/^0*(\d+)(.*)$/);
+        if (match) return match[1] + (match[2] || "");
+        return part;
+      })
+      .join("");
+  };
 
   useEffect(() => {
     const sMap = {};
@@ -65,9 +57,22 @@ const normalizeRouteNo = (routeNo) => {
       rMap[normalizedRouteNo] = r;
     });
 
+    const makeMap = (data) => {
+      const map = {};
+      data.forEach((r) => {
+        const normalized = normalizeRouteNo(r.route_no);
+        map[normalized] = r;
+      });
+      return map;
+    };
+
     setSectionMap(sMap);
     setRouteMap(rMap);
     setAllSections(Array.from(uniqueSections).sort());
+
+    setNormalMap(makeMap(normalData));
+    setSemiMap(makeMap(semiData));
+    setAcMap(makeMap(acData));
   }, []);
 
   useEffect(() => {
@@ -104,14 +109,40 @@ const normalizeRouteNo = (routeNo) => {
         const destSec = sectionMap[routeNo][destination];
         if (originSec && destSec) {
           const routeInfo = routeMap[routeNo];
+
+          const services = [];
+          if (normalMap[routeNo]) {
+            services.push({
+              type: "Normal",
+              distance: normalMap[routeNo].distance,
+              travel_time: normalMap[routeNo].travel_time,
+            });
+          }
+          if (semiMap[routeNo]) {
+            services.push({
+              type: "Semi",
+              distance: semiMap[routeNo].distance,
+              travel_time: semiMap[routeNo].travel_time,
+            });
+          }
+          if (acMap[routeNo]) {
+            services.push({
+              type: "AC",
+              distance: acMap[routeNo].distance,
+              travel_time: acMap[routeNo].travel_time,
+            });
+          }
+
           results.push({
-            route_no: routeNo, // already normalized
+            route_no: routeNo,
             route_name: routeInfo
               ? `${routeInfo.Origin} - ${routeInfo.Destination}`
               : "Unknown",
+            services,
           });
         }
       });
+
       results.sort((a, b) => a.route_no.localeCompare(b.route_no));
       setMatchingRoutes(results);
       setLoading(false);
@@ -179,7 +210,6 @@ const normalizeRouteNo = (routeNo) => {
         </div>
       </section>
 
-      {/* Search Area */}
       <main className="flex-1 p-4 sm:p-6 flex justify-center">
         <div className="w-full max-w-xl sm:max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-blue-700 mb-6 sm:mb-8 text-center">
@@ -188,7 +218,6 @@ const normalizeRouteNo = (routeNo) => {
 
           {/* Input Fields */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
-            {/* Origin Input */}
             <div className="relative" ref={originRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Origin
@@ -220,7 +249,6 @@ const normalizeRouteNo = (routeNo) => {
               )}
             </div>
 
-            {/* Destination Input */}
             <div className="relative" ref={destinationRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Destination
@@ -237,24 +265,23 @@ const normalizeRouteNo = (routeNo) => {
                 className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm"
                 autoComplete="off"
               />
-              {showDestinationSuggestions &&
-                filteredDestinationSections.length > 0 && (
-                  <ul className="absolute z-10 w-full max-h-40 sm:max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
-                    {filteredDestinationSections.map((sec) => (
-                      <li
-                        key={sec}
-                        onClick={() => selectDestination(sec)}
-                        className="cursor-pointer px-3 py-2 hover:bg-blue-100 transition"
-                      >
-                        {sec}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+              {showDestinationSuggestions && filteredDestinationSections.length > 0 && (
+                <ul className="absolute z-10 w-full max-h-40 sm:max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
+                  {filteredDestinationSections.map((sec) => (
+                    <li
+                      key={sec}
+                      onClick={() => selectDestination(sec)}
+                      className="cursor-pointer px-3 py-2 hover:bg-blue-100 transition"
+                    >
+                      {sec}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
 
-          {/* Action Buttons */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6">
             <button
               onClick={swapOriginDestination}
@@ -273,9 +300,7 @@ const normalizeRouteNo = (routeNo) => {
 
             <button
               onClick={findRoutes}
-              disabled={
-                loading || !origin || !destination || origin === destination
-              }
+              disabled={loading || !origin || !destination || origin === destination}
               className="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition disabled:opacity-50"
             >
               {loading ? "Searching..." : "Find Routes"}
@@ -286,10 +311,7 @@ const normalizeRouteNo = (routeNo) => {
           <div>
             {loading && (
               <div className="text-center py-4">
-                <Bus
-                  className="animate-bounce mx-auto text-blue-600"
-                  size={36}
-                />
+                <Bus className="animate-bounce mx-auto text-blue-600" size={36} />
                 <p className="text-gray-600 mt-2 text-sm sm:text-base">
                   Searching for routes...
                 </p>
@@ -310,19 +332,40 @@ const normalizeRouteNo = (routeNo) => {
                   Found {matchingRoutes.length} route
                   {matchingRoutes.length > 1 ? "s" : ""}
                 </p>
-                <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {matchingRoutes.map((route, idx) => (
                     <div
                       key={idx}
-                      className="border border-gray-200 rounded-xl p-4 sm:p-6 shadow-md hover:shadow-lg transition bg-white"
+                      className="border border-gray-200 rounded-2xl p-5 shadow-md bg-white"
                     >
-                      <h2 className="text-base sm:text-lg font-bold text-blue-800">
-                        {route.route_name}
-                      </h2>
-                      <p className="text-xs sm:text-sm text-gray-600">
-                        <span className="font-semibold">Route No:</span>{" "}
-                        {route.route_no}
-                      </p>
+                      {/* Route Name & No */}
+                      <div className="mb-4">
+                        <h2 className="text-lg font-bold text-blue-800">{route.route_name}</h2>
+                        <p className="text-sm font-medium text-gray-500 mt-1">Route No: {route.route_no}</p>
+                      </div>
+
+                      {/* Services */}
+                      <div className="flex flex-col gap-3">
+                        {route.services.map((s, i) => (
+                          <div
+                            key={i}
+                            className={`flex flex-col sm:flex-row justify-between items-center px-4 py-3 rounded-lg shadow-sm transition transform hover:scale-105 ${
+                              s.type === "Normal"
+                                ? "bg-orange-100 text-orange-800"
+                                : s.type === "Semi"
+                                ? "bg-blue-100 text-blue-800"
+                                : "bg-green-100 text-green-800"
+                            }`}
+                          >
+                            <span className="font-semibold text-sm sm:text-base">{s.type}</span>
+                            <div className="text-xs sm:text-sm text-gray-700 mt-1 sm:mt-0 sm:text-right">
+                              <div>Distance: {s.distance} km</div>
+                              <div>Travel Time: {s.travel_time} hrs</div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
