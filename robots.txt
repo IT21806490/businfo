@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://businfo.click/sitemap.xml
+Host: https://businfo.click
