@@ -4,8 +4,10 @@ import highwaySectionsData from "../data/highway_sections.json";
 import { Bus, RefreshCw, Trash2 } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import useBlockInspect from "../hooks/useBlockInspect";
 
 const HighwayFareCalculator = () => {
+  useBlockInspect();
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
   const [highwayResults, setHighwayResults] = useState([]);

@@ -1,12 +1,14 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useMemo, useCallback } from "react";
 import allSectionsData from "../data/all_section.json";
 import fareStagesData from "../data/fare_stages.json";
 import allRoutesData from "../data/allroutes.json";
-import { Bus, RefreshCw, Trash2 } from "lucide-react";
+import { Bus, RefreshCw, Trash2, Search } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import useBlockInspect from "../hooks/useBlockInspect";
 
 const FareCalculator = () => {
+  useBlockInspect();
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
   const [fareResults, setFareResults] = useState([]);
@@ -17,9 +19,14 @@ const FareCalculator = () => {
   const [routeMap, setRouteMap] = useState({});
   const [showOriginSuggestions, setShowOriginSuggestions] = useState(false);
   const [showDestinationSuggestions, setShowDestinationSuggestions] = useState(false);
+  const [originQuery, setOriginQuery] = useState("");
+  const [destinationQuery, setDestinationQuery] = useState("");
+  const [debouncedOriginQuery, setDebouncedOriginQuery] = useState("");
+  const [debouncedDestinationQuery, setDebouncedDestinationQuery] = useState("");
 
   const originRef = useRef(null);
   const destinationRef = useRef(null);
+  const debounceTimer = useRef(null);
 
   // ------------------- Normalization Function -------------------
   const normalizeRouteNo = (routeNo) => {
@@ -34,6 +41,162 @@ const FareCalculator = () => {
         return part;
       })
       .join("");
+  };
+
+  // ------------------- Debounce Hook -------------------
+  const debounce = useCallback((func, delay) => {
+    return (...args) => {
+      clearTimeout(debounceTimer.current);
+      debounceTimer.current = setTimeout(() => func.apply(null, args), delay);
+    };
+  }, []);
+
+  // Debounced search queries
+  useEffect(() => {
+    const debouncedUpdate = debounce(() => {
+      setDebouncedOriginQuery(originQuery);
+    }, 150);
+    debouncedUpdate();
+  }, [originQuery, debounce]);
+
+  useEffect(() => {
+    const debouncedUpdate = debounce(() => {
+      setDebouncedDestinationQuery(destinationQuery);
+    }, 150);
+    debouncedUpdate();
+  }, [destinationQuery, debounce]);
+
+  // ------------------- Fast Search with Memoization -------------------
+  const filteredOriginSections = useMemo(() => {
+    if (!debouncedOriginQuery.trim()) return allSections.slice(0, 50); // Show first 50 if no query
+    
+    const query = debouncedOriginQuery.toLowerCase();
+    const results = [];
+    const exactMatches = [];
+    const startsWithMatches = [];
+    const containsMatches = [];
+    
+    for (const section of allSections) {
+      const sectionLower = section.toLowerCase();
+      
+      if (sectionLower === query) {
+        exactMatches.push(section);
+      } else if (sectionLower.startsWith(query)) {
+        startsWithMatches.push(section);
+      } else if (sectionLower.includes(query)) {
+        containsMatches.push(section);
+      }
+      
+      // Limit total results for performance
+      if (results.length >= 100) break;
+    }
+    
+    return [...exactMatches, ...startsWithMatches, ...containsMatches].slice(0, 50);
+  }, [debouncedOriginQuery, allSections]);
+
+  const filteredDestinationSections = useMemo(() => {
+    if (!debouncedDestinationQuery.trim()) return allSections.slice(0, 50);
+    
+    const query = debouncedDestinationQuery.toLowerCase();
+    const results = [];
+    const exactMatches = [];
+    const startsWithMatches = [];
+    const containsMatches = [];
+    
+    for (const section of allSections) {
+      const sectionLower = section.toLowerCase();
+      
+      if (sectionLower === query) {
+        exactMatches.push(section);
+      } else if (sectionLower.startsWith(query)) {
+        startsWithMatches.push(section);
+      } else if (sectionLower.includes(query)) {
+        containsMatches.push(section);
+      }
+      
+      if (results.length >= 100) break;
+    }
+    
+    return [...exactMatches, ...startsWithMatches, ...containsMatches].slice(0, 50);
+  }, [debouncedDestinationQuery, allSections]);
+  const hasServiceType = (serviceTypeStr, typeToCheck) => {
+    if (!serviceTypeStr) return false;
+    const types = serviceTypeStr.split(',');
+    return types.some(t => t.trim() === typeToCheck);
+  };
+
+  const getAvailableServiceTypes = (routeNo) => {
+    const sections = sectionMap[routeNo];
+    if (!sections) return [];
+    
+    const types = new Set();
+    Object.values(sections).forEach(section => {
+      if (section.service_type) {
+        section.service_type.split(',').forEach(type => {
+          types.add(type.trim());
+        });
+      }
+    });
+    return Array.from(types);
+  };
+
+  const findNearestSection = (routeNo, currentSectionId, direction, relativeTo, serviceType) => {
+    const sections = sectionMap[routeNo];
+    if (!sections) return null;
+
+    const isOrigin = relativeTo === 'origin';
+    const isUp = direction === 'up';
+    
+    const shouldGoBackward = (isOrigin && isUp) || (!isOrigin && !isUp);
+    
+    let nearestSection = null;
+    let bestDistance = Infinity;
+
+    Object.values(sections).forEach(section => {
+      if (!hasServiceType(section.service_type, serviceType)) return;
+      
+      const sectionId = section.section_id;
+      
+      if (shouldGoBackward) {
+        // Looking for sections with smaller IDs
+        if (sectionId < currentSectionId) {
+          const distance = currentSectionId - sectionId;
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            nearestSection = section;
+          }
+        }
+      } else {
+        // Looking for sections with larger IDs
+        if (sectionId > currentSectionId) {
+          const distance = sectionId - currentSectionId;
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            nearestSection = section;
+          }
+        }
+      }
+    });
+
+    return nearestSection;
+  };
+
+  const resolveRouteName = (routeNo, originName, destinationName) => {
+    const routeInfo = routeMap[routeNo];
+    if (routeInfo) {
+      return `${routeInfo.Origin} - ${routeInfo.Destination}`;
+    }
+
+    // Fallback: try to find by origin and destination
+    const fallbackRoute = Object.values(routeMap).find(route => 
+      route.Origin === originName && route.Destination === destinationName
+    );
+    
+    if (fallbackRoute) {
+      return `${fallbackRoute.Origin} - ${fallbackRoute.Destination}`;
+    }
+
+    return 'Unknown';
   };
 
   // ------------------- Initialization -------------------
@@ -78,34 +241,88 @@ const FareCalculator = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const filteredOriginSections = allSections.filter((sec) =>
-    sec.toLowerCase().includes(origin.toLowerCase())
-  );
-  const filteredDestinationSections = allSections.filter((sec) =>
-    sec.toLowerCase().includes(destination.toLowerCase())
-  );
+  // ------------------- Helper Functions for AC/Semi Logic -------------------
 
   const swapOriginDestination = () => {
+    const tempOrigin = origin;
+    const tempOriginQuery = originQuery;
+    
     setOrigin(destination);
-    setDestination(origin);
+    setOriginQuery(destinationQuery);
+    setDestination(tempOrigin);
+    setDestinationQuery(tempOriginQuery);
   };
 
   const clearSelections = () => {
     setOrigin("");
     setDestination("");
+    setOriginQuery("");
+    setDestinationQuery("");
     setFareResults([]);
-  };
-
-  const selectOrigin = (val) => {
-    setOrigin(val);
     setShowOriginSuggestions(false);
-  };
-  const selectDestination = (val) => {
-    setDestination(val);
     setShowDestinationSuggestions(false);
   };
 
-  // ------------------- Fare Calculation -------------------
+  const selectOrigin = useCallback((val) => {
+    setOrigin(val);
+    setOriginQuery(val);
+    setShowOriginSuggestions(false);
+  }, []);
+
+  const selectDestination = useCallback((val) => {
+    setDestination(val);
+    setDestinationQuery(val);
+    setShowDestinationSuggestions(false);
+  }, []);
+
+  // Handle input changes with fast typing support
+  const handleOriginChange = useCallback((e) => {
+    const value = e.target.value;
+    setOriginQuery(value);
+    
+    // If the typed value exactly matches an existing section, auto-select it
+    const exactMatch = allSections.find(section => 
+      section.toLowerCase() === value.toLowerCase()
+    );
+    
+    if (exactMatch) {
+      setOrigin(exactMatch);
+    } else {
+      setOrigin(value);
+    }
+    
+    setShowOriginSuggestions(true);
+  }, [allSections]);
+
+  const handleDestinationChange = useCallback((e) => {
+    const value = e.target.value;
+    setDestinationQuery(value);
+    
+    const exactMatch = allSections.find(section => 
+      section.toLowerCase() === value.toLowerCase()
+    );
+    
+    if (exactMatch) {
+      setDestination(exactMatch);
+    } else {
+      setDestination(value);
+    }
+    
+    setShowDestinationSuggestions(true);
+  }, [allSections]);
+
+  // Keyboard navigation for suggestions
+  const handleKeyDown = useCallback((e, type) => {
+    if (e.key === 'Escape') {
+      if (type === 'origin') {
+        setShowOriginSuggestions(false);
+      } else {
+        setShowDestinationSuggestions(false);
+      }
+    }
+  }, []);
+
+  // ------------------- Enhanced Fare Calculation -------------------
   const calculateFare = () => {
     if (!origin || !destination) {
       alert("Please select both origin and destination");
@@ -119,25 +336,84 @@ const FareCalculator = () => {
     setLoading(true);
     setTimeout(() => {
       const results = [];
+      
       Object.keys(sectionMap).forEach((routeNo) => {
         const originSec = sectionMap[routeNo][origin];
         const destSec = sectionMap[routeNo][destination];
+        
         if (originSec && destSec) {
-          const sectionDiff = Math.abs(destSec.section_id - originSec.section_id);
-          const fareData = fareStageMap[sectionDiff];
-          if (!fareData) return;
-          const routeInfo = routeMap[routeNo];
-          results.push({
-            route_no: routeNo, // already normalized
-            route_name: routeInfo
-              ? `${routeInfo.Origin} - ${routeInfo.Destination}`
-              : "Unknown",
-            normal: fareData.normal,
-            semi: fareData.semi,
-            ac: fareData.ac,
-          });
+          const direction = originSec.section_id < destSec.section_id ? 'up' : 'down';
+          
+          // Calculate normal fare
+          const sectionDiffNormal = Math.abs(destSec.section_id - originSec.section_id);
+          const normalFareData = fareStageMap[sectionDiffNormal];
+          const normalFare = normalFareData?.normal;
+
+          // Get available service types for this route
+          const availableServices = getAvailableServiceTypes(routeNo);
+
+          let semi = null;
+          let ac = null;
+
+          // Calculate Semi fare (SL service type)
+          if (availableServices.includes('SL')) {
+            let nearOrigin = hasServiceType(originSec.service_type, 'SL') 
+              ? originSec 
+              : findNearestSection(routeNo, originSec.section_id, direction, 'origin', 'SL');
+
+            let nearDestination = hasServiceType(destSec.service_type, 'SL') 
+              ? destSec 
+              : findNearestSection(routeNo, destSec.section_id, direction, 'destination', 'SL');
+
+            if (nearOrigin && nearDestination) {
+              const sectionDiff = Math.abs(nearDestination.section_id - nearOrigin.section_id);
+              const semiFareData = fareStageMap[sectionDiff];
+              semi = semiFareData?.semi;
+            }
+          }
+
+          // Calculate AC fare (LX service type)
+          if (availableServices.includes('LX')) {
+            let nearOrigin = hasServiceType(originSec.service_type, 'LX') 
+              ? originSec 
+              : findNearestSection(routeNo, originSec.section_id, direction, 'origin', 'LX');
+
+            let nearDestination = hasServiceType(destSec.service_type, 'LX') 
+              ? destSec 
+              : findNearestSection(routeNo, destSec.section_id, direction, 'destination', 'LX');
+
+            if (nearOrigin && nearDestination) {
+              const sectionDiff = Math.abs(nearDestination.section_id - nearOrigin.section_id);
+              const acFareData = fareStageMap[sectionDiff];
+              ac = acFareData?.ac;
+            }
+          }
+
+          const routeName = resolveRouteName(routeNo, origin, destination);
+
+          const fareEntry = {
+            route_no: routeNo,
+            route_name: routeName,
+          };
+
+          // Only add fare types that have valid values
+          if (normalFare !== undefined && normalFare !== null) {
+            fareEntry.normal = normalFare;
+          }
+          if (semi !== undefined && semi !== null) {
+            fareEntry.semi = semi;
+          }
+          if (ac !== undefined && ac !== null) {
+            fareEntry.ac = ac;
+          }
+
+          // Only add the result if at least one fare type is available
+          if (fareEntry.normal || fareEntry.semi || fareEntry.ac) {
+            results.push(fareEntry);
+          }
         }
       });
+
       results.sort((a, b) => a.route_no.localeCompare(b.route_no));
       setFareResults(results);
       setLoading(false);
@@ -178,60 +454,88 @@ const FareCalculator = () => {
             {/* Origin */}
             <div className="relative" ref={originRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">Origin</label>
-              <input
-                type="text"
-                placeholder="Enter origin..."
-                value={origin}
-                onChange={(e) => {
-                  setOrigin(e.target.value);
-                  setShowOriginSuggestions(true);
-                }}
-                onFocus={() => setShowOriginSuggestions(true)}
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm"
-                autoComplete="off"
-              />
-              {showOriginSuggestions && filteredOriginSections.length > 0 && (
-                <ul className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
-                  {filteredOriginSections.map((sec) => (
-                    <li
-                      key={sec}
-                      onClick={() => selectOrigin(sec)}
-                      className="cursor-pointer px-3 py-2 hover:bg-blue-100 transition"
-                    >
-                      {sec}
-                    </li>
-                  ))}
-                </ul>
+              <div className="relative">
+                <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Type to search origin..."
+                  value={originQuery}
+                  onChange={handleOriginChange}
+                  onFocus={() => setShowOriginSuggestions(true)}
+                  onKeyDown={(e) => handleKeyDown(e, 'origin')}
+                  className="w-full pl-10 border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
+                  autoComplete="off"
+                />
+              </div>
+              {showOriginSuggestions && (
+                <div className="absolute z-50 w-full max-h-64 overflow-auto bg-white border border-gray-200 rounded-lg mt-1 shadow-xl">
+                  {filteredOriginSections.length > 0 ? (
+                    <>
+                      <div className="sticky top-0 bg-gray-50 px-3 py-2 text-xs text-gray-500 border-b">
+                        {filteredOriginSections.length} result{filteredOriginSections.length !== 1 ? 's' : ''} found
+                      </div>
+                      {filteredOriginSections.map((sec, index) => (
+                        <div
+                          key={`${sec}-${index}`}
+                          onClick={() => selectOrigin(sec)}
+                          className="cursor-pointer px-3 py-2.5 hover:bg-blue-50 transition-colors duration-150 border-b last:border-b-0 flex items-center"
+                        >
+                          <div className="flex-1">
+                            <div className="text-sm font-medium text-gray-900">{sec}</div>
+                          </div>
+                        </div>
+                      ))}
+                    </>
+                  ) : (
+                    <div className="px-3 py-4 text-center text-sm text-gray-500">
+                      No sections found for "{debouncedOriginQuery}"
+                    </div>
+                  )}
+                </div>
               )}
             </div>
 
             {/* Destination */}
             <div className="relative" ref={destinationRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
-              <input
-                type="text"
-                placeholder="Enter destination..."
-                value={destination}
-                onChange={(e) => {
-                  setDestination(e.target.value);
-                  setShowDestinationSuggestions(true);
-                }}
-                onFocus={() => setShowDestinationSuggestions(true)}
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm"
-                autoComplete="off"
-              />
-              {showDestinationSuggestions && filteredDestinationSections.length > 0 && (
-                <ul className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
-                  {filteredDestinationSections.map((sec) => (
-                    <li
-                      key={sec}
-                      onClick={() => selectDestination(sec)}
-                      className="cursor-pointer px-3 py-2 hover:bg-blue-100 transition"
-                    >
-                      {sec}
-                    </li>
-                  ))}
-                </ul>
+              <div className="relative">
+                <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Type to search destination..."
+                  value={destinationQuery}
+                  onChange={handleDestinationChange}
+                  onFocus={() => setShowDestinationSuggestions(true)}
+                  onKeyDown={(e) => handleKeyDown(e, 'destination')}
+                  className="w-full pl-10 border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
+                  autoComplete="off"
+                />
+              </div>
+              {showDestinationSuggestions && (
+                <div className="absolute z-50 w-full max-h-64 overflow-auto bg-white border border-gray-200 rounded-lg mt-1 shadow-xl">
+                  {filteredDestinationSections.length > 0 ? (
+                    <>
+                      <div className="sticky top-0 bg-gray-50 px-3 py-2 text-xs text-gray-500 border-b">
+                        {filteredDestinationSections.length} result{filteredDestinationSections.length !== 1 ? 's' : ''} found
+                      </div>
+                      {filteredDestinationSections.map((sec, index) => (
+                        <div
+                          key={`${sec}-${index}`}
+                          onClick={() => selectDestination(sec)}
+                          className="cursor-pointer px-3 py-2.5 hover:bg-blue-50 transition-colors duration-150 border-b last:border-b-0 flex items-center"
+                        >
+                          <div className="flex-1">
+                            <div className="text-sm font-medium text-gray-900">{sec}</div>
+                          </div>
+                        </div>
+                      ))}
+                    </>
+                  ) : (
+                    <div className="px-3 py-4 text-center text-sm text-gray-500">
+                      No sections found for "{debouncedDestinationQuery}"
+                    </div>
+                  )}
+                </div>
               )}
             </div>
           </div>
@@ -241,22 +545,29 @@ const FareCalculator = () => {
             <button
               onClick={swapOriginDestination}
               disabled={!origin || !destination}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition disabled:opacity-50"
+              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <RefreshCw size={16} className="mr-2" /> Swap
             </button>
             <button
               onClick={clearSelections}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition"
+              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-200"
             >
               <Trash2 size={16} className="mr-2" /> Clear
             </button>
             <button
               onClick={calculateFare}
               disabled={loading || !origin || !destination || origin === destination}
-              className="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition disabled:opacity-50"
+              className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? "Calculating..." : "Calculate Fare"}
+              {loading ? (
+                <>
+                  <Bus className="animate-spin mr-2" size={16} />
+                  Calculating...
+                </>
+              ) : (
+                "Calculate Fare"
+              )}
             </button>
           </div>
 
@@ -295,18 +606,24 @@ const FareCalculator = () => {
                         </p>
                       </div>
                       <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-2 sm:mt-4">
-                        <div className="rounded-lg p-2 sm:p-4 text-center bg-yellow-50 text-yellow-700 shadow-sm">
-                          <p className="text-xs sm:text-sm font-semibold">Normal</p>
-                          <p className="text-sm sm:text-lg font-bold">Rs. {fare.normal}</p>
-                        </div>
-                        <div className="rounded-lg p-2 sm:p-4 text-center bg-blue-50 text-blue-700 shadow-sm">
-                          <p className="text-xs sm:text-sm font-semibold">Semi</p>
-                          <p className="text-sm sm:text-lg font-bold">Rs. {fare.semi}</p>
-                        </div>
-                        <div className="rounded-lg p-2 sm:p-4 text-center bg-green-50 text-green-700 shadow-sm">
-                          <p className="text-xs sm:text-sm font-semibold">AC</p>
-                          <p className="text-sm sm:text-lg font-bold">Rs. {fare.ac}</p>
-                        </div>
+                        {fare.normal && (
+                          <div className="rounded-lg p-2 sm:p-4 text-center bg-yellow-50 text-yellow-700 shadow-sm">
+                            <p className="text-xs sm:text-sm font-semibold">Normal</p>
+                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.normal}</p>
+                          </div>
+                        )}
+                        {fare.semi && (
+                          <div className="rounded-lg p-2 sm:p-4 text-center bg-blue-50 text-blue-700 shadow-sm">
+                            <p className="text-xs sm:text-sm font-semibold">Semi</p>
+                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.semi}</p>
+                          </div>
+                        )}
+                        {fare.ac && (
+                          <div className="rounded-lg p-2 sm:p-4 text-center bg-green-50 text-green-700 shadow-sm">
+                            <p className="text-xs sm:text-sm font-semibold">AC</p>
+                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.ac}</p>
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}

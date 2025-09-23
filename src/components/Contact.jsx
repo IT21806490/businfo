@@ -2,8 +2,10 @@ import React from "react";
 import { Bus, Mail, Phone, MapPin } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import useBlockInspect from "../hooks/useBlockInspect";
 
 const Contact = () => {
+  useBlockInspect();
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />

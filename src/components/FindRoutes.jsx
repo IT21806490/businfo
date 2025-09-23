@@ -7,8 +7,10 @@ import acData from "../data/ac.json";
 import { Bus, RefreshCw, Trash2, Users, Clock } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import useBlockInspect from "../hooks/useBlockInspect";
 
 const FindRoutes = () => {
+  useBlockInspect();
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
   const [matchingRoutes, setMatchingRoutes] = useState([]);

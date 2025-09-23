@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logoImage from "../images/logo.png";
+import useBlockInspect from "../hooks/useBlockInspect";
 
 const Navbar = () => {
+  useBlockInspect();
   const [isOpen, setIsOpen] = useState(false);
   const [faresDropdown, setFaresDropdown] = useState(false);
   const menuRef = useRef(null);
