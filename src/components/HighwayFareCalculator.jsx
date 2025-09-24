@@ -21,32 +21,34 @@ const HighwayFareCalculator = () => {
   const originRef = useRef(null);
   const destinationRef = useRef(null);
 
-const normalizeRouteNo = (routeNo) => {
-  if (!routeNo) return "";
-  let str = String(routeNo).trim();
+const expressRoutesCount = allRoutesData.filter((route) =>
+  String(route.Route_No || "").startsWith("EX")
+).length;
 
-  // Split prefix (letters + space) from the rest
-  const prefixMatch = str.match(/^([A-Za-z\s]+)?(.*)$/);
-  let prefix = prefixMatch[1] ? prefixMatch[1].trim() : "";
-  let mainPart = prefixMatch[2] || "";
+  const sectionsCoveredCount = highwaySectionsData.length;
 
-  // If mainPart starts with a separator like "-" or "/", remove it
-  if (mainPart.startsWith("-") || mainPart.startsWith("/")) {
-    mainPart = mainPart.slice(1);
-  }
+  const normalizeRouteNo = (routeNo) => {
+    if (!routeNo) return "";
+    let str = String(routeNo).trim();
 
-  // Normalize numeric parts while keeping separators
-  const parts = mainPart.split(/([-/])/);
-  const normalizedParts = parts.map((part) => {
-    if (part === "-" || part === "/") return part;
-    const match = part.match(/^0*(\d+)(.*)$/);
-    if (match) return match[1] + (match[2] || "");
-    return part;
-  });
+    const prefixMatch = str.match(/^([A-Za-z\s]+)?(.*)$/);
+    let prefix = prefixMatch[1] ? prefixMatch[1].trim() : "";
+    let mainPart = prefixMatch[2] || "";
 
-  return (prefix ? prefix + " " : "") + normalizedParts.join("");
-};
+    if (mainPart.startsWith("-") || mainPart.startsWith("/")) {
+      mainPart = mainPart.slice(1);
+    }
 
+    const parts = mainPart.split(/([-/])/);
+    const normalizedParts = parts.map((part) => {
+      if (part === "-" || part === "/") return part;
+      const match = part.match(/^0*(\d+)(.*)$/);
+      if (match) return match[1] + (match[2] || "");
+      return part;
+    });
+
+    return (prefix ? prefix + " " : "") + normalizedParts.join("");
+  };
 
   useEffect(() => {
     const hMap = {};
@@ -119,7 +121,7 @@ const normalizeRouteNo = (routeNo) => {
             route_no,
             route_name: routeInfo ? `${routeInfo.Origin} → ${routeInfo.Destination}` : "Unknown",
             highway: Math.abs(fares[upDestination] - fares[upOrigin]).toFixed(2),
-            service_type: service_type === "SUPER" ? "SUPER LUXURY" : service_type === "TEMP" ? "NORMAL TEMP HIGHWAY" : service_type,
+            service_type: service_type === "SUPER" ? "SUPER LUXURY" : service_type === "TEMP" ? "TEMPORARY SERVICE" : service_type,
           });
         }
       });
@@ -137,12 +139,16 @@ const normalizeRouteNo = (routeNo) => {
       <section className="bg-white py-6 sm:py-8 shadow-sm">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 px-4 text-center">
           <div className="p-4 sm:p-5 rounded-xl bg-orange-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-orange-700">{allRoutesData.length}</p>
-            <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
+            <p className="text-xl sm:text-2xl font-bold text-orange-700">{expressRoutesCount}</p>
+            <p className="text-gray-600 text-sm sm:text-base">Express Routes Available</p>
+
+
           </div>
           <div className="p-4 sm:p-5 rounded-xl bg-orange-100 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-orange-800">{allHighwaySections.length}</p>
+            <p className="text-xl sm:text-2xl font-bold text-orange-800">{sectionsCoveredCount}</p>
             <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
+
+
           </div>
           <div className="p-4 sm:p-5 rounded-xl bg-orange-200 shadow-md hover:shadow-lg transition">
             <p className="text-xl sm:text-2xl font-bold text-orange-900">100k+</p>
@@ -236,16 +242,37 @@ const normalizeRouteNo = (routeNo) => {
                   Found {highwayResults.length} route{highwayResults.length > 1 ? "s" : ""}
                 </p>
                 <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
-                  {highwayResults.map((fare, idx) => (
-                    <div key={idx} className="border border-gray-200 rounded-xl p-4 sm:p-6 shadow-md hover:shadow-lg transition bg-orange-50">
-                      <h2 className="text-base sm:text-lg font-bold text-orange-700">{fare.route_name}</h2>
-                      <p className="text-xs sm:text-sm text-gray-600"><span className="font-semibold">Route No:</span> {fare.route_no}</p>
-                      <div className="mt-2 sm:mt-4 text-center">
-                        <p className="text-sm sm:text-lg font-bold text-orange-700">{fare.service_type}</p>
-                        <p className="text-sm sm:text-base font-semibold">Rs. {fare.highway}</p>
+                  {highwayResults.map((fare, idx) => {
+                    const isNormalTemp = fare.service_type === "TEMPORARY SERVICE";
+                    return (
+                      <div
+                        key={idx}
+                        className={`border rounded-xl p-4 sm:p-6 shadow-md hover:shadow-lg transition ${
+                          isNormalTemp ? "bg-red-50 border-red-300" : "bg-orange-50 border-gray-200"
+                        }`}
+                      >
+                        <h2 className="text-base sm:text-lg font-bold text-orange-700">{fare.route_name}</h2>
+                        <p className="text-xs sm:text-sm text-gray-600">
+                          <span className="font-semibold">Route No:</span> {fare.route_no}
+                        </p>
+                        <div className="mt-2 sm:mt-4 text-center">
+                          <p
+                            className={`text-sm sm:text-lg font-bold ${
+                              isNormalTemp ? "text-red-700" : "text-orange-700"
+                            }`}
+                          >
+                            {fare.service_type}
+                          </p>
+                          <p className="text-sm sm:text-base font-semibold">Rs. {fare.highway}</p>
+                          {isNormalTemp && (
+                            <p className="text-xs sm:text-sm text-gray-600 mt-2 italic">
+                              Normal way bus in highway for special reasons
+                            </p>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </>
             )}

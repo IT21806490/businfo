@@ -4,7 +4,7 @@ import allRoutesData from "../data/allroutes.json";
 import normalData from "../data/normal.json";
 import semiData from "../data/semi.json";
 import acData from "../data/ac.json";
-import { Bus, RefreshCw, Trash2, Users, Clock } from "lucide-react";
+import { Bus, RefreshCw, Trash2 } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import useBlockInspect from "../hooks/useBlockInspect";
@@ -20,6 +20,8 @@ const FindRoutes = () => {
   const [routeMap, setRouteMap] = useState({});
   const [showOriginSuggestions, setShowOriginSuggestions] = useState(false);
   const [showDestinationSuggestions, setShowDestinationSuggestions] = useState(false);
+
+  const sectionsCoveredCount = allSections.length;
 
   const [normalMap, setNormalMap] = useState({});
   const [semiMap, setSemiMap] = useState({});
@@ -40,6 +42,17 @@ const FindRoutes = () => {
         return part;
       })
       .join("");
+  };
+
+  // ✅ Format travel time from decimal hours to H:MM
+  const formatTravelTime = (time) => {
+    if (!time) return "";
+
+    const num = parseFloat(time);
+    const hours = Math.floor(num);
+    const minutes = Math.round((num - hours) * 100); // since .30 means 30 min, .45 means 45 min
+
+    return `${hours}:${minutes.toString().padStart(2, "0")} hrs`;
   };
 
   useEffect(() => {
@@ -182,35 +195,23 @@ const FindRoutes = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
 
-      {/* Highlights Section */}
-      <section className="bg-white py-6 sm:py-8 shadow-sm">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 px-4 text-center">
-          <div className="p-4 sm:p-5 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-blue-700">
-              {allRoutesData.length}
-            </p>
-            <p className="text-gray-600 text-sm sm:text-base">
-              Routes Available
-            </p>
-          </div>
-          <div className="p-4 sm:p-5 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-green-700">
-              {allSections.length}
-            </p>
-            <p className="text-gray-600 text-sm sm:text-base">
-              Sections Covered
-            </p>
-          </div>
-          <div className="p-4 sm:p-5 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-yellow-700">
-              100k+
-            </p>
-            <p className="text-gray-600 text-sm sm:text-base">
-              Passengers Served
-            </p>
-          </div>
-        </div>
-      </section>
+            {/* Highlights */}
+            <section className="bg-white py-6 shadow-sm">
+              <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 text-center">
+                <div className="p-4 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
+                  <p className="text-xl sm:text-2xl font-bold text-blue-700">{allRoutesData.length}</p>
+                  <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
+                </div>
+                <div className="p-4 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
+                  <p className="text-xl sm:text-2xl font-bold text-green-700">{sectionsCoveredCount}</p>
+                  <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
+                </div>
+                <div className="p-4 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
+                  <p className="text-xl sm:text-2xl font-bold text-yellow-700">100k+</p>
+                  <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
+                </div>
+              </div>
+            </section>
 
       <main className="flex-1 p-4 sm:p-6 flex justify-center">
         <div className="w-full max-w-xl sm:max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
@@ -363,7 +364,7 @@ const FindRoutes = () => {
                             <span className="font-semibold text-sm sm:text-base">{s.type}</span>
                             <div className="text-xs sm:text-sm text-gray-700 mt-1 sm:mt-0 sm:text-right">
                               <div>Distance: {s.distance} km</div>
-                              <div>Travel Time: {s.travel_time} hrs</div>
+                              <div>Travel Time: {formatTravelTime(s.travel_time)}</div>
                             </div>
                           </div>
                         ))}

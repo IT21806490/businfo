@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useMemo, useCallback } from "react"
 import allSectionsData from "../data/all_section.json";
 import fareStagesData from "../data/fare_stages.json";
 import allRoutesData from "../data/allroutes.json";
-import { Bus, RefreshCw, Trash2, Search } from "lucide-react";
+import { Bus, RefreshCw, Trash2 } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import useBlockInspect from "../hooks/useBlockInspect";
@@ -68,10 +68,9 @@ const FareCalculator = () => {
 
   // ------------------- Fast Search with Memoization -------------------
   const filteredOriginSections = useMemo(() => {
-    if (!debouncedOriginQuery.trim()) return allSections.slice(0, 50); // Show first 50 if no query
+    if (!debouncedOriginQuery.trim()) return allSections.slice(0, 50);
     
     const query = debouncedOriginQuery.toLowerCase();
-    const results = [];
     const exactMatches = [];
     const startsWithMatches = [];
     const containsMatches = [];
@@ -86,19 +85,16 @@ const FareCalculator = () => {
       } else if (sectionLower.includes(query)) {
         containsMatches.push(section);
       }
-      
-      // Limit total results for performance
-      if (results.length >= 100) break;
     }
     
-    return [...exactMatches, ...startsWithMatches, ...containsMatches].slice(0, 50);
+    const results = [...exactMatches, ...startsWithMatches, ...containsMatches];
+    return results.slice(0, 5);
   }, [debouncedOriginQuery, allSections]);
 
   const filteredDestinationSections = useMemo(() => {
     if (!debouncedDestinationQuery.trim()) return allSections.slice(0, 50);
     
     const query = debouncedDestinationQuery.toLowerCase();
-    const results = [];
     const exactMatches = [];
     const startsWithMatches = [];
     const containsMatches = [];
@@ -113,12 +109,12 @@ const FareCalculator = () => {
       } else if (sectionLower.includes(query)) {
         containsMatches.push(section);
       }
-      
-      if (results.length >= 100) break;
     }
     
-    return [...exactMatches, ...startsWithMatches, ...containsMatches].slice(0, 50);
+    const results = [...exactMatches, ...startsWithMatches, ...containsMatches];
+    return results.slice(0, 5);
   }, [debouncedDestinationQuery, allSections]);
+
   const hasServiceType = (serviceTypeStr, typeToCheck) => {
     if (!serviceTypeStr) return false;
     const types = serviceTypeStr.split(',');
@@ -158,7 +154,6 @@ const FareCalculator = () => {
       const sectionId = section.section_id;
       
       if (shouldGoBackward) {
-        // Looking for sections with smaller IDs
         if (sectionId < currentSectionId) {
           const distance = currentSectionId - sectionId;
           if (distance < bestDistance) {
@@ -167,7 +162,6 @@ const FareCalculator = () => {
           }
         }
       } else {
-        // Looking for sections with larger IDs
         if (sectionId > currentSectionId) {
           const distance = sectionId - currentSectionId;
           if (distance < bestDistance) {
@@ -187,7 +181,6 @@ const FareCalculator = () => {
       return `${routeInfo.Origin} - ${routeInfo.Destination}`;
     }
 
-    // Fallback: try to find by origin and destination
     const fallbackRoute = Object.values(routeMap).find(route => 
       route.Origin === originName && route.Destination === destinationName
     );
@@ -241,8 +234,7 @@ const FareCalculator = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // ------------------- Helper Functions for AC/Semi Logic -------------------
-
+  // ------------------- Helper Functions -------------------
   const swapOriginDestination = () => {
     const tempOrigin = origin;
     const tempOriginQuery = originQuery;
@@ -275,12 +267,10 @@ const FareCalculator = () => {
     setShowDestinationSuggestions(false);
   }, []);
 
-  // Handle input changes with fast typing support
   const handleOriginChange = useCallback((e) => {
     const value = e.target.value;
     setOriginQuery(value);
     
-    // If the typed value exactly matches an existing section, auto-select it
     const exactMatch = allSections.find(section => 
       section.toLowerCase() === value.toLowerCase()
     );
@@ -311,7 +301,6 @@ const FareCalculator = () => {
     setShowDestinationSuggestions(true);
   }, [allSections]);
 
-  // Keyboard navigation for suggestions
   const handleKeyDown = useCallback((e, type) => {
     if (e.key === 'Escape') {
       if (type === 'origin') {
@@ -344,18 +333,15 @@ const FareCalculator = () => {
         if (originSec && destSec) {
           const direction = originSec.section_id < destSec.section_id ? 'up' : 'down';
           
-          // Calculate normal fare
           const sectionDiffNormal = Math.abs(destSec.section_id - originSec.section_id);
           const normalFareData = fareStageMap[sectionDiffNormal];
           const normalFare = normalFareData?.normal;
 
-          // Get available service types for this route
           const availableServices = getAvailableServiceTypes(routeNo);
 
           let semi = null;
           let ac = null;
 
-          // Calculate Semi fare (SL service type)
           if (availableServices.includes('SL')) {
             let nearOrigin = hasServiceType(originSec.service_type, 'SL') 
               ? originSec 
@@ -372,7 +358,6 @@ const FareCalculator = () => {
             }
           }
 
-          // Calculate AC fare (LX service type)
           if (availableServices.includes('LX')) {
             let nearOrigin = hasServiceType(originSec.service_type, 'LX') 
               ? originSec 
@@ -396,7 +381,6 @@ const FareCalculator = () => {
             route_name: routeName,
           };
 
-          // Only add fare types that have valid values
           if (normalFare !== undefined && normalFare !== null) {
             fareEntry.normal = normalFare;
           }
@@ -407,7 +391,6 @@ const FareCalculator = () => {
             fareEntry.ac = ac;
           }
 
-          // Only add the result if at least one fare type is available
           if (fareEntry.normal || fareEntry.semi || fareEntry.ac) {
             results.push(fareEntry);
           }
@@ -455,37 +438,31 @@ const FareCalculator = () => {
             <div className="relative" ref={originRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">Origin</label>
               <div className="relative">
-                <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                 <input
                   type="text"
-                  placeholder="Type to search origin..."
+                  placeholder="Enter origin..."
                   value={originQuery}
                   onChange={handleOriginChange}
                   onFocus={() => setShowOriginSuggestions(true)}
                   onKeyDown={(e) => handleKeyDown(e, 'origin')}
-                  className="w-full pl-10 border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
+                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
                   autoComplete="off"
                 />
               </div>
               {showOriginSuggestions && (
-                <div className="absolute z-50 w-full max-h-64 overflow-auto bg-white border border-gray-200 rounded-lg mt-1 shadow-xl">
+                <div className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
                   {filteredOriginSections.length > 0 ? (
-                    <>
-                      <div className="sticky top-0 bg-gray-50 px-3 py-2 text-xs text-gray-500 border-b">
-                        {filteredOriginSections.length} result{filteredOriginSections.length !== 1 ? 's' : ''} found
-                      </div>
-                      {filteredOriginSections.map((sec, index) => (
-                        <div
-                          key={`${sec}-${index}`}
-                          onClick={() => selectOrigin(sec)}
-                          className="cursor-pointer px-3 py-2.5 hover:bg-blue-50 transition-colors duration-150 border-b last:border-b-0 flex items-center"
-                        >
-                          <div className="flex-1">
-                            <div className="text-sm font-medium text-gray-900">{sec}</div>
-                          </div>
+                    filteredOriginSections.map((sec, index) => (
+                      <div
+                        key={`${sec}-${index}`}
+                        onClick={() => selectOrigin(sec)}
+                        className="cursor-pointer px-3 py-2 hover:bg-blue-50 transition-colors duration-150 last:border-b-0 flex items-center"
+                      >
+                        <div className="flex-1">
+                          <div className="text-sm text-gray-900">{sec}</div>
                         </div>
-                      ))}
-                    </>
+                      </div>
+                    ))
                   ) : (
                     <div className="px-3 py-4 text-center text-sm text-gray-500">
                       No sections found for "{debouncedOriginQuery}"
@@ -499,37 +476,31 @@ const FareCalculator = () => {
             <div className="relative" ref={destinationRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
               <div className="relative">
-                <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                 <input
                   type="text"
-                  placeholder="Type to search destination..."
+                  placeholder="Enter destination..."
                   value={destinationQuery}
                   onChange={handleDestinationChange}
                   onFocus={() => setShowDestinationSuggestions(true)}
                   onKeyDown={(e) => handleKeyDown(e, 'destination')}
-                  className="w-full pl-10 border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
+                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
                   autoComplete="off"
                 />
               </div>
               {showDestinationSuggestions && (
-                <div className="absolute z-50 w-full max-h-64 overflow-auto bg-white border border-gray-200 rounded-lg mt-1 shadow-xl">
+                <div className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
                   {filteredDestinationSections.length > 0 ? (
-                    <>
-                      <div className="sticky top-0 bg-gray-50 px-3 py-2 text-xs text-gray-500 border-b">
-                        {filteredDestinationSections.length} result{filteredDestinationSections.length !== 1 ? 's' : ''} found
-                      </div>
-                      {filteredDestinationSections.map((sec, index) => (
-                        <div
-                          key={`${sec}-${index}`}
-                          onClick={() => selectDestination(sec)}
-                          className="cursor-pointer px-3 py-2.5 hover:bg-blue-50 transition-colors duration-150 border-b last:border-b-0 flex items-center"
-                        >
-                          <div className="flex-1">
-                            <div className="text-sm font-medium text-gray-900">{sec}</div>
-                          </div>
+                    filteredDestinationSections.map((sec, index) => (
+                      <div
+                        key={`${sec}-${index}`}
+                        onClick={() => selectDestination(sec)}
+                        className="cursor-pointer px-3 py-2 hover:bg-blue-50 transition-colors duration-150 last:border-b-0 flex items-center"
+                      >
+                        <div className="flex-1">
+                          <div className="text-sm text-gray-900">{sec}</div>
                         </div>
-                      ))}
-                    </>
+                      </div>
+                    ))
                   ) : (
                     <div className="px-3 py-4 text-center text-sm text-gray-500">
                       No sections found for "{debouncedDestinationQuery}"
@@ -560,14 +531,7 @@ const FareCalculator = () => {
               disabled={loading || !origin || !destination || origin === destination}
               className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? (
-                <>
-                  <Bus className="animate-spin mr-2" size={16} />
-                  Calculating...
-                </>
-              ) : (
-                "Calculate Fare"
-              )}
+              Calculate Fare
             </button>
           </div>
 

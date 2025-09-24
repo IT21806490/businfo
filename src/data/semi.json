@@ -12,7 +12,7 @@
   },
   "route_no": "2/4-3",
   "distance": 376,
-  "travel_time": 10.3
+  "travel_time": 10.30
 },
 {
   "_id": {
@@ -28,7 +28,7 @@
   },
   "route_no": "2/48",
   "distance": 382.4,
-  "travel_time": 10.4
+  "travel_time": 10.40
 },
 {
   "_id": {
@@ -36,7 +36,7 @@
   },
   "route_no": 3,
   "distance": 263.2,
-  "travel_time": 7.2
+  "travel_time": 7.20
 },
 {
   "_id": {
@@ -76,7 +76,7 @@
   },
   "route_no": "4-3",
   "distance": 216.4,
-  "travel_time": 5.3
+  "travel_time": 5.30
 },
 {
   "_id": {
@@ -84,7 +84,7 @@
   },
   "route_no": "4-3/842-1",
   "distance": 310.2,
-  "travel_time": 7.5
+  "travel_time": 7.50
 },
 {
   "_id": {
@@ -92,7 +92,7 @@
   },
   "route_no": "4/844",
   "distance": 308.2,
-  "travel_time": 7.5
+  "travel_time": 7.50
 },
 {
   "_id": {
@@ -164,7 +164,7 @@
   },
   "route_no": "15/82",
   "distance": 328,
-  "travel_time": 8.3
+  "travel_time": 8.30
 },
 {
   "_id": {
@@ -188,7 +188,7 @@
   },
   "route_no": "15-22/87/769",
   "distance": 438.3,
-  "travel_time": 11.5
+  "travel_time": 11.50
 },
 {
   "_id": {
@@ -196,7 +196,7 @@
   },
   "route_no": 17,
   "distance": 147.3,
-  "travel_time": 4.3
+  "travel_time": 4.30
 },
 {
   "_id": {
@@ -252,7 +252,7 @@
   },
   "route_no": "21-1/245",
   "distance": 249,
-  "travel_time": 6.3
+  "travel_time": 6.30
 },
 {
   "_id": {
@@ -260,7 +260,7 @@
   },
   "route_no": "22-8",
   "distance": 314,
-  "travel_time": 8.5
+  "travel_time": 8.50
 },
 {
   "_id": {
@@ -268,7 +268,7 @@
   },
   "route_no": "22-9",
   "distance": 360.1,
-  "travel_time": 9.3
+  "travel_time": 9.30
 },
 {
   "_id": {
@@ -284,7 +284,7 @@
   },
   "route_no": "31-1",
   "distance": 251.3,
-  "travel_time": 7.1
+  "travel_time": 7.10
 },
 {
   "_id": {
@@ -308,7 +308,7 @@
   },
   "route_no": "32-2",
   "distance": 282.2,
-  "travel_time": 6.3
+  "travel_time": 6.30
 },
 {
   "_id": {
@@ -324,7 +324,7 @@
   },
   "route_no": "32-4/87",
   "distance": 616,
-  "travel_time": 16.3
+  "travel_time": 16.30
 },
 {
   "_id": {
@@ -332,7 +332,7 @@
   },
   "route_no": "32-7/1",
   "distance": 313,
-  "travel_time": 9.3
+  "travel_time": 9.30
 },
 {
   "_id": {
@@ -340,7 +340,7 @@
   },
   "route_no": "32/49",
   "distance": 463.3,
-  "travel_time": 12.3
+  "travel_time": 12.30
 },
 {
   "_id": {
@@ -372,7 +372,7 @@
   },
   "route_no": 38,
   "distance": 231,
-  "travel_time": 7.2
+  "travel_time": 7.20
 },
 {
   "_id": {
@@ -380,7 +380,7 @@
   },
   "route_no": "38-1",
   "distance": 192.4,
-  "travel_time": 6.2
+  "travel_time": 6.20
 },
 {
   "_id": {
@@ -388,7 +388,7 @@
   },
   "route_no": "38-3",
   "distance": 237.2,
-  "travel_time": 7.2
+  "travel_time": 7.20
 },
 {
   "_id": {
@@ -404,7 +404,7 @@
   },
   "route_no": "41-12/48",
   "distance": 245,
-  "travel_time": 6.3
+  "travel_time": 6.30
 },
 {
   "_id": {
@@ -412,7 +412,7 @@
   },
   "route_no": "43-1",
   "distance": 234,
-  "travel_time": 5.5
+  "travel_time": 5.50
 },
 {
   "_id": {
@@ -420,7 +420,7 @@
   },
   "route_no": "43-10/87/769",
   "distance": 422,
-  "travel_time": 13.3
+  "travel_time": 13.30
 },
 {
   "_id": {
@@ -428,7 +428,7 @@
   },
   "route_no": "43/87",
   "distance": 334.2,
-  "travel_time": 8.5
+  "travel_time": 8.50
 },
 {
   "_id": {
@@ -444,7 +444,7 @@
   },
   "route_no": "47/43/87",
   "distance": 486.2,
-  "travel_time": 14.2
+  "travel_time": 14.20
 },
 {
   "_id": {
@@ -452,7 +452,7 @@
   },
   "route_no": 48,
   "distance": 356.2,
-  "travel_time": 9.4
+  "travel_time": 9.40
 },
 {
   "_id": {
@@ -476,7 +476,7 @@
   },
   "route_no": "48-5",
   "distance": 282.7,
-  "travel_time": 7.2
+  "travel_time": 7.20
 },
 {
   "_id": {
@@ -484,7 +484,7 @@
   },
   "route_no": "48-12",
   "distance": 380.9,
-  "travel_time": 10.1
+  "travel_time": 10.10
 },
 {
   "_id": {
@@ -492,7 +492,7 @@
   },
   "route_no": "48-13",
   "distance": 393.7,
-  "travel_time": 10.3
+  "travel_time": 10.30
 },
 {
   "_id": {
@@ -500,7 +500,7 @@
   },
   "route_no": "48-14",
   "distance": 322.3,
-  "travel_time": 8.2
+  "travel_time": 8.20
 },
 {
   "_id": {
@@ -556,7 +556,7 @@
   },
   "route_no": 57,
   "distance": 211,
-  "travel_time": 5.3
+  "travel_time": 5.30
 },
 {
   "_id": {
@@ -564,7 +564,7 @@
   },
   "route_no": "57/87",
   "distance": 412.5,
-  "travel_time": 10.3
+  "travel_time": 10.30
 },
 {
   "_id": {
@@ -572,7 +572,7 @@
   },
   "route_no": 60,
   "distance": 200.8,
-  "travel_time": 5.5
+  "travel_time": 5.50
 },
 {
   "_id": {
@@ -604,7 +604,7 @@
   },
   "route_no": "69-4",
   "distance": 86.5,
-  "travel_time": 2.3
+  "travel_time": 2.30
 },
 {
   "_id": {
@@ -612,7 +612,7 @@
   },
   "route_no": "69/15/87",
   "distance": 420.1,
-  "travel_time": 10.3
+  "travel_time": 10.30
 },
 {
   "_id": {
@@ -628,7 +628,7 @@
   },
   "route_no": "69/15-7/87",
   "distance": 568.8,
-  "travel_time": 14.3
+  "travel_time": 14.30
 },
 {
   "_id": {
@@ -636,7 +636,7 @@
   },
   "route_no": "69/15-8",
   "distance": 342.3,
-  "travel_time": 8.3
+  "travel_time": 8.30
 },
 {
   "_id": {
@@ -644,7 +644,7 @@
   },
   "route_no": 79,
   "distance": 180,
-  "travel_time": 5.5
+  "travel_time": 5.50
 },
 {
   "_id": {
@@ -652,7 +652,7 @@
   },
   "route_no": "79-1",
   "distance": 208.4,
-  "travel_time": 6.4
+  "travel_time": 6.40
 },
 {
   "_id": {
@@ -676,7 +676,7 @@
   },
   "route_no": "84/580/314",
   "distance": 350,
-  "travel_time": 10.3
+  "travel_time": 10.30
 },
 {
   "_id": {
@@ -700,7 +700,7 @@
   },
   "route_no": "86-6",
   "distance": 282.3,
-  "travel_time": 7.3
+  "travel_time": 7.30
 },
 {
   "_id": {
@@ -708,7 +708,7 @@
   },
   "route_no": "86-7",
   "distance": 443,
-  "travel_time": 11.3
+  "travel_time": 11.30
 },
 {
   "_id": {
@@ -716,7 +716,7 @@
   },
   "route_no": "86-8",
   "distance": 369.4,
-  "travel_time": 9.3
+  "travel_time": 9.30
 },
 {
   "_id": {
@@ -732,7 +732,7 @@
   },
   "route_no": "86/218/22",
   "distance": 362,
-  "travel_time": 9.2
+  "travel_time": 9.20
 },
 {
   "_id": {
@@ -740,7 +740,7 @@
   },
   "route_no": "86/816-5",
   "distance": 322.5,
-  "travel_time": 8.3
+  "travel_time": 8.30
 },
 {
   "_id": {
@@ -748,7 +748,7 @@
   },
   "route_no": 87,
   "distance": 419.6,
-  "travel_time": 10.3
+  "travel_time": 10.30
 },
 {
   "_id": {
@@ -764,7 +764,7 @@
   },
   "route_no": "87-5/782",
   "distance": 450,
-  "travel_time": 12.3
+  "travel_time": 12.30
 },
 {
   "_id": {
@@ -772,7 +772,7 @@
   },
   "route_no": "87-6-1",
   "distance": 332.1,
-  "travel_time": 8.2
+  "travel_time": 8.20
 },
 {
   "_id": {
@@ -788,7 +788,7 @@
   },
   "route_no": "87/816",
   "distance": 320.2,
-  "travel_time": 8.1
+  "travel_time": 8.10
 },
 {
   "_id": {
@@ -796,7 +796,7 @@
   },
   "route_no": "87/816-5",
   "distance": 332.5,
-  "travel_time": 8.2
+  "travel_time": 8.20
 },
 {
   "_id": {
@@ -804,7 +804,7 @@
   },
   "route_no": 88,
   "distance": 247,
-  "travel_time": 6.2
+  "travel_time": 6.20
 },
 {
   "_id": {
@@ -812,7 +812,7 @@
   },
   "route_no": "88-2",
   "distance": 103.3,
-  "travel_time": 2.4
+  "travel_time": 2.40
 },
 {
   "_id": {
@@ -820,7 +820,7 @@
   },
   "route_no": "88-6",
   "distance": 182.5,
-  "travel_time": 4.4
+  "travel_time": 4.40
 },
 {
   "_id": {
@@ -860,7 +860,7 @@
   },
   "route_no": 99,
   "distance": 238,
-  "travel_time": 7.3
+  "travel_time": 7.30
 },
 {
   "_id": {
@@ -884,7 +884,7 @@
   },
   "route_no": "99-10",
   "distance": 230,
-  "travel_time": 7.2
+  "travel_time": 7.20
 },
 {
   "_id": {
@@ -892,7 +892,7 @@
   },
   "route_no": "99/318",
   "distance": 268,
-  "travel_time": 8.3
+  "travel_time": 8.30
 },
 {
   "_id": {
@@ -900,7 +900,7 @@
   },
   "route_no": "122/210-5",
   "distance": 187.6,
-  "travel_time": 5.3
+  "travel_time": 5.30
 },
 {
   "_id": {
@@ -908,7 +908,7 @@
   },
   "route_no": "122/69",
   "distance": 136,
-  "travel_time": 3.4
+  "travel_time": 3.40
 },
 {
   "_id": {
@@ -916,7 +916,7 @@
   },
   "route_no": "211/69/45",
   "distance": 433.2,
-  "travel_time": 11.3
+  "travel_time": 11.30
 },
 {
   "_id": {
@@ -924,7 +924,7 @@
   },
   "route_no": "285/6/15-12",
   "distance": 275.8,
-  "travel_time": 7.3
+  "travel_time": 7.30
 },
 {
   "_id": {
@@ -932,7 +932,7 @@
   },
   "route_no": "314/580/87",
   "distance": 440.2,
-  "travel_time": 12.3
+  "travel_time": 12.30
 },
 {
   "_id": {
@@ -940,7 +940,7 @@
   },
   "route_no": "315/1",
   "distance": 134,
-  "travel_time": 3.3
+  "travel_time": 3.30
 },
 {
   "_id": {
@@ -948,7 +948,7 @@
   },
   "route_no": "315/1-30",
   "distance": 375,
-  "travel_time": 9.3
+  "travel_time": 9.30
 },
 {
   "_id": {
@@ -956,7 +956,7 @@
   },
   "route_no": "458-1",
   "distance": 168,
-  "travel_time": 4.3
+  "travel_time": 4.30
 },
 {
   "_id": {
@@ -964,7 +964,7 @@
   },
   "route_no": "458/15/87",
   "distance": 464.3,
-  "travel_time": 11.3
+  "travel_time": 11.30
 },
 {
   "_id": {
@@ -980,7 +980,7 @@
   },
   "route_no": "626/43/87",
   "distance": 440,
-  "travel_time": 12.3
+  "travel_time": 12.30
 },
 {
   "_id": {
@@ -988,7 +988,7 @@
   },
   "route_no": "725/43/87",
   "distance": 409,
-  "travel_time": 10.5
+  "travel_time": 10.50
 },
 {
   "_id": {
