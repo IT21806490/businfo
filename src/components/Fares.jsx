@@ -8,423 +8,467 @@ import Footer from "./Footer";
 import useBlockInspect from "../hooks/useBlockInspect";
 
 const FareCalculator = () => {
-  useBlockInspect();
-  const [origin, setOrigin] = useState("");
-  const [destination, setDestination] = useState("");
-  const [fareResults, setFareResults] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [allSections, setAllSections] = useState([]);
-  const [sectionMap, setSectionMap] = useState({});
-  const [fareStageMap, setFareStageMap] = useState({});
-  const [routeMap, setRouteMap] = useState({});
-  const [showOriginSuggestions, setShowOriginSuggestions] = useState(false);
-  const [showDestinationSuggestions, setShowDestinationSuggestions] = useState(false);
-  const [originQuery, setOriginQuery] = useState("");
-  const [destinationQuery, setDestinationQuery] = useState("");
-  const [debouncedOriginQuery, setDebouncedOriginQuery] = useState("");
-  const [debouncedDestinationQuery, setDebouncedDestinationQuery] = useState("");
+  useBlockInspect();
+  const [origin, setOrigin] = useState("");
+  const [destination, setDestination] = useState("");
+  const [fareResults, setFareResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [allSections, setAllSections] = useState([]);
+  const [sectionMap, setSectionMap] = useState({});
+  const [fareStageMap, setFareStageMap] = useState({});
+  const [routeMap, setRouteMap] = useState({});
+  const [showOriginSuggestions, setShowOriginSuggestions] = useState(false);
+  const [showDestinationSuggestions, setShowDestinationSuggestions] = useState(false);
+  const [originQuery, setOriginQuery] = useState("");
+  const [destinationQuery, setDestinationQuery] = useState("");
+  const [debouncedOriginQuery, setDebouncedOriginQuery] = useState("");
+  const [debouncedDestinationQuery, setDebouncedDestinationQuery] = useState("");
 
-  const mainTowns = [
-    "Colombo",
-    "Kandy",
-    "Galle",
-    "Jaffna",
-    "Anuradhapura",
-    "Kurunegala",
-    "Badulla",
-    "Trincomalee",
-    "Matara",
-    "Batticaloa",
-  ];
+  // 🌍 Language state
+  const [language, setLanguage] = useState("en");
 
-  const originRef = useRef(null);
-  const destinationRef = useRef(null);
-  const debounceTimer = useRef(null);
+  const mainTowns = [
+    "Colombo",
+    "Kandy",
+    "Galle",
+    "Jaffna",
+    "Anuradhapura",
+    "Kurunegala",
+    "Badulla",
+    "Trincomalee",
+    "Matara",
+    "Batticaloa",
+  ];
 
-  const normalizeRouteNo = (routeNo) => {
-    if (!routeNo) return "";
-    const strRouteNo = String(routeNo).trim();
-    const parts = strRouteNo.split(/([-/])/);
-    return parts
-      .map((part) => {
-        if (part === "-" || part === "/") return part;
-        const match = part.match(/^0*(\d+)(.*)$/);
-        if (match) return match[1] + (match[2] || "");
-        return part;
-      })
-      .join("");
-  };
+  const originRef = useRef(null);
+  const destinationRef = useRef(null);
+  const debounceTimer = useRef(null);
 
-  const debounce = useCallback((func, delay) => {
-    return (...args) => {
-      clearTimeout(debounceTimer.current);
-      debounceTimer.current = setTimeout(() => func.apply(null, args), delay);
-    };
-  }, []);
+  // Translations
+  const tips = {
+    en: "Type your starting point and ending point here and press the Calculate button. This will show you all the routes you can travel and their fares for regular, semi-luxury, and air-conditioned buses.",
+    si: "ඔබගේ ගමන් ආරම්භක ස්ථානය හා ගමන් අවසාන ස්ථානය මෙහි ටයිප් කර Calculate බොත්තම ඔබන්න. එවිට ඔබට ගමන්ගත හැකි සියලුම මාර්ග සහ ඒවායේ සාමාන්‍ය, අර්ධ සුඛෝපභෝගී හා වායුසමීකරණ බස් රථවල ගාස්තු සටහන් මෙයින් පෙන්වයි.",
+    ta: "உங்கள் தொடக்கப் புள்ளி மற்றும் முடிவுப் புள்ளியை இங்கே தட்டச்சு செய்து கணக்கிடு பொத்தானை அழுத்தவும். இது நீங்கள் பயணிக்கக்கூடிய அனைத்து வழித்தடங்களையும், வழக்கமான, அரை சொகுசு மற்றும் குளிரூட்டப்பட்ட பேருந்துகளுக்கான கட்டணங்களையும் காண்பிக்கும்.",
+  };
 
-  useEffect(() => {
-    const debouncedUpdate = debounce(() => {
-      setDebouncedOriginQuery(originQuery);
-    }, 150);
-    debouncedUpdate();
-  }, [originQuery, debounce]);
+  // Language options
+  const languages = [
+    { code: "en", label: "English"},
+    { code: "si", label: "සිංහල"},
+    { code: "ta", label: "தமிழ்"},
+  ];
 
-  useEffect(() => {
-    const debouncedUpdate = debounce(() => {
-      setDebouncedDestinationQuery(destinationQuery);
-    }, 150);
-    debouncedUpdate();
-  }, [destinationQuery, debounce]);
+  const normalizeRouteNo = (routeNo) => {
+    if (!routeNo) return "";
+    const strRouteNo = String(routeNo).trim();
+    const parts = strRouteNo.split(/([-/])/);
+    return parts
+      .map((part) => {
+        if (part === "-" || part === "/") return part;
+        const match = part.match(/^0*(\d+)(.*)$/);
+        if (match) return match[1] + (match[2] || "");
+        return part;
+      })
+      .join("");
+  };
 
-  const getFilteredSuggestions = useCallback((query, allOptions) => {
-    if (!query.trim()) {
-      return mainTowns;
-    }
+  const debounce = useCallback((func, delay) => {
+    return (...args) => {
+      clearTimeout(debounceTimer.current);
+      debounceTimer.current = setTimeout(() => func.apply(null, args), delay);
+    };
+  }, []);
 
-    const lowerCaseQuery = query.toLowerCase();
-    const exactMatches = [];
-    const startsWithMatches = [];
-    const containsMatches = [];
+  useEffect(() => {
+    const debouncedUpdate = debounce(() => {
+      setDebouncedOriginQuery(originQuery);
+    }, 150);
+    debouncedUpdate();
+  }, [originQuery, debounce]);
 
-    for (const section of allOptions) {
-      const sectionLower = section.toLowerCase();
-      
-      if (sectionLower === lowerCaseQuery) {
-        exactMatches.push(section);
-      } else if (sectionLower.startsWith(lowerCaseQuery)) {
-        startsWithMatches.push(section);
-      } else if (sectionLower.includes(lowerCaseQuery)) {
-        containsMatches.push(section);
-      }
-    }
+  useEffect(() => {
+    const debouncedUpdate = debounce(() => {
+      setDebouncedDestinationQuery(destinationQuery);
+    }, 150);
+    debouncedUpdate();
+  }, [destinationQuery, debounce]);
 
-    const results = [...exactMatches, ...startsWithMatches, ...containsMatches];
-    return results.slice(0, 50); // Show up to 50 results
-  }, [mainTowns]);
+  const getFilteredSuggestions = useCallback(
+    (query, allOptions) => {
+      if (!query.trim()) {
+        return mainTowns;
+      }
 
-  const filteredOriginSections = useMemo(() => 
-    getFilteredSuggestions(debouncedOriginQuery, allSections),
-    [debouncedOriginQuery, allSections, getFilteredSuggestions]
-  );
+      const lowerCaseQuery = query.toLowerCase();
+      const exactMatches = [];
+      const startsWithMatches = [];
+      const containsMatches = [];
 
-  const filteredDestinationSections = useMemo(() => 
-    getFilteredSuggestions(debouncedDestinationQuery, allSections),
-    [debouncedDestinationQuery, allSections, getFilteredSuggestions]
-  );
+      for (const section of allOptions) {
+        const sectionLower = section.toLowerCase();
 
-  const hasServiceType = (serviceTypeStr, typeToCheck) => {
-    if (!serviceTypeStr) return false;
-    const types = serviceTypeStr.split(',');
-    return types.some(t => t.trim() === typeToCheck);
-  };
+        if (sectionLower === lowerCaseQuery) {
+          exactMatches.push(section);
+        } else if (sectionLower.startsWith(lowerCaseQuery)) {
+          startsWithMatches.push(section);
+        } else if (sectionLower.includes(lowerCaseQuery)) {
+          containsMatches.push(section);
+        }
+      }
 
-  const getAvailableServiceTypes = (routeNo) => {
-    const sections = sectionMap[routeNo];
-    if (!sections) return [];
-    
-    const types = new Set();
-    Object.values(sections).forEach(section => {
-      if (section.service_type) {
-        section.service_type.split(',').forEach(type => {
-          types.add(type.trim());
-        });
-      }
-    });
-    return Array.from(types);
-  };
+      const results = [...exactMatches, ...startsWithMatches, ...containsMatches];
+      return results.slice(0, 50);
+    },
+    [mainTowns]
+  );
 
-  const findNearestSection = (routeNo, currentSectionId, direction, relativeTo, serviceType) => {
-    const sections = sectionMap[routeNo];
-    if (!sections) return null;
+  const filteredOriginSections = useMemo(
+    () => getFilteredSuggestions(debouncedOriginQuery, allSections),
+    [debouncedOriginQuery, allSections, getFilteredSuggestions]
+  );
 
-    const isOrigin = relativeTo === 'origin';
-    const isUp = direction === 'up';
-    
-    const shouldGoBackward = (isOrigin && isUp) || (!isOrigin && !isUp);
-    
-    let nearestSection = null;
-    let bestDistance = Infinity;
+  const filteredDestinationSections = useMemo(
+    () => getFilteredSuggestions(debouncedDestinationQuery, allSections),
+    [debouncedDestinationQuery, allSections, getFilteredSuggestions]
+  );
 
-    Object.values(sections).forEach(section => {
-      if (!hasServiceType(section.service_type, serviceType)) return;
-      
-      const sectionId = section.section_id;
-      
-      if (shouldGoBackward) {
-        if (sectionId < currentSectionId) {
-          const distance = currentSectionId - sectionId;
-          if (distance < bestDistance) {
-            bestDistance = distance;
-            nearestSection = section;
-          }
-        }
-      } else {
-        if (sectionId > currentSectionId) {
-          const distance = sectionId - currentSectionId;
-          if (distance < bestDistance) {
-            bestDistance = distance;
-            nearestSection = section;
-          }
-        }
-      }
-    });
+  const hasServiceType = (serviceTypeStr, typeToCheck) => {
+    if (!serviceTypeStr) return false;
+    const types = serviceTypeStr.split(",");
+    return types.some((t) => t.trim() === typeToCheck);
+  };
 
-    return nearestSection;
-  };
+  const getAvailableServiceTypes = (routeNo) => {
+    const sections = sectionMap[routeNo];
+    if (!sections) return [];
 
-  const resolveRouteName = (routeNo, originName, destinationName) => {
-    const routeInfo = routeMap[routeNo];
-    if (routeInfo) {
-      return `${routeInfo.Origin} - ${routeInfo.Destination}`;
-    }
+    const types = new Set();
+    Object.values(sections).forEach((section) => {
+      if (section.service_type) {
+        section.service_type.split(",").forEach((type) => {
+          types.add(type.trim());
+        });
+      }
+    });
+    return Array.from(types);
+  };
 
-    const fallbackRoute = Object.values(routeMap).find(route => 
-      route.Origin === originName && route.Destination === destinationName
-    );
-    
-    if (fallbackRoute) {
-      return `${fallbackRoute.Origin} - ${fallbackRoute.Destination}`;
-    }
+  const findNearestSection = (routeNo, currentSectionId, direction, relativeTo, serviceType) => {
+    const sections = sectionMap[routeNo];
+    if (!sections) return null;
 
-    return 'Unknown';
-  };
+    const isOrigin = relativeTo === "origin";
+    const isUp = direction === "up";
+    const shouldGoBackward = (isOrigin && isUp) || (!isOrigin && !isUp);
 
-  useEffect(() => {
-    const sMap = {};
-    const uniqueSections = new Set();
-    allSectionsData.forEach((sec) => {
-      const normalizedRouteNo = normalizeRouteNo(sec.route_no);
-      if (!sMap[normalizedRouteNo]) sMap[normalizedRouteNo] = {};
-      sMap[normalizedRouteNo][sec.section_name] = sec;
-      uniqueSections.add(sec.section_name);
-    });
+    let nearestSection = null;
+    let bestDistance = Infinity;
 
-    const fMap = {};
-    fareStagesData.forEach((f) => {
-      fMap[f.fare_stage] = f;
-    });
+    Object.values(sections).forEach((section) => {
+      if (!hasServiceType(section.service_type, serviceType)) return;
 
-    const rMap = {};
-    allRoutesData.forEach((r) => {
-      const normalizedRouteNo = normalizeRouteNo(r.Route_No);
-      rMap[normalizedRouteNo] = r;
-    });
+      const sectionId = section.section_id;
 
-    setSectionMap(sMap);
-    setFareStageMap(fMap);
-    setRouteMap(rMap);
-    setAllSections(Array.from(uniqueSections).sort());
-  }, []);
+      if (shouldGoBackward) {
+        if (sectionId < currentSectionId) {
+          const distance = currentSectionId - sectionId;
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            nearestSection = section;
+          }
+        }
+      } else {
+        if (sectionId > currentSectionId) {
+          const distance = sectionId - currentSectionId;
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            nearestSection = section;
+          }
+        }
+      }
+    });
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (originRef.current && !originRef.current.contains(event.target)) {
-        setShowOriginSuggestions(false);
-      }
-      if (destinationRef.current && !destinationRef.current.contains(event.target)) {
-        setShowDestinationSuggestions(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    return nearestSection;
+  };
 
-  const swapOriginDestination = () => {
-    const tempOrigin = origin;
-    const tempOriginQuery = originQuery;
-    
-    setOrigin(destination);
-    setOriginQuery(destinationQuery);
-    setDestination(tempOrigin);
-    setDestinationQuery(tempOriginQuery);
-  };
+  const resolveRouteName = (routeNo, originName, destinationName) => {
+    const routeInfo = routeMap[routeNo];
+    if (routeInfo) {
+      return `${routeInfo.Origin} - ${routeInfo.Destination}`;
+    }
 
-  const clearSelections = () => {
-    setOrigin("");
-    setDestination("");
-    setOriginQuery("");
-    setDestinationQuery("");
-    setFareResults([]);
-    setShowOriginSuggestions(false);
-    setShowDestinationSuggestions(false);
-  };
+    const fallbackRoute = Object.values(routeMap).find(
+      (route) => route.Origin === originName && route.Destination === destinationName
+    );
 
-  const selectOrigin = useCallback((val) => {
-    setOrigin(val);
-    setOriginQuery(val);
-    setShowOriginSuggestions(false);
-  }, []);
+    if (fallbackRoute) {
+      return `${fallbackRoute.Origin} - ${fallbackRoute.Destination}`;
+    }
 
-  const selectDestination = useCallback((val) => {
-    setDestination(val);
-    setDestinationQuery(val);
-    setShowDestinationSuggestions(false);
-  }, []);
+    return "Unknown";
+  };
 
-  const handleOriginChange = useCallback((e) => {
-    const value = e.target.value;
-    setOriginQuery(value);
-    
-    const exactMatch = allSections.find(section => 
-      section.toLowerCase() === value.toLowerCase()
-    );
-    
-    if (exactMatch) {
-      setOrigin(exactMatch);
-    } else {
-      setOrigin(value);
-    }
-    
-    setShowOriginSuggestions(true);
-  }, [allSections]);
+  useEffect(() => {
+    const sMap = {};
+    const uniqueSections = new Set();
+    allSectionsData.forEach((sec) => {
+      const normalizedRouteNo = normalizeRouteNo(sec.route_no);
+      if (!sMap[normalizedRouteNo]) sMap[normalizedRouteNo] = {};
+      sMap[normalizedRouteNo][sec.section_name] = sec;
+      uniqueSections.add(sec.section_name);
+    });
 
-  const handleDestinationChange = useCallback((e) => {
-    const value = e.target.value;
-    setDestinationQuery(value);
-    
-    const exactMatch = allSections.find(section => 
-      section.toLowerCase() === value.toLowerCase()
-    );
-    
-    if (exactMatch) {
-      setDestination(exactMatch);
-    } else {
-      setDestination(value);
-    }
-    
-    setShowDestinationSuggestions(true);
-  }, [allSections]);
+    const fMap = {};
+    fareStagesData.forEach((f) => {
+      fMap[f.fare_stage] = f;
+    });
 
-  const handleKeyDown = useCallback((e, type) => {
-    if (e.key === 'Escape') {
-      if (type === 'origin') {
-        setShowOriginSuggestions(false);
-      } else {
-        setShowDestinationSuggestions(false);
-      }
-    }
-  }, []);
+    const rMap = {};
+    allRoutesData.forEach((r) => {
+      const normalizedRouteNo = normalizeRouteNo(r.Route_No);
+      rMap[normalizedRouteNo] = r;
+    });
 
-  const calculateFare = () => {
-    if (!origin || !destination) {
-      alert("Please select both origin and destination");
-      return;
-    }
-    if (origin === destination) {
-      alert("Origin and destination cannot be the same");
-      return;
-    }
+    setSectionMap(sMap);
+    setFareStageMap(fMap);
+    setRouteMap(rMap);
+    setAllSections(Array.from(uniqueSections).sort());
+  }, []);
 
-    setLoading(true);
-    setTimeout(() => {
-      const results = [];
-      
-      Object.keys(sectionMap).forEach((routeNo) => {
-        const originSec = sectionMap[routeNo][origin];
-        const destSec = sectionMap[routeNo][destination];
-        
-        if (originSec && destSec) {
-          const direction = originSec.section_id < destSec.section_id ? 'up' : 'down';
-          
-          const sectionDiffNormal = Math.abs(destSec.section_id - originSec.section_id);
-          const normalFareData = fareStageMap[sectionDiffNormal];
-          const normalFare = normalFareData?.normal;
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (originRef.current && !originRef.current.contains(event.target)) {
+        setShowOriginSuggestions(false);
+      }
+      if (destinationRef.current && !destinationRef.current.contains(event.target)) {
+        setShowDestinationSuggestions(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
-          const availableServices = getAvailableServiceTypes(routeNo);
+  const swapOriginDestination = () => {
+    const tempOrigin = origin;
+    const tempOriginQuery = originQuery;
+    setOrigin(destination);
+    setOriginQuery(destinationQuery);
+    setDestination(tempOrigin);
+    setDestinationQuery(tempOriginQuery);
+  };
 
-          let semi = null;
-          let ac = null;
+  const clearSelections = () => {
+    setOrigin("");
+    setDestination("");
+    setOriginQuery("");
+    setDestinationQuery("");
+    setFareResults([]);
+    setShowOriginSuggestions(false);
+    setShowDestinationSuggestions(false);
+  };
 
-          if (availableServices.includes('SL')) {
-            let nearOrigin = hasServiceType(originSec.service_type, 'SL') 
-              ? originSec 
-              : findNearestSection(routeNo, originSec.section_id, direction, 'origin', 'SL');
+  const selectOrigin = useCallback((val) => {
+    setOrigin(val);
+    setOriginQuery(val);
+    setShowOriginSuggestions(false);
+  }, []);
 
-            let nearDestination = hasServiceType(destSec.service_type, 'SL') 
-              ? destSec 
-              : findNearestSection(routeNo, destSec.section_id, direction, 'destination', 'SL');
+  const selectDestination = useCallback((val) => {
+    setDestination(val);
+    setDestinationQuery(val);
+    setShowDestinationSuggestions(false);
+  }, []);
 
-            if (nearOrigin && nearDestination) {
-              const sectionDiff = Math.abs(nearDestination.section_id - nearOrigin.section_id);
-              const semiFareData = fareStageMap[sectionDiff];
-              semi = semiFareData?.semi;
-            }
-          }
+  const handleOriginChange = useCallback(
+    (e) => {
+      const value = e.target.value;
+      setOriginQuery(value);
+      const exactMatch = allSections.find((section) => section.toLowerCase() === value.toLowerCase());
+      if (exactMatch) {
+        setOrigin(exactMatch);
+      } else {
+        setOrigin(value);
+      }
+      setShowOriginSuggestions(true);
+    },
+    [allSections]
+  );
 
-          if (availableServices.includes('LX')) {
-            let nearOrigin = hasServiceType(originSec.service_type, 'LX') 
-              ? originSec 
-              : findNearestSection(routeNo, originSec.section_id, direction, 'origin', 'LX');
+  const handleDestinationChange = useCallback(
+    (e) => {
+      const value = e.target.value;
+      setDestinationQuery(value);
+      const exactMatch = allSections.find((section) => section.toLowerCase() === value.toLowerCase());
+      if (exactMatch) {
+        setDestination(exactMatch);
+      } else {
+        setDestination(value);
+      }
+      setShowDestinationSuggestions(true);
+    },
+    [allSections]
+  );
 
-            let nearDestination = hasServiceType(destSec.service_type, 'LX') 
-              ? destSec 
-              : findNearestSection(routeNo, destSec.section_id, direction, 'destination', 'LX');
+  const handleKeyDown = useCallback((e, type) => {
+    if (e.key === "Escape") {
+      if (type === "origin") {
+        setShowOriginSuggestions(false);
+      } else {
+        setShowDestinationSuggestions(false);
+      }
+    }
+  }, []);
 
-            if (nearOrigin && nearDestination) {
-              const sectionDiff = Math.abs(nearDestination.section_id - nearOrigin.section_id);
-              const acFareData = fareStageMap[sectionDiff];
-              ac = acFareData?.ac;
-            }
-          }
+  const calculateFare = () => {
+    if (!origin || !destination) {
+      alert("Please select both origin and destination");
+      return;
+    }
+    if (origin === destination) {
+      alert("Origin and destination cannot be the same");
+      return;
+    }
 
-          const routeName = resolveRouteName(routeNo, origin, destination);
+    setLoading(true);
+    setTimeout(() => {
+      const results = [];
 
-          const fareEntry = {
-            route_no: routeNo,
-            route_name: routeName,
-          };
+      Object.keys(sectionMap).forEach((routeNo) => {
+        const originSec = sectionMap[routeNo][origin];
+        const destSec = sectionMap[routeNo][destination];
 
-          if (normalFare !== undefined && normalFare !== null) {
-            fareEntry.normal = normalFare;
-          }
-          if (semi !== undefined && semi !== null) {
-            fareEntry.semi = semi;
-          }
-          if (ac !== undefined && ac !== null) {
-            fareEntry.ac = ac;
-          }
+        if (originSec && destSec) {
+          const direction = originSec.section_id < destSec.section_id ? "up" : "down";
 
-          if (fareEntry.normal || fareEntry.semi || fareEntry.ac) {
-            results.push(fareEntry);
-          }
-        }
-      });
+          const sectionDiffNormal = Math.abs(destSec.section_id - originSec.section_id);
+          const normalFareData = fareStageMap[sectionDiffNormal];
+          const normalFare = normalFareData?.normal;
 
-      results.sort((a, b) => a.route_no.localeCompare(b.route_no));
-      setFareResults(results);
-      setLoading(false);
-    }, 1000);
-  };
-  
+          const availableServices = getAvailableServiceTypes(routeNo);
 
-  return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      <Navbar />
+          let semi = null;
+          let ac = null;
 
-      <section className="bg-white py-6 shadow-sm">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 text-center">
-          <div className="p-4 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-blue-700">{allRoutesData.length}</p>
-            <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
-          </div>
-          <div className="p-4 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-green-700">{allSections.length}</p>
-            <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
-          </div>
-          <div className="p-4 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-yellow-700">100k+</p>
-            <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
-          </div>
-        </div>
-      </section>
+          if (availableServices.includes("SL")) {
+            let nearOrigin = hasServiceType(originSec.service_type, "SL")
+              ? originSec
+              : findNearestSection(routeNo, originSec.section_id, direction, "origin", "SL");
 
-      <main className="flex-1 p-4 sm:p-6 flex justify-center">
-        <div className="w-full max-w-xl sm:max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-12">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-blue-700 mb-6 sm:mb-8 text-center">
-            Calculate Normal way Fares
-          </h2>
+            let nearDestination = hasServiceType(destSec.service_type, "SL")
+              ? destSec
+              : findNearestSection(routeNo, destSec.section_id, direction, "destination", "SL");
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
+            if (nearOrigin && nearDestination) {
+              const sectionDiff = Math.abs(nearDestination.section_id - nearOrigin.section_id);
+              const semiFareData = fareStageMap[sectionDiff];
+              semi = semiFareData?.semi;
+            }
+          }
+
+          if (availableServices.includes("LX")) {
+            let nearOrigin = hasServiceType(originSec.service_type, "LX")
+              ? originSec
+              : findNearestSection(routeNo, originSec.section_id, direction, "origin", "LX");
+
+            let nearDestination = hasServiceType(destSec.service_type, "LX")
+              ? destSec
+              : findNearestSection(routeNo, destSec.section_id, direction, "destination", "LX");
+
+            if (nearOrigin && nearDestination) {
+              const sectionDiff = Math.abs(nearDestination.section_id - nearOrigin.section_id);
+              const acFareData = fareStageMap[sectionDiff];
+              ac = acFareData?.ac;
+            }
+          }
+
+          const routeName = resolveRouteName(routeNo, origin, destination);
+
+          const fareEntry = {
+            route_no: routeNo,
+            route_name: routeName,
+          };
+
+          if (normalFare !== undefined && normalFare !== null) {
+            fareEntry.normal = normalFare;
+          }
+          if (semi !== undefined && semi !== null) {
+            fareEntry.semi = semi;
+          }
+          if (ac !== undefined && ac !== null) {
+            fareEntry.ac = ac;
+          }
+
+          if (fareEntry.normal || fareEntry.semi || fareEntry.ac) {
+            results.push(fareEntry);
+          }
+        }
+      });
+
+      results.sort((a, b) => a.route_no.localeCompare(b.route_no));
+      setFareResults(results);
+      setLoading(false);
+    }, 1000);
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      <Navbar />
+
+      <section className="bg-white py-6 shadow-sm">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 text-center">
+          <div className="p-4 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
+            <p className="text-xl sm:text-2xl font-bold text-blue-700">{allRoutesData.length}</p>
+            <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
+          </div>
+          <div className="p-4 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
+            <p className="text-xl sm:text-2xl font-bold text-green-700">{allSections.length}</p>
+            <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
+          </div>
+          <div className="p-4 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
+            <p className="text-xl sm:text-2xl font-bold text-yellow-700">100k+</p>
+            <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
+          </div>
+        </div>
+      </section>
+
+      <main className="flex-1 p-4 sm:p-6 flex justify-center">
+        <div className="w-full max-w-xl sm:max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-12">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-blue-700 mb-6 sm:mb-8 text-center">
+            Calculate Normal way Fares
+          </h2>
+
+          {/* 🌍 Professional Language Switcher */}
+          <div className="flex justify-center gap-3 mb-6">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                onClick={() => setLanguage(lang.code)}
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition font-medium ${
+                  language === lang.code
+                    ? "bg-blue-600 text-white border-blue-600 shadow"
+                    : "bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200"
+                }`}
+              >
+                <span>{lang.flag}</span>
+                <span>{lang.label}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* 💡 How to Use Section */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 sm:p-6 mb-8 border border-blue-100">
+            <div className="text-center space-y-3">
+              <h3 className="text-lg font-semibold text-blue-800 mb-3">💡 How to Use</h3>
+              <p className="text-gray-700 text-sm sm:text-base">{tips[language]}</p>
+
+              <div className="bg-white rounded-lg p-3 mt-4 border border-blue-200">
+                <p className="text-xs sm:text-sm text-gray-600 font-medium">
+                  Example: Colombo ➜ Matara | කොළඹ ➜ මාතර | கொழும்பு ➜ மாத்தறை
+                </p>
+              </div>
+            </div>
+          </div>
+	<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
             <div className="relative" ref={originRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">Origin</label>
               <div className="relative">
@@ -583,11 +627,13 @@ const FareCalculator = () => {
             )}
           </div>
         </div>
-      </main>
+          
+        
+      </main>
 
-      <Footer />
-    </div>
-  );
+      <Footer />
+    </div>
+  );
 };
 
 export default FareCalculator;
