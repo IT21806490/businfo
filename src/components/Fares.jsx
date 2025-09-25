@@ -14,6 +14,7 @@ const FareCalculator = () => {
   const [fareResults, setFareResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [allSections, setAllSections] = useState([]);
+  const [mainTownSuggestions, setMainTownSuggestions] = useState([]); // New state for main towns
   const [sectionMap, setSectionMap] = useState({});
   const [fareStageMap, setFareStageMap] = useState({});
   const [routeMap, setRouteMap] = useState({});
@@ -26,19 +27,6 @@ const FareCalculator = () => {
 
   // 🌍 Language state
   const [language, setLanguage] = useState("en");
-
-  const mainTowns = [
-    "Colombo",
-    "Kandy",
-    "Galle",
-    "Jaffna",
-    "Anuradhapura",
-    "Kurunegala",
-    "Badulla",
-    "Trincomalee",
-    "Matara",
-    "Batticaloa",
-  ];
 
   const originRef = useRef(null);
   const destinationRef = useRef(null);
@@ -96,7 +84,8 @@ const FareCalculator = () => {
   const getFilteredSuggestions = useCallback(
     (query, allOptions) => {
       if (!query.trim()) {
-        return mainTowns;
+        // Return the curated list of main towns when the input is empty
+        return mainTownSuggestions;
       }
 
       const lowerCaseQuery = query.toLowerCase();
@@ -119,7 +108,7 @@ const FareCalculator = () => {
       const results = [...exactMatches, ...startsWithMatches, ...containsMatches];
       return results.slice(0, 50);
     },
-    [mainTowns]
+    [mainTownSuggestions] // Depend on the new state
   );
 
   const filteredOriginSections = useMemo(
@@ -229,10 +218,18 @@ const FareCalculator = () => {
       rMap[normalizedRouteNo] = r;
     });
 
+    const mainTowns = ["COLOMBO", "KANDY", "GALLE", "JAFFNA", "ANURADHAPURA", "KURUNEGALA", "BADULLA", "TRINCOMALEE", "MATARA", "BATTICALOA"];
+    
+    // Filter the unique sections to find only the main towns
+    const filteredMainTowns = Array.from(uniqueSections).filter(section => 
+        mainTowns.includes(section.toUpperCase())
+    ).sort();
+
     setSectionMap(sMap);
     setFareStageMap(fMap);
     setRouteMap(rMap);
     setAllSections(Array.from(uniqueSections).sort());
+    setMainTownSuggestions(filteredMainTowns); // Set the new state
   }, []);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import allSectionsData from "../data/all_section.json";
 import allRoutesData from "../data/allroutes.json";
 import normalData from "../data/normal.json";
@@ -20,29 +20,18 @@ const FindRoutes = () => {
   const [routeMap, setRouteMap] = useState({});
   const [showOriginSuggestions, setShowOriginSuggestions] = useState(false);
   const [showDestinationSuggestions, setShowDestinationSuggestions] = useState(false);
-
-  // New list of main towns in Sri Lanka
-  const mainTowns = [
-    "Colombo",
-    "Kandy",
-    "Galle",
-    "Jaffna",
-    "Anuradhapura",
-    "Kurunegala",
-    "Badulla",
-    "Trincomalee",
-    "Matara",
-    "Batticaloa",
-  ];
+  const [debouncedOriginQuery, setDebouncedOriginQuery] = useState("");
+  const [debouncedDestinationQuery, setDebouncedDestinationQuery] = useState("");
+  const [mainTownSuggestions, setMainTownSuggestions] = useState([]);
 
   const sectionsCoveredCount = allSections.length;
-
   const [normalMap, setNormalMap] = useState({});
   const [semiMap, setSemiMap] = useState({});
   const [acMap, setAcMap] = useState({});
 
   const originRef = useRef(null);
   const destinationRef = useRef(null);
+  const debounceTimer = useRef(null);
 
   const normalizeRouteNo = (routeNo) => {
     if (!routeNo) return "";
@@ -66,15 +55,42 @@ const FindRoutes = () => {
     return `${hours}:${minutes.toString().padStart(2, "0")} hrs`;
   };
 
+  const debounce = useCallback((func, delay) => {
+    return (...args) => {
+      clearTimeout(debounceTimer.current);
+      debounceTimer.current = setTimeout(() => func.apply(null, args), delay);
+    };
+  }, []);
+
+  useEffect(() => {
+    const debouncedUpdate = debounce(() => {
+      setDebouncedOriginQuery(origin);
+    }, 150);
+    debouncedUpdate();
+  }, [origin, debounce]);
+
+  useEffect(() => {
+    const debouncedUpdate = debounce(() => {
+      setDebouncedDestinationQuery(destination);
+    }, 150);
+    debouncedUpdate();
+  }, [destination, debounce]);
+
   useEffect(() => {
     const sMap = {};
     const uniqueSections = new Set();
+    const mainTownNames = ["COLOMBO", "KANDY", "GALLE", "JAFFNA", "ANURADHAPURA", "KURUNEGALA", "BADULLA", "TRINCOMALEE", "MATARA", "BATTICALOA"];
+    const foundMainTowns = new Set();
 
     allSectionsData.forEach((sec) => {
       const normalizedRouteNo = normalizeRouteNo(sec.route_no);
       if (!sMap[normalizedRouteNo]) sMap[normalizedRouteNo] = {};
       sMap[normalizedRouteNo][sec.section_name] = sec;
       uniqueSections.add(sec.section_name);
+      
+      if (mainTownNames.includes(sec.section_name.toUpperCase())) {
+        foundMainTowns.add(sec.section_name);
+      }
     });
 
     const rMap = {};
@@ -95,10 +111,10 @@ const FindRoutes = () => {
     setSectionMap(sMap);
     setRouteMap(rMap);
     setAllSections(Array.from(uniqueSections).sort());
-
     setNormalMap(makeMap(normalData));
     setSemiMap(makeMap(semiData));
     setAcMap(makeMap(acData));
+    setMainTownSuggestions(Array.from(foundMainTowns).sort());
   }, []);
 
   useEffect(() => {
@@ -106,10 +122,7 @@ const FindRoutes = () => {
       if (originRef.current && !originRef.current.contains(event.target)) {
         setShowOriginSuggestions(false);
       }
-      if (
-        destinationRef.current &&
-        !destinationRef.current.contains(event.target)
-      ) {
+      if (destinationRef.current && !destinationRef.current.contains(event.target)) {
         setShowDestinationSuggestions(false);
       }
     };
@@ -195,17 +208,17 @@ const FindRoutes = () => {
     setShowDestinationSuggestions(false);
   };
 
-  const getFilteredSuggestions = (inputValue, allOptions) => {
-    if (!inputValue) {
-      return mainTowns;
+  const getFilteredSuggestions = useCallback((inputValue, allOptions) => {
+    if (!inputValue.trim()) {
+      return mainTownSuggestions;
     }
     return allOptions.filter((sec) =>
       sec.toLowerCase().includes(inputValue.toLowerCase())
     );
-  };
+  }, [mainTownSuggestions]);
 
-  const filteredOriginSections = getFilteredSuggestions(origin, allSections);
-  const filteredDestinationSections = getFilteredSuggestions(destination, allSections);
+  const filteredOriginSections = useMemo(() => getFilteredSuggestions(debouncedOriginQuery, allSections), [debouncedOriginQuery, allSections, getFilteredSuggestions]);
+  const filteredDestinationSections = useMemo(() => getFilteredSuggestions(debouncedDestinationQuery, allSections), [debouncedDestinationQuery, allSections, getFilteredSuggestions]);
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
