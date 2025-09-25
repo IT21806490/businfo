@@ -51,11 +51,11 @@ const FareCalculator = () => {
     ta: "உங்கள் தொடக்கப் புள்ளி மற்றும் முடிவுப் புள்ளியை இங்கே தட்டச்சு செய்து கணக்கிடு பொத்தானை அழுத்தவும். இது நீங்கள் பயணிக்கக்கூடிய அனைத்து வழித்தடங்களையும், வழக்கமான, அரை சொகுசு மற்றும் குளிரூட்டப்பட்ட பேருந்துகளுக்கான கட்டணங்களையும் காண்பிக்கும்.",
   };
 
-  // Language options
+  // Language options without flag emojis
   const languages = [
-    { code: "en", label: "English"},
-    { code: "si", label: "සිංහල"},
-    { code: "ta", label: "தமிழ்"},
+    { code: "en", label: "English" },
+    { code: "si", label: "සිංහල" },
+    { code: "ta", label: "தமிழ்" },
   ];
 
   const normalizeRouteNo = (routeNo) => {
@@ -437,19 +437,23 @@ const FareCalculator = () => {
             Calculate Normal way Fares
           </h2>
 
-          {/* 🌍 Professional Language Switcher */}
-          <div className="flex justify-center gap-3 mb-6">
+          {/* 🌍 Newly designed Language Switcher */}
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
             {languages.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => setLanguage(lang.code)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition font-medium ${
-                  language === lang.code
-                    ? "bg-blue-600 text-white border-blue-600 shadow"
-                    : "bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200"
-                }`}
+                className={`
+                  flex items-center gap-2 px-4 py-2 rounded-full border 
+                  transition-all duration-300 font-medium 
+                  transform hover:scale-105 active:scale-95
+                  ${
+                    language === lang.code
+                      ? "bg-blue-600 text-white border-blue-600 shadow-md"
+                      : "bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200"
+                  }
+                `}
               >
-                <span>{lang.flag}</span>
                 <span>{lang.label}</span>
               </button>
             ))}
@@ -468,167 +472,165 @@ const FareCalculator = () => {
               </div>
             </div>
           </div>
-	<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
-            <div className="relative" ref={originRef}>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Origin</label>
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Enter origin..."
-                  value={originQuery}
-                  onChange={handleOriginChange}
-                  onFocus={() => setShowOriginSuggestions(true)}
-                  onKeyDown={(e) => handleKeyDown(e, 'origin')}
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
-                  autoComplete="off"
-                />
-              </div>
-              {showOriginSuggestions && (
-                <div className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
-                  {filteredOriginSections.length > 0 ? (
-                    filteredOriginSections.map((sec, index) => (
-                      <div
-                        key={`${sec}-${index}`}
-                        onClick={() => selectOrigin(sec)}
-                        className="cursor-pointer px-3 py-2 hover:bg-blue-50 transition-colors duration-150 last:border-b-0 flex items-center"
-                      >
-                        <div className="flex-1">
-                          <div className="text-sm text-gray-900">{sec}</div>
-                        </div>
-                      </div>
-                    ))
-                  ) : (
-                    <div className="px-3 py-4 text-center text-sm text-gray-500">
-                      No sections found for "{debouncedOriginQuery}"
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
+            <div className="relative" ref={originRef}>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Origin</label>
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Enter origin..."
+                  value={originQuery}
+                  onChange={handleOriginChange}
+                  onFocus={() => setShowOriginSuggestions(true)}
+                  onKeyDown={(e) => handleKeyDown(e, 'origin')}
+                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
+                  autoComplete="off"
+                />
+              </div>
+              {showOriginSuggestions && (
+                <div className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
+                  {filteredOriginSections.length > 0 ? (
+                    filteredOriginSections.map((sec, index) => (
+                      <div
+                        key={`${sec}-${index}`}
+                        onClick={() => selectOrigin(sec)}
+                        className="cursor-pointer px-3 py-2 hover:bg-blue-50 transition-colors duration-150 last:border-b-0 flex items-center"
+                      >
+                        <div className="flex-1">
+                          <div className="text-sm text-gray-900">{sec}</div>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="px-3 py-4 text-center text-sm text-gray-500">
+                      No sections found for "{debouncedOriginQuery}"
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
 
-            <div className="relative" ref={destinationRef}>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Enter destination..."
-                  value={destinationQuery}
-                  onChange={handleDestinationChange}
-                  onFocus={() => setShowDestinationSuggestions(true)}
-                  onKeyDown={(e) => handleKeyDown(e, 'destination')}
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
-                  autoComplete="off"
-                />
-              </div>
-              {showDestinationSuggestions && (
-                <div className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
-                  {filteredDestinationSections.length > 0 ? (
-                    filteredDestinationSections.map((sec, index) => (
-                      <div
-                        key={`${sec}-${index}`}
-                        onClick={() => selectDestination(sec)}
-                        className="cursor-pointer px-3 py-2 hover:bg-blue-50 transition-colors duration-150 last:border-b-0 flex items-center"
-                      >
-                        <div className="flex-1">
-                          <div className="text-sm text-gray-900">{sec}</div>
-                        </div>
-                      </div>
-                    ))
-                  ) : (
-                    <div className="px-3 py-4 text-center text-sm text-gray-500">
-                      No sections found for "{debouncedDestinationQuery}"
-                    </div>
-                  )}
-                </div>
-              )}
-          </div>
-          </div>
+            <div className="relative" ref={destinationRef}>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Enter destination..."
+                  value={destinationQuery}
+                  onChange={handleDestinationChange}
+                  onFocus={() => setShowDestinationSuggestions(true)}
+                  onKeyDown={(e) => handleKeyDown(e, 'destination')}
+                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all duration-200"
+                  autoComplete="off"
+                />
+              </div>
+              {showDestinationSuggestions && (
+                <div className="absolute z-10 w-full max-h-48 overflow-auto bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
+                  {filteredDestinationSections.length > 0 ? (
+                    filteredDestinationSections.map((sec, index) => (
+                      <div
+                        key={`${sec}-${index}`}
+                        onClick={() => selectDestination(sec)}
+                        className="cursor-pointer px-3 py-2 hover:bg-blue-50 transition-colors duration-150 last:border-b-0 flex items-center"
+                      >
+                        <div className="flex-1">
+                          <div className="text-sm text-gray-900">{sec}</div>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="px-3 py-4 text-center text-sm text-gray-500">
+                      No sections found for "{debouncedDestinationQuery}"
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
 
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-3 sm:gap-4">
-            <button
-              onClick={swapOriginDestination}
-              disabled={!origin || !destination}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              <RefreshCw size={16} className="mr-2" /> Swap
-            </button>
-            <button
-              onClick={clearSelections}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-200"
-            >
-              <Trash2 size={16} className="mr-2" /> Clear
-            </button>
-            <button
-              onClick={calculateFare}
-              disabled={loading || !origin || !destination || origin === destination}
-              className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              Calculate Fare
-            </button>
-          </div>
+          <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-3 sm:gap-4">
+            <button
+              onClick={swapOriginDestination}
+              disabled={!origin || !destination}
+              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <RefreshCw size={16} className="mr-2" /> Swap
+            </button>
+            <button
+              onClick={clearSelections}
+              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-200"
+            >
+              <Trash2 size={16} className="mr-2" /> Clear
+            </button>
+            <button
+              onClick={calculateFare}
+              disabled={loading || !origin || !destination || origin === destination}
+              className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Calculate Fare
+            </button>
+          </div>
 
-          <div>
-            {loading && (
-              <div className="text-center py-4">
-                <Bus className="animate-bounce mx-auto text-blue-600" size={36} />
-                <p className="text-gray-600 mt-2 text-sm sm:text-base">Finding best routes...</p>
-              </div>
-            )}
+          <div>
+            {loading && (
+              <div className="text-center py-4">
+                <Bus className="animate-bounce mx-auto text-blue-600" size={36} />
+                <p className="text-gray-600 mt-2 text-sm sm:text-base">Finding best routes...</p>
+              </div>
+            )}
 
-            {!loading && fareResults.length === 0 && (
-              <p className="text-center text-gray-500 text-sm sm:text-base mt-4">
-                {origin && destination
-                  ? "No routes found between selected origin and destination."
-                  : "Please select origin and destination to calculate fare."}
-              </p>
-            )}
+            {!loading && fareResults.length === 0 && (
+              <p className="text-center text-gray-500 text-sm sm:text-base mt-4">
+                {origin && destination
+                  ? "No routes found between selected origin and destination."
+                  : "Please select origin and destination to calculate fare."}
+              </p>
+            )}
 
-            {fareResults.length > 0 && (
-              <>
-                <p className="mb-4 sm:mb-6 text-blue-700 font-semibold text-center text-sm sm:text-base">
-                  Found {fareResults.length} route{fareResults.length > 1 ? "s" : ""}
-                </p>
-                <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
-                  {fareResults.map((fare, idx) => (
-                    <div
-                      key={idx}
-                      className="border border-gray-200 rounded-xl p-4 sm:p-6 shadow-md hover:shadow-lg transition bg-white"
-                    >
-                      <div className="mb-2">
-                        <h2 className="text-base sm:text-lg font-bold text-blue-800">{fare.route_name}</h2>
-                        <p className="text-xs sm:text-sm text-gray-600">
-                          <span className="font-semibold">Route No:</span> {fare.route_no}
-                        </p>
-                      </div>
-                      <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-2 sm:mt-4">
-                        {fare.normal && (
-                          <div className="rounded-lg p-2 sm:p-4 text-center bg-yellow-50 text-yellow-700 shadow-sm">
-                            <p className="text-xs sm:text-sm font-semibold">Normal</p>
-                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.normal}</p>
-                          </div>
-                        )}
-                        {fare.semi && (
-                          <div className="rounded-lg p-2 sm:p-4 text-center bg-blue-50 text-blue-700 shadow-sm">
-                            <p className="text-xs sm:text-sm font-semibold">Semi</p>
-                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.semi}</p>
-                          </div>
-                        )}
-                        {fare.ac && (
-                          <div className="rounded-lg p-2 sm:p-4 text-center bg-green-50 text-green-700 shadow-sm">
-                            <p className="text-xs sm:text-sm font-semibold">AC</p>
-                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.ac}</p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-          
-        
+            {fareResults.length > 0 && (
+              <>
+                <p className="mb-4 sm:mb-6 text-blue-700 font-semibold text-center text-sm sm:text-base">
+                  Found {fareResults.length} route{fareResults.length > 1 ? "s" : ""}
+                </p>
+                <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
+                  {fareResults.map((fare, idx) => (
+                    <div
+                      key={idx}
+                      className="border border-gray-200 rounded-xl p-4 sm:p-6 shadow-md hover:shadow-lg transition bg-white"
+                    >
+                      <div className="mb-2">
+                        <h2 className="text-base sm:text-lg font-bold text-blue-800">{fare.route_name}</h2>
+                        <p className="text-xs sm:text-sm text-gray-600">
+                          <span className="font-semibold">Route No:</span> {fare.route_no}
+                        </p>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-2 sm:mt-4">
+                        {fare.normal && (
+                          <div className="rounded-lg p-2 sm:p-4 text-center bg-yellow-50 text-yellow-700 shadow-sm">
+                            <p className="text-xs sm:text-sm font-semibold">Normal</p>
+                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.normal}</p>
+                          </div>
+                        )}
+                        {fare.semi && (
+                          <div className="rounded-lg p-2 sm:p-4 text-center bg-blue-50 text-blue-700 shadow-sm">
+                            <p className="text-xs sm:text-sm font-semibold">Semi</p>
+                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.semi}</p>
+                          </div>
+                        )}
+                        {fare.ac && (
+                          <div className="rounded-lg p-2 sm:p-4 text-center bg-green-50 text-green-700 shadow-sm">
+                            <p className="text-xs sm:text-sm font-semibold">AC</p>
+                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.ac}</p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
       </main>
 
       <Footer />
