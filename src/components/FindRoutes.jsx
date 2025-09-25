@@ -21,6 +21,20 @@ const FindRoutes = () => {
   const [showOriginSuggestions, setShowOriginSuggestions] = useState(false);
   const [showDestinationSuggestions, setShowDestinationSuggestions] = useState(false);
 
+  // New list of main towns in Sri Lanka
+  const mainTowns = [
+    "Colombo",
+    "Kandy",
+    "Galle",
+    "Jaffna",
+    "Anuradhapura",
+    "Kurunegala",
+    "Badulla",
+    "Trincomalee",
+    "Matara",
+    "Batticaloa",
+  ];
+
   const sectionsCoveredCount = allSections.length;
 
   const [normalMap, setNormalMap] = useState({});
@@ -44,14 +58,11 @@ const FindRoutes = () => {
       .join("");
   };
 
-  // ✅ Format travel time from decimal hours to H:MM
   const formatTravelTime = (time) => {
     if (!time) return "";
-
     const num = parseFloat(time);
     const hours = Math.floor(num);
-    const minutes = Math.round((num - hours) * 100); // since .30 means 30 min, .45 means 45 min
-
+    const minutes = Math.round((num - hours) * 100);
     return `${hours}:${minutes.toString().padStart(2, "0")} hrs`;
   };
 
@@ -184,34 +195,38 @@ const FindRoutes = () => {
     setShowDestinationSuggestions(false);
   };
 
-  const filteredOriginSections = allSections.filter((sec) =>
-    sec.toLowerCase().includes(origin.toLowerCase())
-  );
-  const filteredDestinationSections = allSections.filter((sec) =>
-    sec.toLowerCase().includes(destination.toLowerCase())
-  );
+  const getFilteredSuggestions = (inputValue, allOptions) => {
+    if (!inputValue) {
+      return mainTowns;
+    }
+    return allOptions.filter((sec) =>
+      sec.toLowerCase().includes(inputValue.toLowerCase())
+    );
+  };
+
+  const filteredOriginSections = getFilteredSuggestions(origin, allSections);
+  const filteredDestinationSections = getFilteredSuggestions(destination, allSections);
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
 
-            {/* Highlights */}
-            <section className="bg-white py-6 shadow-sm">
-              <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 text-center">
-                <div className="p-4 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
-                  <p className="text-xl sm:text-2xl font-bold text-blue-700">{allRoutesData.length}</p>
-                  <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
-                </div>
-                <div className="p-4 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
-                  <p className="text-xl sm:text-2xl font-bold text-green-700">{sectionsCoveredCount}</p>
-                  <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
-                </div>
-                <div className="p-4 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
-                  <p className="text-xl sm:text-2xl font-bold text-yellow-700">100k+</p>
-                  <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
-                </div>
-              </div>
-            </section>
+      <section className="bg-white py-6 shadow-sm">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 text-center">
+          <div className="p-4 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
+            <p className="text-xl sm:text-2xl font-bold text-blue-700">{allRoutesData.length}</p>
+            <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
+          </div>
+          <div className="p-4 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
+            <p className="text-xl sm:text-2xl font-bold text-green-700">{sectionsCoveredCount}</p>
+            <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
+          </div>
+          <div className="p-4 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
+            <p className="text-xl sm:text-2xl font-bold text-yellow-700">100k+</p>
+            <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
+          </div>
+        </div>
+      </section>
 
       <main className="flex-1 p-4 sm:p-6 flex justify-center">
         <div className="w-full max-w-xl sm:max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
@@ -219,7 +234,6 @@ const FindRoutes = () => {
             Find Your Route
           </h2>
 
-          {/* Input Fields */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
             <div className="relative" ref={originRef}>
               <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -284,7 +298,6 @@ const FindRoutes = () => {
             </div>
           </div>
 
-          {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6">
             <button
               onClick={swapOriginDestination}
@@ -310,7 +323,6 @@ const FindRoutes = () => {
             </button>
           </div>
 
-          {/* Results */}
           <div>
             {loading && (
               <div className="text-center py-4">
@@ -342,13 +354,11 @@ const FindRoutes = () => {
                       key={idx}
                       className="border border-gray-200 rounded-2xl p-5 shadow-md bg-white"
                     >
-                      {/* Route Name & No */}
                       <div className="mb-4">
                         <h2 className="text-lg font-bold text-blue-800">{route.route_name}</h2>
                         <p className="text-sm font-medium text-gray-500 mt-1">Route No: {route.route_no}</p>
                       </div>
 
-                      {/* Services */}
                       <div className="flex flex-col gap-3">
                         {route.services.map((s, i) => (
                           <div
