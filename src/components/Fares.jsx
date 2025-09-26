@@ -14,7 +14,7 @@ const FareCalculator = () => {
   const [fareResults, setFareResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [allSections, setAllSections] = useState([]);
-  const [mainTownSuggestions, setMainTownSuggestions] = useState([]); // New state for main towns
+  const [mainTownSuggestions, setMainTownSuggestions] = useState([]);
   const [sectionMap, setSectionMap] = useState({});
   const [fareStageMap, setFareStageMap] = useState({});
   const [routeMap, setRouteMap] = useState({});
@@ -84,7 +84,6 @@ const FareCalculator = () => {
   const getFilteredSuggestions = useCallback(
     (query, allOptions) => {
       if (!query.trim()) {
-        // Return the curated list of main towns when the input is empty
         return mainTownSuggestions;
       }
 
@@ -108,7 +107,7 @@ const FareCalculator = () => {
       const results = [...exactMatches, ...startsWithMatches, ...containsMatches];
       return results.slice(0, 50);
     },
-    [mainTownSuggestions] // Depend on the new state
+    [mainTownSuggestions]
   );
 
   const filteredOriginSections = useMemo(
@@ -345,6 +344,7 @@ const FareCalculator = () => {
 
           let semi = null;
           let ac = null;
+          let superLuxury = null;
 
           if (availableServices.includes("SL")) {
             let nearOrigin = hasServiceType(originSec.service_type, "SL")
@@ -378,6 +378,22 @@ const FareCalculator = () => {
             }
           }
 
+          if (availableServices.includes("SU")) {
+            let nearOrigin = hasServiceType(originSec.service_type, "SU")
+              ? originSec
+              : findNearestSection(routeNo, originSec.section_id, direction, "origin", "SU");
+
+            let nearDestination = hasServiceType(destSec.service_type, "SU")
+              ? destSec
+              : findNearestSection(routeNo, destSec.section_id, direction, "destination", "SU");
+
+            if (nearOrigin && nearDestination) {
+              const sectionDiff = Math.abs(nearDestination.section_id - nearOrigin.section_id);
+              const suFareData = fareStageMap[sectionDiff];
+              superLuxury = suFareData?.super;
+            }
+          }
+
           const routeName = resolveRouteName(routeNo, origin, destination);
 
           const fareEntry = {
@@ -394,8 +410,11 @@ const FareCalculator = () => {
           if (ac !== undefined && ac !== null) {
             fareEntry.ac = ac;
           }
+          if (superLuxury !== undefined && superLuxury !== null) {
+            fareEntry.su = superLuxury;
+          }
 
-          if (fareEntry.normal || fareEntry.semi || fareEntry.ac) {
+          if (fareEntry.normal || fareEntry.semi || fareEntry.ac || fareEntry.su) {
             results.push(fareEntry);
           }
         }
@@ -601,7 +620,7 @@ const FareCalculator = () => {
                           <span className="font-semibold">Route No:</span> {fare.route_no}
                         </p>
                       </div>
-                      <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-2 sm:mt-4">
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mt-2 sm:mt-4">
                         {fare.normal && (
                           <div className="rounded-lg p-2 sm:p-4 text-center bg-yellow-50 text-yellow-700 shadow-sm">
                             <p className="text-xs sm:text-sm font-semibold">Normal</p>
@@ -618,6 +637,12 @@ const FareCalculator = () => {
                           <div className="rounded-lg p-2 sm:p-4 text-center bg-green-50 text-green-700 shadow-sm">
                             <p className="text-xs sm:text-sm font-semibold">AC</p>
                             <p className="text-sm sm:text-lg font-bold">Rs. {fare.ac}</p>
+                          </div>
+                        )}
+                        {fare.su && (
+                          <div className="rounded-lg p-2 sm:p-4 text-center bg-purple-50 text-purple-700 shadow-sm">
+                            <p className="text-xs sm:text-sm font-semibold">Super Luxury</p>
+                            <p className="text-sm sm:text-lg font-bold">Rs. {fare.su}</p>
                           </div>
                         )}
                       </div>
