@@ -24,7 +24,6 @@ const FindRoutes = () => {
   const [debouncedDestinationQuery, setDebouncedDestinationQuery] = useState("");
   const [mainTownSuggestions, setMainTownSuggestions] = useState([]);
 
-  const sectionsCoveredCount = allSections.length;
   const [normalMap, setNormalMap] = useState({});
   const [semiMap, setSemiMap] = useState({});
   const [acMap, setAcMap] = useState({});
@@ -32,6 +31,22 @@ const FindRoutes = () => {
   const originRef = useRef(null);
   const destinationRef = useRef(null);
   const debounceTimer = useRef(null);
+
+  // 🌍 Language state
+  const [language, setLanguage] = useState("en");
+
+  // Translations
+  const tips = {
+    en: "This page shows all possible routes for your travel needs, and please note that the distance and travel time shown here are for the entire route.",
+    si: "මෙහිදී ඔබගේ ගමන් අවශ්‍යතාව සදහා භාවිතා කළ හැකි සෑම ගමන් මාර්ගයක්ම පෙන්වන අතර මෙහිදී පෙන්වන දුර සහ ගමන් කාලය පෙන්නනුයේ අදාළ සම්පූර්ණ Route එක සදහා බව කරුණාවෙන් සළකන්න.",
+    ta: "இந்தப் பக்கம் உங்கள் பயணத் தேவைகளுக்கான அனைத்து சாத்தியமான வழிகளையும் காட்டுகிறது, மேலும் இங்கே காட்டப்பட்டுள்ள தூரம் மற்றும் பயண நேரம் முழு வழிக்கும் என்பதை நினைவில் கொள்ளவும்.",
+  };
+
+  const languages = [
+    { code: "en", label: "English" },
+    { code: "si", label: "සිංහල" },
+    { code: "ta", label: "தமிழ்" },
+  ];
 
   const normalizeRouteNo = (routeNo) => {
     if (!routeNo) return "";
@@ -62,6 +77,29 @@ const FindRoutes = () => {
     };
   }, []);
 
+  // Close suggestions when clicking outside
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      originRef.current && !originRef.current.contains(event.target)
+    ) {
+      setShowOriginSuggestions(false);
+    }
+    if (
+      destinationRef.current && !destinationRef.current.contains(event.target)
+    ) {
+      setShowDestinationSuggestions(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
+
+
+  // Debounce origin
   useEffect(() => {
     const debouncedUpdate = debounce(() => {
       setDebouncedOriginQuery(origin);
@@ -69,6 +107,7 @@ const FindRoutes = () => {
     debouncedUpdate();
   }, [origin, debounce]);
 
+  // Debounce destination
   useEffect(() => {
     const debouncedUpdate = debounce(() => {
       setDebouncedDestinationQuery(destination);
@@ -76,10 +115,22 @@ const FindRoutes = () => {
     debouncedUpdate();
   }, [destination, debounce]);
 
+  // Build maps
   useEffect(() => {
     const sMap = {};
     const uniqueSections = new Set();
-    const mainTownNames = ["COLOMBO", "KANDY", "GALLE", "JAFFNA", "ANURADHAPURA", "KURUNEGALA", "BADULLA", "TRINCOMALEE", "MATARA", "BATTICALOA"];
+    const mainTownNames = [
+      "COLOMBO",
+      "KANDY",
+      "GALLE",
+      "JAFFNA",
+      "ANURADHAPURA",
+      "KURUNEGALA",
+      "BADULLA",
+      "TRINCOMALEE",
+      "MATARA",
+      "BATTICALOA",
+    ];
     const foundMainTowns = new Set();
 
     allSectionsData.forEach((sec) => {
@@ -87,7 +138,7 @@ const FindRoutes = () => {
       if (!sMap[normalizedRouteNo]) sMap[normalizedRouteNo] = {};
       sMap[normalizedRouteNo][sec.section_name] = sec;
       uniqueSections.add(sec.section_name);
-      
+
       if (mainTownNames.includes(sec.section_name.toUpperCase())) {
         foundMainTowns.add(sec.section_name);
       }
@@ -117,141 +168,164 @@ const FindRoutes = () => {
     setMainTownSuggestions(Array.from(foundMainTowns).sort());
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (originRef.current && !originRef.current.contains(event.target)) {
-        setShowOriginSuggestions(false);
-      }
-      if (destinationRef.current && !destinationRef.current.contains(event.target)) {
-        setShowDestinationSuggestions(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  // 🔎 Filtered suggestions
+  const filteredOriginSections = useMemo(() => {
+    if (!debouncedOriginQuery) return mainTownSuggestions;
+    return allSections.filter((s) =>
+      s.toLowerCase().includes(debouncedOriginQuery.toLowerCase())
+    );
+  }, [debouncedOriginQuery, allSections, mainTownSuggestions]);
 
-  const findRoutes = () => {
-    if (!origin || !destination) {
-      alert("Please select both origin and destination");
-      return;
-    }
-    if (origin === destination) {
-      alert("Origin and destination cannot be the same");
-      return;
-    }
+  const filteredDestinationSections = useMemo(() => {
+    if (!debouncedDestinationQuery) return mainTownSuggestions;
+    return allSections.filter((s) =>
+      s.toLowerCase().includes(debouncedDestinationQuery.toLowerCase())
+    );
+  }, [debouncedDestinationQuery, allSections, mainTownSuggestions]);
 
-    setLoading(true);
-    setTimeout(() => {
-      const results = [];
-      Object.keys(sectionMap).forEach((routeNo) => {
-        const originSec = sectionMap[routeNo][origin];
-        const destSec = sectionMap[routeNo][destination];
-        if (originSec && destSec) {
-          const routeInfo = routeMap[routeNo];
-
-          const services = [];
-          if (normalMap[routeNo]) {
-            services.push({
-              type: "Normal",
-              distance: normalMap[routeNo].distance,
-              travel_time: normalMap[routeNo].travel_time,
-            });
-          }
-          if (semiMap[routeNo]) {
-            services.push({
-              type: "Semi",
-              distance: semiMap[routeNo].distance,
-              travel_time: semiMap[routeNo].travel_time,
-            });
-          }
-          if (acMap[routeNo]) {
-            services.push({
-              type: "AC",
-              distance: acMap[routeNo].distance,
-              travel_time: acMap[routeNo].travel_time,
-            });
-          }
-
-          results.push({
-            route_no: routeNo,
-            route_name: routeInfo
-              ? `${routeInfo.Origin} - ${routeInfo.Destination}`
-              : "Unknown",
-            services,
-          });
-        }
-      });
-
-      results.sort((a, b) => a.route_no.localeCompare(b.route_no));
-      setMatchingRoutes(results);
-      setLoading(false);
-    }, 1000);
+  // ✅ Select handlers
+  const selectOrigin = (sec) => {
+    setOrigin(sec);
+    setShowOriginSuggestions(false);
   };
 
+  const selectDestination = (sec) => {
+    setDestination(sec);
+    setShowDestinationSuggestions(false);
+  };
+
+  // 🔄 Swap
+  const swapOriginDestination = () => {
+    setOrigin(destination);
+    setDestination(origin);
+  };
+
+  // ❌ Clear
   const clearSelections = () => {
     setOrigin("");
     setDestination("");
     setMatchingRoutes([]);
   };
 
-  const swapOriginDestination = () => {
-    setOrigin(destination);
-    setDestination(origin);
-  };
+  // 🚍 Find routes
+  const findRoutes = () => {
+    if (!origin || !destination || origin === destination) return;
+    setLoading(true);
+    setTimeout(() => {
+      const foundRoutes = [];
 
-  const selectOrigin = (val) => {
-    setOrigin(val);
-    setShowOriginSuggestions(false);
-  };
-  const selectDestination = (val) => {
-    setDestination(val);
-    setShowDestinationSuggestions(false);
-  };
+      Object.keys(sectionMap).forEach((routeNo) => {
+        const sections = sectionMap[routeNo];
+        if (sections[origin] && sections[destination]) {
+          const routeInfo = routeMap[routeNo] || {};
+          const services = [];
 
-  const getFilteredSuggestions = useCallback((inputValue, allOptions) => {
-    if (!inputValue.trim()) {
-      return mainTownSuggestions;
-    }
-    return allOptions.filter((sec) =>
-      sec.toLowerCase().includes(inputValue.toLowerCase())
-    );
-  }, [mainTownSuggestions]);
+          if (normalMap[routeNo]) {
+            services.push({
+              type: "Normal",
+              distance: normalMap[routeNo].distance || "N/A",
+              travel_time: normalMap[routeNo].travel_time || "N/A",
+            });
+          }
+          if (semiMap[routeNo]) {
+            services.push({
+              type: "Semi",
+              distance: semiMap[routeNo].distance || "N/A",
+              travel_time: semiMap[routeNo].travel_time || "N/A",
+            });
+          }
+          if (acMap[routeNo]) {
+            services.push({
+              type: "AC",
+              distance: acMap[routeNo].distance || "N/A",
+              travel_time: acMap[routeNo].travel_time || "N/A",
+            });
+          }
 
-  const filteredOriginSections = useMemo(() => getFilteredSuggestions(debouncedOriginQuery, allSections), [debouncedOriginQuery, allSections, getFilteredSuggestions]);
-  const filteredDestinationSections = useMemo(() => getFilteredSuggestions(debouncedDestinationQuery, allSections), [debouncedDestinationQuery, allSections, getFilteredSuggestions]);
+          foundRoutes.push({
+            route_no: routeNo,
+            route_name: routeInfo.Origin
+              ? `${routeInfo.Origin} ➜ ${routeInfo.Destination}`
+              : `Route ${routeNo}`,
+            services,
+          });
+        }
+      });
+
+      setMatchingRoutes(foundRoutes);
+      setLoading(false);
+    }, 500);
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
 
-      <section className="bg-white py-6 shadow-sm">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 text-center">
-          <div className="p-4 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-blue-700">{allRoutesData.length}</p>
-            <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
-          </div>
-          <div className="p-4 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-green-700">{sectionsCoveredCount}</p>
-            <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
-          </div>
-          <div className="p-4 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
-            <p className="text-xl sm:text-2xl font-bold text-yellow-700">100k+</p>
-            <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
-          </div>
-        </div>
-      </section>
+            <section className="bg-white py-6 shadow-sm">
+              <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 text-center">
+                <div className="p-4 rounded-xl bg-blue-50 shadow-md hover:shadow-lg transition">
+                  <p className="text-xl sm:text-2xl font-bold text-blue-700">{allRoutesData.length}</p>
+                  <p className="text-gray-600 text-sm sm:text-base">Routes Available</p>
+                </div>
+                <div className="p-4 rounded-xl bg-green-50 shadow-md hover:shadow-lg transition">
+                  <p className="text-xl sm:text-2xl font-bold text-green-700">{allSections.length}</p>
+                  <p className="text-gray-600 text-sm sm:text-base">Sections Covered</p>
+                </div>
+                <div className="p-4 rounded-xl bg-yellow-50 shadow-md hover:shadow-lg transition">
+                  <p className="text-xl sm:text-2xl font-bold text-yellow-700">100k+</p>
+                  <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
+                </div>
+              </div>
+            </section>
 
       <main className="flex-1 p-4 sm:p-6 flex justify-center">
-        <div className="w-full max-w-xl sm:max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
+        <div className="w-full max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-10">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-blue-700 mb-6 sm:mb-8 text-center">
-            Find Your Route
+            Find Bus Routes
           </h2>
 
+          {/* 🌍 Language Switcher */}
+<div className="flex flex-wrap justify-center gap-3 mb-6">
+  {languages.map((lang) => (
+    <button
+      key={lang.code}
+      onClick={() => setLanguage(lang.code)}
+      className={`
+        flex items-center gap-2 px-4 py-2 rounded-lg border 
+        transition-all duration-300 font-medium 
+        transform active:scale-95 cursor-pointer
+        ${
+          language === lang.code
+            ? "bg-blue-600 text-white border-blue-600 shadow-md"
+            : "bg-gray-100 text-gray-700 border-gray-300"
+        }
+      `}
+    >
+      <span>{lang.label}</span>
+    </button>
+  ))}
+</div>
+
+
+
+          {/* 💡 How to Use Section */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 sm:p-6 mb-8 border border-blue-100">
+            <div className="text-center space-y-3">
+              <h3 className="text-lg font-semibold text-blue-800 mb-3">💡 How it works</h3>
+              <p className="text-gray-700 text-sm sm:text-base">{tips[language]}</p>
+
+              <div className="bg-white rounded-lg p-3 mt-4 border border-blue-200">
+                <p className="text-xs sm:text-sm text-gray-600 font-medium">
+                  Example: Colombo ➜ Kandy | කොළඹ ➜ මහනුවර | கொழும்பு ➜ கண்டி
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 🏙 Origin & Destination */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
             <div className="relative" ref={originRef}>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Origin
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Origin</label>
               <input
                 type="text"
                 placeholder="Enter origin..."
@@ -280,9 +354,7 @@ const FindRoutes = () => {
             </div>
 
             <div className="relative" ref={destinationRef}>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Destination
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
               <input
                 type="text"
                 placeholder="Enter destination..."
@@ -311,18 +383,19 @@ const FindRoutes = () => {
             </div>
           </div>
 
+          {/* 🔘 Actions */}
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6">
             <button
               onClick={swapOriginDestination}
               disabled={!origin || !destination}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition disabled:opacity-50"
+              className="flex items-center justify-center w-full sm:w-auto px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
             >
               <RefreshCw size={16} className="mr-2" /> Swap
             </button>
 
             <button
               onClick={clearSelections}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition"
+              className="flex items-center justify-center w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition cursor-pointer"
             >
               <Trash2 size={16} className="mr-2" /> Clear
             </button>
@@ -330,19 +403,18 @@ const FindRoutes = () => {
             <button
               onClick={findRoutes}
               disabled={loading || !origin || !destination || origin === destination}
-              className="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition disabled:opacity-50"
+              className="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
             >
               {loading ? "Searching..." : "Find Routes"}
             </button>
           </div>
 
+          {/* 📊 Results */}
           <div>
             {loading && (
               <div className="text-center py-4">
                 <Bus className="animate-bounce mx-auto text-blue-600" size={36} />
-                <p className="text-gray-600 mt-2 text-sm sm:text-base">
-                  Searching for routes...
-                </p>
+                <p className="text-gray-600 mt-2 text-sm sm:text-base">Searching for routes...</p>
               </div>
             )}
 
@@ -369,7 +441,9 @@ const FindRoutes = () => {
                     >
                       <div className="mb-4">
                         <h2 className="text-lg font-bold text-blue-800">{route.route_name}</h2>
-                        <p className="text-sm font-medium text-gray-500 mt-1">Route No: {route.route_no}</p>
+                        <p className="text-sm font-medium text-gray-500 mt-1">
+                          Route No: {route.route_no}
+                        </p>
                       </div>
 
                       <div className="flex flex-col gap-3">

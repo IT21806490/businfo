@@ -445,6 +445,21 @@ const FareCalculator = () => {
             <p className="text-gray-600 text-sm sm:text-base">Passengers Served</p>
           </div>
         </div>
+{/* ✅ Professional Last Fare Update */}
+<div className="mt-6 flex justify-center">
+  <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-lg shadow-sm border border-gray-200">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         className="h-4 w-4 text-blue-600" 
+         fill="none" 
+         viewBox="0 0 24 24" 
+         stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span>Last fare update:</span>
+    <span className="font-semibold text-gray-900">July 04, 2025</span>
+  </div>
+</div>
+
       </section>
 
       <main className="flex-1 p-4 sm:p-6 flex justify-center">
@@ -453,27 +468,29 @@ const FareCalculator = () => {
             Calculate Normal way Fares
           </h2>
 
-          {/* 🌍 Newly designed Language Switcher */}
-          <div className="flex flex-wrap justify-center gap-3 mb-6">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => setLanguage(lang.code)}
-                className={`
-                  flex items-center gap-2 px-4 py-2 rounded-full border 
-                  transition-all duration-300 font-medium 
-                  transform hover:scale-105 active:scale-95
-                  ${
-                    language === lang.code
-                      ? "bg-blue-600 text-white border-blue-600 shadow-md"
-                      : "bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200"
-                  }
-                `}
-              >
-                <span>{lang.label}</span>
-              </button>
-            ))}
-          </div>
+{/* 🌍 Language Switcher */}
+<div className="flex flex-wrap justify-center gap-3 mb-6">
+  {languages.map((lang) => (
+    <button
+      key={lang.code}
+      onClick={() => setLanguage(lang.code)}
+      className={`
+        flex items-center gap-2 px-4 py-2 rounded-lg border 
+        transition-all duration-300 font-medium 
+        transform active:scale-95 cursor-pointer
+        ${
+          language === lang.code
+            ? "bg-blue-600 text-white border-blue-600 shadow-md"
+            : "bg-gray-100 text-gray-700 border-gray-300"
+        }
+      `}
+    >
+      <span>{lang.label}</span>
+    </button>
+  ))}
+</div>
+
+
 
           {/* 💡 How to Use Section */}
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 sm:p-6 mb-8 border border-blue-100">
@@ -564,28 +581,31 @@ const FareCalculator = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-3 sm:gap-4">
-            <button
-              onClick={swapOriginDestination}
-              disabled={!origin || !destination}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              <RefreshCw size={16} className="mr-2" /> Swap
-            </button>
-            <button
-              onClick={clearSelections}
-              className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-200"
-            >
-              <Trash2 size={16} className="mr-2" /> Clear
-            </button>
-            <button
-              onClick={calculateFare}
-              disabled={loading || !origin || !destination || origin === destination}
-              className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              Calculate Fare
-            </button>
-          </div>
+<div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-3 sm:gap-4">
+  <button
+    onClick={swapOriginDestination}
+    disabled={!origin || !destination}
+    className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors duration-200 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+  >
+    <RefreshCw size={16} className="mr-2" /> Swap
+  </button>
+
+  <button
+    onClick={clearSelections}
+    className="flex items-center justify-center w-full sm:w-auto px-4 py-2.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-200 cursor-pointer"
+  >
+    <Trash2 size={16} className="mr-2" /> Clear
+  </button>
+
+  <button
+    onClick={calculateFare}
+    disabled={loading || !origin || !destination || origin === destination}
+    className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+  >
+    Calculate Fare
+  </button>
+</div>
+
 
           <div>
             {loading && (
