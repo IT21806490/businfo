@@ -4,6 +4,8 @@ import FindRoutes from "./components/FindRoutes";
 import Contact from "./components/Contact";
 import Fares from "./components/Fares";
 import HighwayFareCalculator from "./components/HighwayFareCalculator";
+import NormalTimetables from "./components/NormalTimetables";
+import Blogs from "./components/Blogs";
 
 // Map paths to components
 const routes = {
@@ -12,6 +14,8 @@ const routes = {
   "/fares": <Fares />,
   "/highway-fares": <HighwayFareCalculator />,
   "/contact": <Contact />,
+  "/normal-time": <NormalTimetables />,
+  "/blogs": <Blogs />,
 };
 
 const App = () => {
@@ -37,6 +41,8 @@ const App = () => {
         <a href="/fares" onClick={(e) => { e.preventDefault(); navigate("/fares"); }}></a>
         <a href="/highway-fares" onClick={(e) => { e.preventDefault(); navigate("/highway-fares"); }}></a>
         <a href="/contact" onClick={(e) => { e.preventDefault(); navigate("/contact"); }}></a>
+        <a href="/normal-time" onClick={(e) => { e.preventDefault(); navigate("/normal-time"); }}></a>
+        <a href="/blogs" onClick={(e) => { e.preventDefault(); navigate("/blogs"); }}></a>
       </nav>
 
       {/* Render page */}

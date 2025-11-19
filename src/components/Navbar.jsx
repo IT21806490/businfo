@@ -1,164 +1,114 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
-import logoImage from "../images/logo.png";
-import useBlockInspect from "../hooks/useBlockInspect";
+// src/components/Navbar.jsx
+import React, { useState, useEffect } from "react";
+import { Bus } from "lucide-react";
 
 const Navbar = () => {
-  useBlockInspect();
-  const [isOpen, setIsOpen] = useState(false);
-  const [faresDropdown, setFaresDropdown] = useState(false);
-  const menuRef = useRef(null);
-  const [menuHeight, setMenuHeight] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Calculate height dynamically for smooth slide
   useEffect(() => {
-    if (menuRef.current) {
-      setMenuHeight(menuRef.current.scrollHeight);
-    }
-  }, [isOpen]);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4 md:py-6">
-        {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <img
-            src={logoImage}
-            alt="BUSINFO.CLICK Logo"
-            className="w-10 h-10 md:w-12 md:h-12 object-contain"
-          />
-          <h1 className="text-2xl md:text-3xl font-extrabold">Businfo.Click</h1>
-        </div>
-
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8 font-medium text-base md:text-lg items-center">
-          <a href="/" className="hover:text-yellow-400 transition">
-            Home
-          </a>
-
-          {/* Desktop Fares Dropdown on Hover */}
-          <div className="relative group">
-            <button className="flex items-center space-x-1 px-2 py-1 hover:text-yellow-400 transition font-semibold cursor-default">
-              <span>Fares</span>
-              <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-            </button>
-
-            <div className="absolute left-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              <a
-                href="/fares"
-                className="block px-4 py-2 hover:bg-gray-700 rounded-t-lg transition font-medium"
-              >
-                Normal way
-              </a>
-              <a
-                href="/highway-fares"
-                className="block px-4 py-2 hover:bg-gray-700 rounded-b-lg transition font-medium"
-              >
-                Expressway
-              </a>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg py-3" : "bg-white/95 backdrop-blur-sm py-4"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+              <Bus className="text-white" size={24} />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-gray-900">Businfo.click</h1>
+              <p className="text-xs text-gray-500 hidden sm:block">
+                Sri Lanka's #1 Bus Guide
+              </p>
             </div>
           </div>
 
-          <a href="/routes" className="hover:text-yellow-400 transition">
-            Routes
-          </a>
-          <a href="/contact" className="hover:text-yellow-400 transition">
-            Contact
-          </a>
-        </nav>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center space-x-6">
+            <a href="/" className="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+            <a href="/fares" className="text-gray-700 hover:text-blue-600 font-medium">Fares</a>
+            <a href="/routes" className="text-gray-700 hover:text-blue-600 font-medium">Routes</a>
+            <a href="/normal-time" className="text-gray-700 hover:text-blue-600 font-medium">Timetables</a>
+            <a href="/blogs" className="text-gray-700 hover:text-blue-600 font-medium">Blog</a>
 
-        {/* Mobile Hamburger */}
-        <div className="md:hidden flex items-center">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
-      </div>
+            {/* Normal Fares Button - Matched Hero Blue */}
+            <a
+              href="/fares"
+              className="px-5 py-2.5 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-600 via-blue-700 to-blue-900 
+              shadow-md hover:shadow-lg hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 transition-all duration-200"
+            >
+              Normal Fares
+            </a>
 
-      {/* Mobile Menu */}
-      <div
-        ref={menuRef}
-        className={`md:hidden overflow-hidden bg-gray-800 transition-all duration-300 ease-in-out`}
-        style={{
-          maxHeight: isOpen ? `${menuHeight}px` : "0px",
-          opacity: isOpen ? 1 : 0,
-        }}
-      >
-        <a
-          href="/"
-          className="block px-4 py-2 hover:text-yellow-400 transition-opacity duration-300"
-        >
-          Home
-        </a>
+            {/* Highway Fares Button - Matched Hero Orange */}
+            <a
+              href="/highway-fares"
+              className="px-5 py-2.5 rounded-xl font-semibold text-white bg-gradient-to-r from-orange-600 via-orange-700 to-orange-900 
+              shadow-md hover:shadow-lg hover:from-orange-700 hover:via-orange-800 hover:to-orange-900 transition-all duration-200"
+            >
+              Highway Fares
+            </a>
+          </div>
 
-        {/* Mobile Fares */}
-        <div className="relative">
+          {/* Mobile Menu Button */}
           <button
-            onClick={() => setFaresDropdown(!faresDropdown)}
-            className="w-full text-left px-4 py-2 hover:text-yellow-400 flex justify-between items-center font-semibold"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 text-gray-700"
           >
-            <span>Fares</span>
-            <ChevronDown
-              className={`w-4 h-4 transition-transform duration-300 ${
-                faresDropdown ? "rotate-180" : ""
-              }`}
-            />
+            <svg className="w-6 h-6" fill="none" stroke="currentColor">
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
           </button>
-          {faresDropdown && (
-            <div className="bg-gray-700 ml-2 rounded shadow-lg">
-              <a
-                href="/fares"
-                className="block px-4 py-2 hover:bg-gray-600 transition font-medium"
-              >
-                Normal Way
-              </a>
-              <a
-                href="/highway-fares"
-                className="block px-4 py-2 hover:bg-gray-600 transition font-medium"
-              >
-                Expressway
-              </a>
-            </div>
-          )}
         </div>
 
-        <a
-          href="/routes"
-          className="block px-4 py-2 hover:text-yellow-400 transition-opacity duration-300"
-        >
-          Routes
-        </a>
-        <a
-          href="/contact"
-          className="block px-4 py-2 hover:text-yellow-400 transition-opacity duration-300"
-        >
-          Contact
-        </a>
-      </div>
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 space-y-3">
+            <a href="/" className="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
+            <a href="/fares" className="block text-gray-700 hover:text-blue-600 font-medium">Fares</a>
+            <a href="/routes" className="block text-gray-700 hover:text-blue-600 font-medium">Routes</a>
+            <a href="/timetables" className="block text-gray-700 hover:text-blue-600 font-medium">Timetables</a>
+            <a href="/blogs" className="block text-gray-700 hover:text-blue-600 font-medium">Blog</a>
 
-      {/* Tailwind Keyframe Animation */}
-      <style jsx>{`
-        @keyframes slideBounce {
-          0% {
-            transform: translateY(-20px);
-            opacity: 0;
-          }
-          60% {
-            transform: translateY(10px);
-            opacity: 1;
-          }
-          80% {
-            transform: translateY(-5px);
-          }
-          100% {
-            transform: translateY(0);
-          }
-        }
-        .animate-slideBounce {
-          animation: slideBounce 0.4s ease forwards;
-        }
-      `}</style>
-    </header>
+            {/* Mobile Normal Fares */}
+            <a
+              href="/fares"
+              className="block px-5 py-2.5 rounded-xl font-semibold text-white text-center 
+              bg-gradient-to-r from-blue-600 via-blue-700 to-blue-900 shadow-md 
+              hover:shadow-lg hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 transition-all duration-200"
+            >
+              Normal Fares
+            </a>
+
+            {/* Mobile Highway Fares */}
+            <a
+              href="/highway-fares"
+              className="block px-5 py-2.5 rounded-xl font-semibold text-white text-center 
+              bg-gradient-to-r from-orange-600 via-orange-700 to-orange-900 shadow-md 
+              hover:shadow-lg hover:from-orange-700 hover:via-orange-800 hover:to-orange-900 transition-all duration-200"
+            >
+              Highway Fares
+            </a>
+          </div>
+        )}
+      </div>
+    </nav>
   );
 };
 
